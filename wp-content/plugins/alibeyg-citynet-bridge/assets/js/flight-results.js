@@ -4,10 +4,11 @@
  * This script should be included on the flight results page (e.g., /flight/)
  * It reads search parameters from sessionStorage/URL and triggers the search
  * CRITICAL: Injects API results directly into CityNet's COMPONENT DATA (not Vuex!)
+ * Sets noPaginatedFlights which allFlightsCount computed property depends on
  *
  * @package Alibeyg_Citynet_Bridge
  * @since 0.5.1
- * @version 0.5.7
+ * @version 0.5.8
  */
 
 (function() {
@@ -248,17 +249,23 @@
         if (typeof vueInstance.$set === 'function') {
           vueInstance.$set(flightComponent, 'originalAvailFlights', data.Items || []);
           vueInstance.$set(flightComponent, 'customAvailFlights', data.Items || []);
+          vueInstance.$set(flightComponent, 'noPaginatedFlights', data.Items || []); // CRITICAL: allFlightsCount checks this!
           vueInstance.$set(flightComponent, 'ClosedFlights', data.ClosedFlight || []);
           vueInstance.$set(flightComponent, 'loading', false);
           vueInstance.$set(flightComponent, 'isInitializing', false);
+          vueInstance.$set(flightComponent, 'errorStatus', null);
+          vueInstance.$set(flightComponent, 'noFlightError', null);
           console.log('[Alibeyg Flight Results] ✓ Injected ' + (data.Items ? data.Items.length : 0) + ' flights using Vue.set()');
         } else {
           // Fallback to direct assignment
           flightComponent.originalAvailFlights = data.Items || [];
           flightComponent.customAvailFlights = data.Items || [];
+          flightComponent.noPaginatedFlights = data.Items || []; // CRITICAL: allFlightsCount checks this!
           flightComponent.ClosedFlights = data.ClosedFlight || [];
           flightComponent.loading = false;
           flightComponent.isInitializing = false;
+          flightComponent.errorStatus = null;
+          flightComponent.noFlightError = null;
           console.log('[Alibeyg Flight Results] ✓ Injected ' + (data.Items ? data.Items.length : 0) + ' flights (direct)');
         }
 
