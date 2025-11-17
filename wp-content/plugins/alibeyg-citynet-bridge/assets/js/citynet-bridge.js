@@ -1,5 +1,5 @@
 /**
- * CityNet Bridge Script v2.1
+ * CityNet Bridge Script v2.2
  *
  * This script bridges the custom Alibeyg search widget with CityNet's Vue.js app
  * by making CityNet perform its own search with the custom widget's parameters.
@@ -8,12 +8,14 @@
  * 1. Custom widget stores search payload in sessionStorage
  * 2. This script reads payload and converts to CityNet format
  * 3. Sets CRITICAL Vuex state properties (searchedFlightFromHome, SearchInfo)
+ *    - First tries Vuex mutations
+ *    - Falls back to Vue.set() for reactivity
  * 4. Stores data in CityNet's expected locations (localStorage + URL)
  * 5. Triggers CityNet's internal search mechanism
  *
  * @package Alibeyg_Citynet_Bridge
- * @since 0.5.4
- * @version 0.5.4
+ * @since 0.5.5
+ * @version 0.5.5
  */
 
 (function() {
@@ -217,6 +219,25 @@
             // Silent fail - this is expected for non-existent mutations
           }
         });
+
+        // CRITICAL FALLBACK: Direct state manipulation if mutations didn't work
+        if (vueInstance.$store.state.flightStore) {
+          try {
+            // Use Vue.set() for reactivity (Vue 2)
+            if (typeof vueInstance.$set === 'function') {
+              vueInstance.$set(vueInstance.$store.state.flightStore, 'searchedFlightFromHome', true);
+              vueInstance.$set(vueInstance.$store.state.flightStore, 'SearchInfo', citynetPayload);
+              console.log('[CityNet Bridge] ⚠ REACTIVE STATE SET: Used Vue.set() for critical properties');
+            } else {
+              // Fallback to direct assignment
+              vueInstance.$store.state.flightStore.searchedFlightFromHome = true;
+              vueInstance.$store.state.flightStore.SearchInfo = citynetPayload;
+              console.log('[CityNet Bridge] ⚠ DIRECT STATE SET: Force-set critical properties');
+            }
+          } catch (e) {
+            console.warn('[CityNet Bridge] Failed to manipulate state:', e);
+          }
+        }
       }
 
       // Strategy 2: Try Vuex store actions (might trigger API call)
