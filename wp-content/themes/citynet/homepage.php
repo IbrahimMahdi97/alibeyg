@@ -15,14 +15,14 @@ $bg_image_panel = get_field('bg-image');
         <span class="image-banner" style="background-image:url('');"><?= wp_get_attachment_image(get_field('bg-image'),'full'); ?></span>
         <div class="border-panel">
             <div class="container mt-5">
-                <?= do_shortcode('[citynet]') ?>
+                <?= do_shortcode('[alibeyg_travel_widget flight_url="/flight/" hotel_url="/hotel/" visa_url="/visa/"]') ?>
             </div>
         </div>
     </section>
 <?php else : ?>
     <div class="border-panel">
         <div class="container mt-4">
-            <?= do_shortcode('[citynet]') ?>
+            <?= do_shortcode('[alibeyg_travel_widget flight_url="/flight/" hotel_url="/hotel/" visa_url="/visa/"]') ?>
         </div>
     </div>
 <?php endif; ?>

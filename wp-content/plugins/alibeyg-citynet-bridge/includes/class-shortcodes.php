@@ -103,7 +103,7 @@ class ABG_Citynet_Shortcodes {
             'abg-citynet-flight-results',
             $this->plugin_url . '/assets/js/flight-results.js',
             array(),
-            '0.5.1',
+            '0.5.8',
             true
         );
 

@@ -3,9 +3,12 @@
  *
  * This script should be included on the flight results page (e.g., /flight/)
  * It reads search parameters from sessionStorage/URL and triggers the search
+ * CRITICAL: Injects API results directly into CityNet's COMPONENT DATA (not Vuex!)
+ * Sets noPaginatedFlights which allFlightsCount computed property depends on
  *
  * @package Alibeyg_Citynet_Bridge
  * @since 0.5.1
+ * @version 0.5.8
  */
 
 (function() {
@@ -170,6 +173,10 @@
         sessionStorage.removeItem('autoSearch');
 
         if (result.status === 200 && result.data) {
+          // CRITICAL: Inject results into CityNet's Vuex store
+          this.injectResultsIntoCityNet(result.data);
+
+          // Also display in custom UI if not in silent mode
           this.displayResults(result.data);
         } else if (result.code && result.message) {
           // WordPress error format
@@ -183,6 +190,95 @@
         sessionStorage.removeItem('autoSearch');
         this.showError('Network error. Please check your connection and try again.');
       });
+    },
+
+    /**
+     * Inject API results into CityNet's flight results component
+     * CRITICAL: CityNet stores results in component local data, NOT Vuex!
+     */
+    injectResultsIntoCityNet: function(data) {
+      console.log('[Alibeyg Flight Results] Injecting results into CityNet component...');
+
+      const app = document.getElementById('app');
+      if (!app || !app.__vue__) {
+        console.warn('[Alibeyg Flight Results] CityNet Vue app not found');
+        return;
+      }
+
+      const vueInstance = app.__vue__;
+
+      // Find the flight results component (uid 34, has originalAvailFlights property)
+      let flightComponent = null;
+
+      // Try to find via $refs first
+      function findFlightComponent(component) {
+        if (component.$refs && component.$refs.resultFlight) {
+          return component.$refs.resultFlight;
+        }
+
+        // Check if this component has the flight data properties
+        if (component.$data &&
+            component.hasOwnProperty('originalAvailFlights') &&
+            component.hasOwnProperty('customAvailFlights')) {
+          return component;
+        }
+
+        // Recurse through children
+        if (component.$children) {
+          for (let i = 0; i < component.$children.length; i++) {
+            const found = findFlightComponent(component.$children[i]);
+            if (found) return found;
+          }
+        }
+
+        return null;
+      }
+
+      flightComponent = findFlightComponent(vueInstance);
+
+      if (!flightComponent) {
+        console.error('[Alibeyg Flight Results] ✗ Could not find flight results component');
+        return;
+      }
+
+      console.log('[Alibeyg Flight Results] ✓ Found flight component (uid: ' + flightComponent._uid + ')');
+
+      // Inject the results using Vue.set() for reactivity
+      try {
+        // The data structure from API: {Success: true, Items: Array(108), ClosedFlight: Array(0)}
+        if (typeof vueInstance.$set === 'function') {
+          vueInstance.$set(flightComponent, 'originalAvailFlights', data.Items || []);
+          vueInstance.$set(flightComponent, 'customAvailFlights', data.Items || []);
+          vueInstance.$set(flightComponent, 'noPaginatedFlights', data.Items || []); // CRITICAL: allFlightsCount checks this!
+          vueInstance.$set(flightComponent, 'ClosedFlights', data.ClosedFlight || []);
+          vueInstance.$set(flightComponent, 'loading', false);
+          vueInstance.$set(flightComponent, 'isInitializing', false);
+          vueInstance.$set(flightComponent, 'errorStatus', null);
+          vueInstance.$set(flightComponent, 'noFlightError', null);
+          console.log('[Alibeyg Flight Results] ✓ Injected ' + (data.Items ? data.Items.length : 0) + ' flights using Vue.set()');
+        } else {
+          // Fallback to direct assignment
+          flightComponent.originalAvailFlights = data.Items || [];
+          flightComponent.customAvailFlights = data.Items || [];
+          flightComponent.noPaginatedFlights = data.Items || []; // CRITICAL: allFlightsCount checks this!
+          flightComponent.ClosedFlights = data.ClosedFlight || [];
+          flightComponent.loading = false;
+          flightComponent.isInitializing = false;
+          flightComponent.errorStatus = null;
+          flightComponent.noFlightError = null;
+          console.log('[Alibeyg Flight Results] ✓ Injected ' + (data.Items ? data.Items.length : 0) + ' flights (direct)');
+        }
+
+        // Force Vue to update
+        if (flightComponent.$forceUpdate) {
+          flightComponent.$forceUpdate();
+          console.log('[Alibeyg Flight Results] ✓ Forced component update');
+        }
+
+        console.log('[Alibeyg Flight Results] ===== INJECTION SUCCESS =====');
+      } catch (e) {
+        console.error('[Alibeyg Flight Results] ✗ Injection failed:', e);
+      }
     },
 
     /**
