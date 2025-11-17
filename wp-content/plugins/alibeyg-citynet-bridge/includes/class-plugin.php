@@ -20,7 +20,7 @@ class ABG_Citynet_Bridge_Plugin {
      *
      * @var string
      */
-    const VERSION = '0.5.3';
+    const VERSION = '0.5.4';
 
     /**
      * Plugin directory path
@@ -166,7 +166,7 @@ class ABG_Citynet_Bridge_Plugin {
                 'abg-citynet-bridge',
                 $this->plugin_url . 'assets/js/citynet-bridge.js',
                 array(), // No dependencies - needs to run early
-                '0.5.3',
+                '0.5.4',
                 true  // Load in footer
             );
 

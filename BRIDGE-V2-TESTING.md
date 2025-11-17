@@ -1,5 +1,11 @@
 # Bridge v2 Testing Guide
 
+## What Changed in v0.5.4 (CRITICAL FIX)
+
+**FIXED:** CityNet now properly displays search results! The bridge now sets the critical Vuex state properties that CityNet requires:
+- `searchedFlightFromHome` - Flag that tells CityNet the search came from homepage
+- `SearchInfo` - Search parameters that CityNet uses to display results
+
 ## What Changed in v0.5.3
 
 The bridge script has been **completely rewritten** to aggressively inject search data into CityNet's Vue.js app using **7 different strategies simultaneously**.
@@ -225,9 +231,10 @@ This will automatically run the inspection after injection.
 
 ## Version Info
 
-- **Bridge Version:** 0.5.3
-- **Plugin Version:** 0.5.3
+- **Bridge Version:** 0.5.4
+- **Plugin Version:** 0.5.4
 - **Last Updated:** 2025-11-17
+- **Critical Fix:** Sets searchedFlightFromHome and SearchInfo in Vuex store
 
 ---
 

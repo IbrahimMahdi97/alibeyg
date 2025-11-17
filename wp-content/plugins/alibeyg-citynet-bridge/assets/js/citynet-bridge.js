@@ -1,5 +1,5 @@
 /**
- * CityNet Bridge Script v2
+ * CityNet Bridge Script v2.1
  *
  * This script bridges the custom Alibeyg search widget with CityNet's Vue.js app
  * by making CityNet perform its own search with the custom widget's parameters.
@@ -7,11 +7,13 @@
  * Flow:
  * 1. Custom widget stores search payload in sessionStorage
  * 2. This script reads payload and converts to CityNet format
- * 3. Stores data in CityNet's expected locations (localStorage + URL)
- * 4. Triggers CityNet's internal search mechanism
+ * 3. Sets CRITICAL Vuex state properties (searchedFlightFromHome, SearchInfo)
+ * 4. Stores data in CityNet's expected locations (localStorage + URL)
+ * 5. Triggers CityNet's internal search mechanism
  *
  * @package Alibeyg_Citynet_Bridge
- * @since 0.5.3
+ * @since 0.5.4
+ * @version 0.5.4
  */
 
 (function() {
@@ -163,6 +165,40 @@
       if (vueInstance.$store && typeof vueInstance.$store.commit === 'function') {
         console.log('[CityNet Bridge] Attempting Vuex mutations...');
 
+        // CRITICAL: Set searchedFlightFromHome flag (required for CityNet to display results)
+        const criticalFlags = [
+          'flightStore/setSearchedFlightFromHome',
+          'flightStore/SET_SEARCHED_FLIGHT_FROM_HOME',
+          'setSearchedFlightFromHome',
+          'SET_SEARCHED_FLIGHT_FROM_HOME'
+        ];
+
+        criticalFlags.forEach(function(mutation) {
+          try {
+            vueInstance.$store.commit(mutation, true);
+            console.log('[CityNet Bridge] ✓ CRITICAL FLAG set: ' + mutation);
+          } catch (e) {
+            // Silent fail
+          }
+        });
+
+        // CRITICAL: Set SearchInfo (required for CityNet to display results)
+        const searchInfoMutations = [
+          'flightStore/setSearchInfo',
+          'flightStore/SET_SEARCH_INFO',
+          'setSearchInfo',
+          'SET_SEARCH_INFO'
+        ];
+
+        searchInfoMutations.forEach(function(mutation) {
+          try {
+            vueInstance.$store.commit(mutation, citynetPayload);
+            console.log('[CityNet Bridge] ✓ CRITICAL SearchInfo set: ' + mutation);
+          } catch (e) {
+            // Silent fail
+          }
+        });
+
         // List of possible mutation names CityNet might use
         const mutationAttempts = [
           'setFlightSearchData',
@@ -274,8 +310,17 @@
       sessionStorage.setItem('autoSearch', 'false');
 
       console.log('[CityNet Bridge] ===== INJECTION COMPLETE =====');
+
+      // Verify critical flags were set
+      if (vueInstance && vueInstance.$store && vueInstance.$store.state.flightStore) {
+        const flightStore = vueInstance.$store.state.flightStore;
+        console.log('[CityNet Bridge] Verification:');
+        console.log('[CityNet Bridge]   searchedFlightFromHome:', flightStore.searchedFlightFromHome);
+        console.log('[CityNet Bridge]   SearchInfo:', flightStore.SearchInfo ? 'SET ✓' : 'NOT SET ✗');
+      }
+
       console.log('[CityNet Bridge] If results don\'t appear, inspect Vue app with:');
-      console.log('[CityNet Bridge]   console.log(document.getElementById("app").__vue__.$store)');
+      console.log('[CityNet Bridge]   AlibeyqCitynetBridge.inspect()');
 
     } catch (error) {
       console.error('[CityNet Bridge] Error during injection:', error);
@@ -299,6 +344,14 @@
     console.log('[CityNet Bridge] Vue instance:', vue);
 
     if (vue.$store) {
+      // Check critical properties FIRST
+      if (vue.$store.state.flightStore) {
+        console.log('[CityNet Bridge] ===== CRITICAL PROPERTIES =====');
+        console.log('[CityNet Bridge] searchedFlightFromHome:', vue.$store.state.flightStore.searchedFlightFromHome);
+        console.log('[CityNet Bridge] SearchInfo:', vue.$store.state.flightStore.SearchInfo);
+        console.log('[CityNet Bridge] =====================================');
+      }
+
       console.log('[CityNet Bridge] Vuex Store State:', vue.$store.state);
       console.log('[CityNet Bridge] Available Mutations:', Object.keys(vue.$store._mutations));
       console.log('[CityNet Bridge] Available Actions:', Object.keys(vue.$store._actions));
