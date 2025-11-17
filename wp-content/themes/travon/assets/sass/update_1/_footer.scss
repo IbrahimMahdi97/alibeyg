@@ -1,0 +1,83 @@
+//-----------------------------------
+.footer-layout3 {
+    background-image: linear-gradient(to left, $title-color, $title-color);
+    background-size: 100% 430px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    .ot-social {
+        --body-color: #B3C1D3;
+    }
+    .widget-area {
+        border-radius: 30px;
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+    .copyright-wrap {
+        border-top: none;
+        --body-color: #fff;
+    }
+    .footer-widget .widget_title {
+        color: $title-color;
+        font-weight: bold;
+    }
+}
+
+@include md {
+    .footer-layout3 {
+        .widget-area {
+            border-radius: 20px;
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
+    }
+}
+
+//--------------------------------------
+.newsletter-wrap2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 42px 0;
+    @include md {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .newsletter-form {
+        width: 100%;
+        max-width: 660px;
+        @include lg {
+            max-width: 500px;
+        }
+    }
+    .form-control {
+        background-color: $title-color !important;
+        border: 1px solid #313D54;
+        color: $body-color;
+        @include inputPlaceholder {
+            color: $body-color;
+        }
+    }
+    .ot-btn {
+        margin-left: -15px;
+        @include xs {
+            margin-left: 0;
+        }
+    }
+    .title-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        .box-title {
+            margin-bottom: -0.3em;
+        }
+        @include xs {
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+//-----------------------------------

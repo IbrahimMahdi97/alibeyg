@@ -1,0 +1,246 @@
+@font-face {
+  font-family: "iranyekan";
+  src: url("../fonts/eot/iranyekanwebregular.eot");
+  src: url("../fonts/eot/iranyekanwebregular.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebregular.woff") format("woff"), url("../fonts/ttf/iranyekanwebregular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "iranyekan";
+  src: url("../fonts/eot/iranyekanwebbold.eot");
+  src: url("../fonts/eot/iranyekanwebbold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebbold.woff") format("woff"), url("../fonts/ttf/iranyekanwebbold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+/* Material design box shadows */
+body.rtl, body.rtl .press-this a.wp-switch-editor {
+  font-family: "iranyekan" !important;
+}
+
+.rtl h1, .rtl h2, .rtl h3, .rtl h4, .rtl h5, .rtl h6, .rtl #wpadminbar *:not(.ab-icon) {
+  font-family: "iranyekan" !important;
+}
+
+#dashboard_right_now .continent-count:before {
+  content: "\f319";
+}
+#dashboard_right_now .country-count:before {
+  content: "\f227";
+}
+#dashboard_right_now .state-count:before {
+  content: "\f231";
+}
+#dashboard_right_now .city-count:before {
+  content: "\f541";
+}
+#dashboard_right_now .location-count:before {
+  content: "\f230";
+}
+#dashboard_right_now .tour-count:before, #dashboard_right_now .irantour-count:before {
+  content: "\f527";
+}
+#dashboard_right_now .hotelpackage-count:before {
+  content: "\f512";
+}
+#dashboard_right_now .media-count:before {
+  content: "\f126";
+}
+
+div.awesomplete {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+div.awesomplete > ul {
+  position: absolute;
+  left: -10px;
+  min-width: 100%;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0.2em 0 0;
+  background: hsl(0, 0%, 100%);
+  background: linear-gradient(to bottom right, white, hsl(0, 0%, 100%));
+  box-shadow: 0.05em 0.2em 0.6em rgba(0, 0, 0, 0.2);
+  text-shadow: none;
+  padding: 4px;
+  z-index: 5;
+  background-color: #fff;
+  top: 2.5em;
+  width: calc(100% + 3em);
+  border: 1px solid #ababab;
+  max-height: 240px;
+  border-radius: 4px;
+  overflow: auto;
+  color: #13447e;
+  /*:before {
+      content: "";
+      position: absolute;
+      top: -.43em;
+      left: 1em;
+      width: 0; height: 0;
+      padding: .4em;
+      background: white;
+      border: inherit;
+      border-right: 0;
+      border-bottom: 0;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+  }*/
+}
+div.awesomplete > ul[hidden], div.awesomplete > ul:empty {
+  display: none;
+}
+div.awesomplete > ul > li {
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: justify;
+  direction: ltr;
+  font-size: 0.85rem;
+  overflow: hidden;
+}
+div.awesomplete > ul > li :not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+div.awesomplete > ul > li :hover {
+  background: #e6e6e6;
+  color: black;
+}
+div.awesomplete > ul > li :hover mark {
+  background: hsl(68, 100%, 41%);
+}
+div.awesomplete > ul > li[aria-selected=true] {
+  /*background: hsl(205, 40%, 40%);
+  color: white;*/
+  background: #e6e6e6;
+}
+div.awesomplete > ul > li[aria-selected=true] mark {
+  background: hsl(86, 100%, 21%);
+  color: inherit;
+}
+div.awesomplete > ul > li p {
+  color: rgba(0, 0, 0, 0.87) !important;
+  margin: 0;
+  padding: 7px 0px 3px 10px;
+}
+div.awesomplete mark {
+  color: #f06543;
+  background-color: transparent;
+  margin-right: -1px;
+}
+div.awesomplete > input {
+  display: block;
+}
+
+.has-awesomplete .acf-input-wrap {
+  overflow: unset;
+}
+.has-awesomplete .awesomplete > ul {
+  width: 100%;
+  left: 0;
+  margin-top: -5px;
+}
+.has-awesomplete .visually-hidden {
+  display: none !important;
+}
+
+.acf_postbox {
+  direction: rtl !important;
+  text-align: right !important;
+  font-family: yekan, tahoma !important;
+  font-weight: normal !important;
+  font-size: 13px !important;
+}
+.acf_postbox select {
+  font-size: 13px !important;
+}
+
+.acf-tab-group > li, .hl > li {
+  float: right;
+  font-family: yekan, tahoma;
+}
+.acf-tab-group > li a, .hl > li a {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.acf_postbox p.label label {
+  font-weight: normal;
+}
+
+ul.acf-radio-list.horizontal li, ul.acf-checkbox-list.horizontal li {
+  float: right;
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.acf-google-map .acf-sprite-remove, .acf-google-map .acf-sprite-locate {
+  right: auto;
+  left: 7px;
+}
+
+.acf_relationship .relationship_search {
+  font-family: yekan, tahoma;
+}
+
+#acf-field-country_title, #acf-field-city_title, #acf-field-attraction_title, #acf-field-hotel_title {
+  direction: ltr;
+  text-align: left;
+}
+
+.acf-field.append-ltr .acf-input-append {
+  direction: ltr;
+}
+.acf-field.input-ltr input {
+  direction: ltr;
+}
+.acf-field.acf-field-checkbox[data-name=facilities] ul.acf-checkbox-list {
+  -moz-column-count: 3;
+       column-count: 3;
+}
+.acf-field.acf-field-checkbox[data-name=facilities] ul.acf-checkbox-list li {
+  clear: both;
+}
+
+input.readonly, input[readonly], textarea.readonly, textarea[readonly] {
+  background-color: #fff !important;
+}
+
+#setting_captcha .on-off-switch .slide-button {
+  background-color: transparent;
+  border-color: transparent;
+}
+#setting_captcha .on-off-switch input:first-of-type:checked ~ .slide-button {
+  background: #b2d27e;
+  border: 1px solid #7c9258;
+}
+#setting_captcha .on-off-switch input:last-of-type:checked ~ .slide-button {
+  background: #b73b27;
+  border-color: #7f291b;
+}
+
+table.wp-list-table.striped tbody tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table.wp-list-table.striped tbody tr:hover {
+  background-color: #e3e3e3;
+}
+table.wp-list-table th#cn-post-thumb {
+  width: 70px;
+}
+table.wp-list-table th#cn-continent {
+  width: 80px;
+}
+table.wp-list-table th#cn-country, table.wp-list-table th#cn-state, table.wp-list-table th#cn-city, table.wp-list-table th#cn-tour-status, table.wp-list-table th#cn-date {
+  width: 100px;
+}
+table.wp-list-table th#cn-countries, table.wp-list-table th#cn-cities {
+  width: 150px;
+}
+table.wp-list-table td.cn-post-thumb img {
+  border: 1px solid #a0a0a0;
+}
+
+.mce-btn .mce-ico.mce-i-none {
+  opacity: 0.65;
+}/*# sourceMappingURL=admin.css.map */

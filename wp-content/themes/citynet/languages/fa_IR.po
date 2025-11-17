@@ -1,0 +1,3768 @@
+# Copyright (C) 2015 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2015-10-28 13:40+0330\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-01-04 14:58+0330\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: fa_IR\n"
+
+# @ _s
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "صفحه مورد نظر پیدا نشد."
+
+msgid "Page not found!"
+msgstr "صفحه پیدا نشد!"
+
+# @ _s
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try search?"
+msgstr "صفحه مورد نظر پیدا نشد."
+
+# @ _s
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr "گروه‌‌‌‌‌های بیشتر استفاده شده"
+
+# @ _s
+#. translators: %1$s: smiley
+#: 404.php:44
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Try looking in the monthly archives. %1$s"
+
+# @ _s
+#: comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s دیدگاه برای &rdquo;%2$s&ldquo;"
+
+# @ _s
+#: comments.php:38 comments.php:59
+msgid "Comment navigation"
+msgstr "جهت یابی دیدگاه‌ها"
+
+# @ _s
+#: comments.php:41 comments.php:62
+msgid "Older Comments"
+msgstr "دیدگاه‌های قدیمی‌تر"
+
+# @ _s
+#: comments.php:42 comments.php:63
+msgid "Newer Comments"
+msgstr "دیدگاه‌های جدیدتر"
+
+# @ _s
+#: comments.php:75
+msgid "Comments are closed."
+msgstr "ارسال دیدگاه بسته شده است."
+
+# @ _s
+#: footer.php:16
+msgid "http://wordpress.org/"
+msgstr ""
+
+# @ _s
+#: footer.php:16
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Proudly powered by %s"
+
+# @ _s
+#: footer.php:18
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s by %2$s."
+
+# @ _s
+#: functions.php:45 header.php:32
+msgid "Primary Menu"
+msgstr "فهرست اصلی"
+
+# @ _s
+#: functions.php:100
+msgid "Sidebar"
+msgstr "ستون کناری"
+
+# @ _s
+#: inc/extras.php:52
+#, php-format
+msgid "Page %s"
+msgstr "صفحه %s"
+
+# @ _s
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "جهت یابی نوشته ها"
+
+# @ _s
+#: inc/template-tags.php:27
+msgid "Older posts"
+msgstr "نوشته‌های قدیمی‌تر"
+
+# @ _s
+#: inc/template-tags.php:31
+msgid "Newer posts"
+msgstr "نوشته‌های جدیدتر"
+
+# @ _s
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "جهت یابی نوشته ها"
+
+# @ _s
+#: inc/template-tags.php:86
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "در تاریخ %s"
+
+# @ _s
+#: inc/template-tags.php:91
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "توسط %s"
+
+# @ _s
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:108 inc/template-tags.php:114
+msgid ", "
+msgstr "، "
+
+# @ _s
+#: inc/template-tags.php:110
+#, php-format
+msgid "Posted in %1$s"
+msgstr "دسته‌ها: %1$s"
+
+# @ _s
+#: inc/template-tags.php:116
+#, php-format
+msgid "Tagged %1$s"
+msgstr "برچسب‌ها: %1$s"
+
+# @ _s
+#: inc/template-tags.php:122
+msgid "Leave a comment"
+msgstr "ارسال دیدگاه"
+
+# @ _s
+#: inc/template-tags.php:122
+msgid "1 Comment"
+msgstr "۱ دیدگاه"
+
+# @ _s
+#: inc/template-tags.php:122
+msgid "% Comments"
+msgstr "% دیدگاه"
+
+# @ _s
+#: inc/template-tags.php:126 template-parts/content-page.php:26
+msgid "Edit"
+msgstr "ویرایش"
+
+# @ _s
+#: inc/template-tags.php:143
+#, php-format
+msgid "Category: %s"
+msgstr "دسته: %s"
+
+# @ _s
+#: inc/template-tags.php:145
+#, php-format
+msgid "Tag: %s"
+msgstr "برچسب: %s"
+
+# @ _s
+#: inc/template-tags.php:147
+#, php-format
+msgid "Author: %s"
+msgstr "نویسنده: %s"
+
+# @ _s
+#: inc/template-tags.php:149
+#, php-format
+msgid "Year: %s"
+msgstr "سال: %s"
+
+# @ _s
+#: inc/template-tags.php:149
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+# @ _s
+#: inc/template-tags.php:151
+#, php-format
+msgid "Month: %s"
+msgstr "ماه: %s"
+
+# @ _s
+#: inc/template-tags.php:151
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+# @ _s
+#: inc/template-tags.php:153
+#, php-format
+msgid "Day: %s"
+msgstr "روز: %s"
+
+# @ _s
+#: inc/template-tags.php:153
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "F j, Y"
+
+# @ _s
+#: inc/template-tags.php:156
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "به جز"
+
+# @ _s
+#: inc/template-tags.php:158
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr "گالری ها"
+
+# @ _s
+#: inc/template-tags.php:160
+msgctxt "post format archive title"
+msgid "Images"
+msgstr "تصاویر"
+
+# @ _s
+#: inc/template-tags.php:162
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr "ویدئو ها"
+
+# @ _s
+#: inc/template-tags.php:164
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr "Quotes"
+
+# @ _s
+#: inc/template-tags.php:166
+msgctxt "post format archive title"
+msgid "Links"
+msgstr "لینک ها"
+
+# @ _s
+#: inc/template-tags.php:168
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr "وضعیت ها"
+
+# @ _s
+#: inc/template-tags.php:170
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr "صوتی "
+
+# @ _s
+#: inc/template-tags.php:172
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr "چت ها "
+
+# @ _s
+#: inc/template-tags.php:175
+#, php-format
+msgid "Archives: %s"
+msgstr "بایگانی‌ها: %s"
+
+# @ _s
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:179
+#, php-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+# @ _s
+#: inc/template-tags.php:181
+msgid "Archives"
+msgstr "بایگانی‌ها"
+
+# @ _s
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "نتایج جستجو برای: %s"
+
+# @ _s
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "چیزی پیدا نشد"
+
+# @ _s
+#: template-parts/content-none.php:20
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "آماده هستید برای انتشار اولین نوشته ؟ <a href=\"%1$s\">اینجا شروع کنید </a>."
+
+# @ _s
+#: template-parts/content-none.php:24
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "مطلبی برای کلیدواژه شما پیدا نشد. لطفا مجددا با استفاده از کلیدواژه‌های جدید جستجو کنید."
+
+# @ _s
+#: template-parts/content-none.php:29
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "مطلبی در این صفحه پیدا نشد. می‌توانید از جستجو استفاده کنید."
+
+# @ _s
+#: template-parts/content-page.php:19 template-parts/content-single.php:23
+#: template-parts/content.php:32
+msgid "Pages:"
+msgstr "صفحات:"
+
+# @ _s
+#. translators: %s: Name of current post
+#: template-parts/content.php:25
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "ادامه مطلب %s <span class=\"meta-nav\">&larr;</span>"
+
+msgid "All"
+msgstr "همه"
+
+msgid "Video Time"
+msgstr "زمان کلیپ"
+
+msgid "Filter by continents:"
+msgstr "فیلتر قاره‌ها:"
+
+msgid "Filter by countries:"
+msgstr "فیلتر کشورها:"
+
+msgid "Filter by cities:"
+msgstr "فیلتر شهرها:"
+
+msgid "Filter by locations:"
+msgstr "فیلتر اماکن:"
+
+msgid "Filter by category:"
+msgstr "فیلتر دسته:"
+
+msgid "Filter by hotel rating:"
+msgstr "فیلتر درجه هتل:"
+
+msgid "Filter by tour status:"
+msgstr "فیلتر وضعیت تور:"
+
+msgid "Filter by special offers:"
+msgstr "فیلتر پیشنهادهای ویژه:"
+
+msgid "Continents:"
+msgstr "قاره‌ها:"
+
+msgid "Countries:"
+msgstr "کشورها:"
+
+msgid "Cities:"
+msgstr "شهرها:"
+
+msgid "Locations:"
+msgstr "اماکن:"
+
+msgid "Category:"
+msgstr "گروه:"
+
+msgid "Hotel rating:"
+msgstr "درجه هتل:"
+
+msgid "Tour status:"
+msgstr "وضعیت تور:"
+
+msgid "Special offers:"
+msgstr "پیشنهادهای ویژه:"
+
+msgid "Asia"
+msgstr "آسیا"
+
+msgid "Europe"
+msgstr "اروپا"
+
+msgid "America"
+msgstr "آمریکا"
+
+msgid "Africa"
+msgstr "آفریقا"
+
+msgid "Oceania"
+msgstr "اقیانوسیه"
+
+msgid "Visiting countries"
+msgstr "کشورهای مورد بازدید"
+
+msgid "Visiting cities"
+msgstr "شهرهای مورد بازدید"
+
+msgid "Visiting locations"
+msgstr "اماکن مورد بازدید"
+
+msgid "Flag"
+msgstr "پرچم"
+
+msgid "Continent information"
+msgstr "اطلاعات قاره"
+
+msgid "Country information"
+msgstr "اطلاعات کشور"
+
+msgid "State information"
+msgstr "اطلاعات ایالت"
+
+msgid "City information"
+msgstr "اطلاعات شهر"
+
+msgid "Location information"
+msgstr "اطلاعات مکان"
+
+msgid "Stay information"
+msgstr "اطلاعات اقامتگاه"
+
+msgid "Tour information"
+msgstr "اطلاعات تور"
+
+msgid "Visa Conditions"
+msgstr "شرایط دریافت ویزا"
+
+msgid "Stay facilities"
+msgstr "امکانات اقامتگاه"
+
+msgid "Contact information"
+msgstr "اطلاعات تماس"
+
+msgid "Photo Gallery"
+msgstr "گالری تصاویر"
+
+msgid "Google Maps"
+msgstr "نقشه گوگل"
+
+msgid "Tour details"
+msgstr "جزئیات تور"
+
+msgid "Nearby locations"
+msgstr "اماکن نزدیک"
+
+msgid "Related tours"
+msgstr "تورهای مرتبط"
+
+msgid "Tour code"
+msgstr "کد تور"
+
+msgid "Package code"
+msgstr "کد پکیج"
+
+msgid "Price"
+msgstr "قیمت"
+
+msgid "Transaction Number"
+msgstr "شماره تراکنش"
+
+msgid "Sale Price"
+msgstr "قیمت با تخفیف"
+
+msgid "Tour duration"
+msgstr "مدت"
+
+msgid "First holding date"
+msgstr "تاریخ اولین برگزاری"
+
+msgid "Last holding date"
+msgstr "تاریخ آخرین برگزاری"
+
+msgid "Holding date"
+msgstr "تاریخ برگزاری"
+
+msgid "Tour services"
+msgstr "خدمات تور"
+
+msgid "Hotelpackage services"
+msgstr "خدمات پکیج اقامت"
+
+msgid "View package"
+msgstr "مشاهده پکیج"
+
+msgid "Hotels list and pricing"
+msgstr "لیست هتل‌ها و تعرفه قیمت"
+
+msgid "Hotel name"
+msgstr "نام هتل"
+
+msgid "Stay services"
+msgstr "خدمات اقامتگاه"
+
+msgid "Two-bed room price"
+msgstr "قیمت دو  تخته"
+
+msgid "One-bed room price"
+msgstr "قیمت یک تخته"
+
+msgid "Child's room price with bed (6 to 12 years old)"
+msgstr "قیمت اتاق کودک با تخت (۶ تا ۱۲ سال)"
+
+msgid "Child's room price without bed (2 to 6 years old)"
+msgstr "قیمت اتاق کودک بدون تخت (۲ تا ۶ سال)"
+
+msgid "Description"
+msgstr "توضیحات"
+
+msgid "Day by day itinerary"
+msgstr "برنامه روزانه"
+
+msgid "Day"
+msgstr "روز"
+
+msgid "O/N Stay"
+msgstr "محل اقامت شب"
+
+msgid "Roadmap"
+msgstr "نقشه راه"
+
+msgid "Active"
+msgstr "در حال اجرا"
+
+msgid "Expired"
+msgstr "برگزار شده"
+
+msgid "Destinations"
+msgstr "مقاصد"
+
+msgid "Attractions"
+msgstr "جاذبه ها"
+
+msgid "On sale"
+msgstr "تخفیف‌دار"
+
+msgid "Hotels of "
+msgstr "هتل‌های "
+
+msgid "Tours of "
+msgstr "تورهای "
+
+msgid "Locations of "
+msgstr "اماکنی   "
+
+msgid "Medias of "
+msgstr "مدیاهای "
+
+msgid "Home"
+msgstr "صفحه اصلی"
+
+msgid "Categories"
+msgstr "گروه‌ها"
+
+msgid "Featured"
+msgstr "ویژه"
+
+msgid "Download"
+msgstr "دانلود"
+
+# Custom post types and taxonomies
+msgid "Continents"
+msgstr "قاره‌ها"
+
+msgid "Continent"
+msgstr "قاره"
+
+msgid "All Continents"
+msgstr "همه قاره‌ها"
+
+msgid "Add New Continent"
+msgstr "افزودن قاره"
+
+msgid "Edit Continent"
+msgstr "ویرایش قاره"
+
+msgid "New Continent"
+msgstr "قاره جدید"
+
+msgid "View Continent"
+msgstr "مشاهده قاره"
+
+msgid "Search Continents"
+msgstr "جستجوی قاره‌ها"
+
+msgid "No Continents found"
+msgstr "هیچ قاره‌ای پیدا نشد"
+
+msgid "No Continents found in Trash"
+msgstr "هیچ قاره‌ای در زباله‌دان پیدا نشد"
+
+msgid "Parent Continent"
+msgstr "قاره والد"
+
+msgid "Countries"
+msgstr "کشورها"
+
+msgid "Country"
+msgstr "کشور"
+
+msgid "All Countries"
+msgstr "همه کشورها"
+
+msgid "Add New"
+msgstr "افزودن"
+
+msgid "Add New Country"
+msgstr "افزودن کشور"
+
+msgid "Edit Country"
+msgstr "ویرایش کشور"
+
+msgid "New Country"
+msgstr "کشور جدید"
+
+msgid "View"
+msgstr "مشاهده"
+
+msgid "View Country"
+msgstr "مشاهده کشور"
+
+msgid "Search Countries"
+msgstr "جستجوی کشورها"
+
+msgid "No Countries found"
+msgstr "هیچ کشوری پیدا نشد"
+
+msgid "No Countries found in Trash"
+msgstr "هیچ کشوری در زباله‌دان پیدا نشد"
+
+msgid "Parent Country"
+msgstr "کشور والد"
+
+msgid "States"
+msgstr "استان‌ها"
+
+msgid "State"
+msgstr "استان"
+
+msgid "All States"
+msgstr "همه استان‌ها"
+
+msgid "Add New State"
+msgstr "افزودن استان"
+
+msgid "Edit State"
+msgstr "ویرایش استان"
+
+msgid "New State"
+msgstr "استان جدید"
+
+msgid "View State"
+msgstr "مشاهده استان"
+
+msgid "Search States"
+msgstr "جستجوی استان‌ها"
+
+msgid "No States found"
+msgstr "هیچ استانی پیدا نشد"
+
+msgid "No States found in Trash"
+msgstr "هیچ استانی در زباله‌دان پیدا نشد"
+
+msgid "Parent State"
+msgstr "استان والد"
+
+msgid "Cities"
+msgstr "شهرها"
+
+msgid "City"
+msgstr "شهر"
+
+msgid "All Cities"
+msgstr "همه شهرها"
+
+msgid "Add New City"
+msgstr "افزودن شهر"
+
+msgid "Edit City"
+msgstr "ویرایش شهر"
+
+msgid "New City"
+msgstr "شهر جدید"
+
+msgid "View City"
+msgstr "مشاهده شهر"
+
+msgid "Search Cities"
+msgstr "جستجوی شهرها"
+
+msgid "No Cities found"
+msgstr "هیچ شهری پیدا نشد"
+
+msgid "No Cities found in Trash"
+msgstr "هیچ شهری در زباله‌دان پیدا نشد"
+
+msgid "Parent City"
+msgstr "شهر والد"
+
+msgid "Edit Information"
+msgstr "ویرایش اطلاعات"
+
+msgid "Locations"
+msgstr "اماکن"
+
+msgid "Location"
+msgstr "مکان"
+
+msgid "All Locations"
+msgstr "همه اماکن"
+
+msgid "Add New Location"
+msgstr "افزودن مکان"
+
+msgid "Edit Location"
+msgstr "ویرایش مکان"
+
+msgid "New Location"
+msgstr "مکان جدید"
+
+msgid "View Location"
+msgstr "مشاهده مکان"
+
+msgid "Search Locations"
+msgstr "جستجوی اماکن"
+
+msgid "No Locations found"
+msgstr "هیچ مکانی پیدا نشد"
+
+msgid "No Locations found in Trash"
+msgstr "هیچ مکانی در زباله‌دان پیدا نشد"
+
+msgid "Parent Location"
+msgstr "مکان والد"
+
+msgid "Hotel"
+msgstr "هتل"
+
+msgid "Hotel Packages"
+msgstr "پکیج‌های اقامت"
+
+msgid "Hotel Package"
+msgstr "پکیج اقامت"
+
+msgid "All Hotel Packages"
+msgstr "همه پکیج‌های اقامت"
+
+msgid "Add New Hotel Package"
+msgstr "افزودن پکیج اقامت"
+
+msgid "Edit Hotel Package"
+msgstr "ویرایش پکیج اقامت"
+
+msgid "New Hotel Package"
+msgstr "پکیج اقامت جدید"
+
+msgid "View Hotel Package"
+msgstr "مشاهده پکیج اقامت"
+
+msgid "Search Hotel Packages"
+msgstr "جستجوی پکیج‌های اقامت"
+
+msgid "No Hotel Packages found"
+msgstr "هیچ پکیج اقامتی پیدا نشد"
+
+msgid "No Hotel Packages found in Trash"
+msgstr "هیچ پکیج اقامتی در زباله‌دان پیدا نشد"
+
+msgid "Parent Hotel Package"
+msgstr "پکیج اقامت والد"
+
+msgid "Tours"
+msgstr "تورها"
+
+msgid "Tour"
+msgstr "تور"
+
+msgid "All Tours"
+msgstr "همه تورها"
+
+msgid "Add New Tour"
+msgstr "افزودن تور"
+
+msgid "Edit Tour"
+msgstr "ویرایش تور"
+
+msgid "New Tour"
+msgstr "تور جدید"
+
+msgid "View Tour"
+msgstr "مشاهده تور"
+
+msgid "Search Tours"
+msgstr "جستجوی تورها"
+
+msgid "No Tours found"
+msgstr "هیچ توری پیدا نشد"
+
+msgid "No Tours found in Trash"
+msgstr "هیچ توری در زباله‌دان پیدا نشد"
+
+msgid "Parent Tour"
+msgstr "تور والد"
+
+msgid "Iran Tours"
+msgstr "ایران‌تورها"
+
+msgid "Iran Tour"
+msgstr "ایران‌تور"
+
+msgid "All Iran Tours"
+msgstr "همه ایران‌تورها"
+
+msgid "Add New Iran Tour"
+msgstr "افزودن ایران‌تور"
+
+msgid "Edit Iran Tour"
+msgstr "ویرایش ایران‌تور"
+
+msgid "New Iran Tour"
+msgstr "ایران‌تور جدید"
+
+msgid "View Iran Tour"
+msgstr "مشاهده ایران‌تور"
+
+msgid "Search Iran Tours"
+msgstr "جستجوی ایران‌تورها"
+
+msgid "No Iran Tours found"
+msgstr "هیچ ایران‌توری پیدا نشد"
+
+msgid "No Iran Tours found in Trash"
+msgstr "هیچ ایران‌توری در زباله‌دان پیدا نشد"
+
+msgid "Parent Iran Tour"
+msgstr "ایران‌تور والد"
+
+msgid "Medias"
+msgstr "مدیاها"
+
+msgid "Media"
+msgstr "مدیا"
+
+msgid "All Medias"
+msgstr "همه مدیاها"
+
+msgid "Add New Media"
+msgstr "افزودن مدیا"
+
+msgid "Edit Media"
+msgstr "ویرایش مدیا"
+
+msgid "New Media"
+msgstr "مدیای جدید"
+
+msgid "View Media"
+msgstr "مشاهده مدیا"
+
+msgid "Search Medias"
+msgstr "جستجوی مدیاها"
+
+msgid "No Medias found"
+msgstr "هیچ مدیایی پیدا نشد"
+
+msgid "No Media found in Trash"
+msgstr "هیچ مدیایی در زباله‌دان پیدا نشد"
+
+msgid "Parent Media"
+msgstr "مدیای والد"
+
+msgid "Country Categories"
+msgstr "گروه‌‌‌های کشور"
+
+msgid "Country Category"
+msgstr "گروه کشور"
+
+msgid "All Country Categories"
+msgstr "همه گروه‌های کشور"
+
+msgid "Edit Country Category"
+msgstr "ویرایش گروه کشور"
+
+msgid "View Country Category"
+msgstr "مشاهده گروه کشور"
+
+msgid "Update Country Category Name"
+msgstr "به‌روزرسانی نام گروه کشور"
+
+msgid "Add New Country Category"
+msgstr "افزودن گروه کشور"
+
+msgid "Add New Country Category Name"
+msgstr "افزودن نام گروه کشور"
+
+msgid "Parent Country Category"
+msgstr "گروه کشور والد"
+
+msgid "Parent Country Category:"
+msgstr "گروه کشور والد:"
+
+msgid "Search Country Categories"
+msgstr "جستجوی گروه‌‌های کشور"
+
+msgid "Popular Country Categories"
+msgstr "گروه‌‌های کشور بیشتر استفاده شده"
+
+msgid "Separate Country Categories with commas"
+msgstr "گروه‌‌های کشور را با ویرگول از هم جدا کنید"
+
+msgid "Add or remove Country Categories"
+msgstr "اضافه یا حذف گروه‌های کشور"
+
+msgid "Choose from the most used Country Categories"
+msgstr "انتخاب از گروه‌‌های کشور بیشتر استفاده شده"
+
+msgid "No Country Categories found"
+msgstr "هیچ گروه کشوری پیدا نشد"
+
+msgid "State Categories"
+msgstr "گروه‌‌‌های ایالت"
+
+msgid "State Category"
+msgstr "گروه ایالت"
+
+msgid "All State Categories"
+msgstr "همه گروه‌های ایالت"
+
+msgid "Edit State Category"
+msgstr "ویرایش گروه ایالت"
+
+msgid "View State Category"
+msgstr "مشاهده گروه ایالت"
+
+msgid "Update State Category Name"
+msgstr "به‌روزرسانی نام گروه ایالت"
+
+msgid "Add New State Category"
+msgstr "افزودن گروه ایالت"
+
+msgid "Add New State Category Name"
+msgstr "افزودن نام گروه ایالت"
+
+msgid "Parent State Category"
+msgstr "گروه ایالت والد"
+
+msgid "Parent State Category:"
+msgstr "گروه ایالت والد:"
+
+msgid "Search State Categories"
+msgstr "جستجوی گروه‌‌های ایالت"
+
+msgid "Popular State Categories"
+msgstr "گروه‌‌های ایالت بیشتر استفاده شده"
+
+msgid "Separate State Categories with commas"
+msgstr "گروه‌‌های ایالت را با ویرگول از هم جدا کنید"
+
+msgid "Add or remove State Categories"
+msgstr "اضافه یا حذف گروه‌های ایالت"
+
+msgid "Choose from the most used State Categories"
+msgstr "انتخاب از گروه‌‌های ایالت بیشتر استفاده شده"
+
+msgid "No State Categories found"
+msgstr "هیچ گروه ایالتی پیدا نشد"
+
+msgid "City Categories"
+msgstr "گروه‌‌‌های شهر"
+
+msgid "City Category"
+msgstr "گروه شهر"
+
+msgid "All City Categories"
+msgstr "همه گروه‌های شهر"
+
+msgid "Edit City Category"
+msgstr "ویرایش گروه شهر"
+
+msgid "View City Category"
+msgstr "مشاهده گروه شهر"
+
+msgid "Update City Category Name"
+msgstr "به‌روزرسانی نام گروه شهر"
+
+msgid "Add New City Category"
+msgstr "افزودن گروه شهر"
+
+msgid "Add New City Category Name"
+msgstr "افزودن نام گروه شهر"
+
+msgid "Parent City Category"
+msgstr "گروه شهر والد"
+
+msgid "Parent City Category:"
+msgstr "گروه شهر والد:"
+
+msgid "Search City Categories"
+msgstr "جستجوی گروه‌‌های شهر"
+
+msgid "Popular City Categories"
+msgstr "گروه‌‌های شهر بیشتر استفاده شده"
+
+msgid "Separate City Categories with commas"
+msgstr "گروه‌‌های شهر را با ویرگول از هم جدا کنید"
+
+msgid "Add or remove City Categories"
+msgstr "اضافه یا حذف گروه‌های شهر"
+
+msgid "Choose from the most used City Categories"
+msgstr "انتخاب از گروه‌‌های شهر بیشتر استفاده شده"
+
+msgid "No City Categories found"
+msgstr "هیچ گروه شهری پیدا نشد"
+
+msgid "Location Categories"
+msgstr "گروه‌های مکان"
+
+msgid "Location Category"
+msgstr "گروه مکان"
+
+msgid "All Location Categories"
+msgstr "همه گروه‌های مکان"
+
+msgid "Edit Location Category"
+msgstr "ویرایش گروه مکان"
+
+msgid "View Location Category"
+msgstr "مشاهده گروه مکان"
+
+msgid "Update Location Category Name"
+msgstr "به‌روزرسانی نام گروه مکان"
+
+msgid "Add New Location Category"
+msgstr "افزودن گروه مکان"
+
+msgid "Add New Location Category Name"
+msgstr "افزودن نام گروه مکان"
+
+msgid "Parent Location Category"
+msgstr "گروه مکان والد"
+
+msgid "Parent Location Category:"
+msgstr "گروه مکان والد:"
+
+msgid "Search Location Categories"
+msgstr "جستجوی گروه‌های مکان"
+
+msgid "Popular Location Categories"
+msgstr "گروه‌‌های مکان بیشتر استفاده شده"
+
+msgid "Separate Location Categories with commas"
+msgstr "گروه‌های مکان را با ویرگول از هم جدا کنید"
+
+msgid "Add or remove Location Categories"
+msgstr "اضافه یا حذف گروه‌های مکان"
+
+msgid "Choose from the most used Location Categories"
+msgstr "انتخاب از گروه‌های مکان بیشتر استفاده شده"
+
+msgid "No Location Categories found"
+msgstr "هیچ گروه مکانی پیدا نشد"
+
+msgid "Hotel Package Categories"
+msgstr "گروه‌‌‌های پکیج اقامت"
+
+msgid "Hotel Package Category"
+msgstr "گروه پکیج اقامت"
+
+msgid "All Hotel Package Categories"
+msgstr "همه گروه‌های پکیج اقامت"
+
+msgid "Edit Hotel Package Category"
+msgstr "ویرایش گروه پکیج اقامت"
+
+msgid "View Hotel Package Category"
+msgstr "مشاهده گروه پکیج اقامت"
+
+msgid "Update Hotel Package Category Name"
+msgstr "به‌روزرسانی نام گروه پکیج اقامت"
+
+msgid "Add New Hotel Package Category"
+msgstr "افزودن گروه پکیج اقامت"
+
+msgid "Add New Hotel Package Category Name'"
+msgstr "افزودن نام گروه پکیج اقامت"
+
+msgid "Parent Hotel Package Category"
+msgstr "گروه پکیج اقامت والد"
+
+msgid "Parent Hotel Package Category:"
+msgstr "گروه پکیج اقامت والد:"
+
+msgid "Search Hotel Package Categories"
+msgstr "جستجوی گروه‌‌های پکیج اقامت"
+
+msgid "Popular Hotel Package Categories"
+msgstr "گروه‌‌های پکیج اقامت بیشتر استفاده شده"
+
+msgid "Separate Hotel Package Categories with commas"
+msgstr "گروه‌‌‌‌های پکیج اقامت را با ویرگول از هم جدا کنید"
+
+msgid "Add or remove Hotel Package Categories"
+msgstr "اضافه یا حذف گروه‌‌‌های پکیج اقامت"
+
+msgid "Choose from the most used Hotel Package Categories"
+msgstr "انتخاب از گروه‌های پکیج اقامت بیشتر استفاده شده"
+
+msgid "No Hotel Package Categories found"
+msgstr "هیچ گروه پکیج اقامتی پیدا نشد"
+
+msgid "Tour Categories"
+msgstr "دسته‌بندی‌های تور"
+
+msgid "Tour Category"
+msgstr "دسته‌بندی تور"
+
+msgid "All Tour Categories"
+msgstr "همه دسته‌بندی‌‌‌‌های تور"
+
+msgid "Edit Tour Category"
+msgstr "ویرایش دسته‌بندی تور"
+
+msgid "View Tour Category"
+msgstr "مشاهده دسته‌بندی تور"
+
+msgid "Update Tour Category Name"
+msgstr "به‌روزرسانی نام دسته‌بندی تور"
+
+msgid "Add New Tour Category"
+msgstr "افزودن دسته‌بندی تور"
+
+msgid "Add New Tour Category Name"
+msgstr "افزودن نام دسته‌بندی تور"
+
+msgid "Parent Tour Category"
+msgstr "دسته‌بندی تور والد"
+
+msgid "Parent Tour Category:"
+msgstr "دسته‌بندی تور والد:"
+
+msgid "Search Tour Categories"
+msgstr "جستجوی دسته‌بندی‌های تور"
+
+msgid "Popular Tour Categories"
+msgstr "دسته‌بندی‌های تور بیشتر استفاده شده"
+
+msgid "Separate Tour Categories with commas"
+msgstr "دسته‌بندی‌های تور را با ویرگول از هم جدا کنید"
+
+msgid "Add or remove Tour Categories"
+msgstr "اضافه یا حذف دسته‌بندی‌های تور"
+
+msgid "Choose from the most used Tour Categories"
+msgstr "انتخاب از دسته‌بندی‌های تور بیشتر استفاده شده"
+
+msgid "No Tour Categories found"
+msgstr "هیچ دسته‌بندی توری پیدا نشد"
+
+msgid "Iran Tour Categories"
+msgstr "دسته‌بندی‌های ایران‌تور"
+
+msgid "Iran Tour Category"
+msgstr "دسته‌بندی ایران‌تور"
+
+msgid "All Iran Tour Categories"
+msgstr "همه دسته‌بندی‌های ایران‌تور"
+
+msgid "Edit Iran Tour Category"
+msgstr "ویرایش دسته‌بندی ایران‌تور"
+
+msgid "View Iran Tour Category"
+msgstr "مشاهده دسته‌بندی ایران‌تور"
+
+msgid "Update Iran Tour Category Name"
+msgstr "به‌روزرسانی نام دسته‌بندی ایران‌تور"
+
+msgid "Add New Iran Tour Category"
+msgstr "افزودن دسته‌بندی ایران‌تور"
+
+msgid "Add New Iran Tour Category Name"
+msgstr "افزودن نام دسته‌بندی ایران‌تور"
+
+msgid "Parent Iran Tour Category"
+msgstr "دسته‌بندی ایران‌تور والد"
+
+msgid "Parent Iran Tour Category:"
+msgstr "دسته‌بندی ایران‌تور والد:"
+
+msgid "Search Iran Tour Categories"
+msgstr "جستجوی دسته‌بندی‌‌‌‌های ایران‌تور"
+
+msgid "Popular Iran Tour Categories"
+msgstr "دسته‌بندی‌های ایران‌تور بیشتر استفاده شده"
+
+msgid "Separate Iran Tour Categories with commas"
+msgstr "دسته‌بندی‌های ایران‌تور را با ویرگول از هم جدا کنید"
+
+msgid "Add or remove Iran Tour Categories"
+msgstr "اضافه یا حذف دسته‌بندی‌های ایران‌تور"
+
+msgid "Choose from the most used Iran Tour Categories"
+msgstr "انتخاب از دسته‌بندی‌‌های ایران‌تور بیشتر استفاده شده"
+
+msgid "No Iran Tour Categories found"
+msgstr "هیچ دسته‌بندی ایران‌توری پیدا نشد"
+
+msgid "Media Categories"
+msgstr "گروه‌های مدیا"
+
+msgid "Media Category"
+msgstr "گروه‌ مدیا"
+
+msgid "All Media Categories"
+msgstr "همه گروه‌های مدیا"
+
+msgid "Edit Media Category"
+msgstr "ویرایش گروه‌ مدیا"
+
+msgid "View Media Category"
+msgstr "مشاهده گروه‌ مدیا"
+
+msgid "Update Media Category Name"
+msgstr "به‌روزرسانی نام گروه‌ مدیا"
+
+msgid "Add New Media Category"
+msgstr "افزودن گروه‌ مدیا"
+
+msgid "Add New Media Category Name"
+msgstr "افزودن نام گروه‌ مدیا"
+
+msgid "Parent Media Category"
+msgstr "گروه‌ مدیای والد"
+
+msgid "Parent Media Category:"
+msgstr "گروه‌ مدیای والد:"
+
+msgid "Search Media Categories"
+msgstr "جستجوی گروه‌‌‌‌های مدیا"
+
+msgid "Popular Media Categories"
+msgstr "گروه‌های مدیای بیشتر استفاده شده"
+
+msgid "Separate media Categories with commas"
+msgstr "گروه‌های مدیا را با ویرگول از هم جدا کنید"
+
+msgid "Add or remove media Categories"
+msgstr "اضافه یا حذف گروه‌های مدیا"
+
+msgid "Choose from the most used media Categories"
+msgstr "انتخاب از گروه‌‌های مدیای بیشتر استفاده شده"
+
+msgid "No media Categories found"
+msgstr "هیچ گروه مدیایی پیدا نشد"
+
+# New words
+msgid "Post"
+msgstr "نوشته"
+
+msgid "Travel Guide"
+msgstr "راهنمای سفر"
+
+msgid "Travel guide"
+msgstr "راهنمای سفر"
+
+msgid "Visa conditions for"
+msgstr "شرایط دریافت ویزای"
+
+msgid "Travel guide for"
+msgstr "راهنمای سفر"
+
+msgid "Website"
+msgstr "وب‌سایت"
+
+msgid "Email"
+msgstr "ایمیل"
+
+msgid "Phone"
+msgstr "تلفن"
+
+msgid "Fax"
+msgstr "فکس"
+
+msgid "Address"
+msgstr "آدرس"
+
+msgid "Address (Persian)"
+msgstr "آدرس به فارسی"
+
+# Hotel facilities
+msgid "Airport welcome service"
+msgstr "استقبال فرودگاه"
+
+msgid "Meals"
+msgstr "وعده‌های غذایی"
+
+msgid "Group size"
+msgstr "تعداد افراد گروه"
+
+msgid "Transportation"
+msgstr "حمل و نقل"
+
+msgid "Cruise"
+msgstr "کشتی تفریحی"
+
+msgid "Train Travel"
+msgstr "سفر با قطار"
+
+msgid "Road Trip"
+msgstr "سفر جاده ای"
+
+msgid "Air Travel"
+msgstr "سفر هوایی"
+
+msgid "Wi-Fi"
+msgstr "اینترنت بی سیم"
+
+msgid "Women hair salon"
+msgstr "آرایشگاه زنانه"
+
+msgid "Men barbershop"
+msgstr "آرایشگاه مردانه"
+
+msgid "Elevator"
+msgstr "آسانسور"
+
+msgid "Wake-up alarm"
+msgstr "آلارم بیدار باش"
+
+msgid "Emergency power"
+msgstr "برق اضطراری"
+
+msgid "Parking"
+msgstr "پارکینگ"
+
+msgid "Taxi service in hotel"
+msgstr "تاکسی سرویس در هتل"
+
+msgid "Multipurpose halls"
+msgstr "تالارهای چند منظوره"
+
+msgid "Airport transportation"
+msgstr "ترانسفر فرودگاهی"
+
+msgid "Turkish bath"
+msgstr "حمام ترک"
+
+msgid "Luggage service"
+msgstr "حمل چمدان به اتاق و بالعکس"
+
+msgid "Postal services"
+msgstr "خدمات پستی"
+
+msgid "City tour"
+msgstr "خدمات تور شهری و تفریحی"
+
+msgid "Photography services"
+msgstr "خدمات عکاسی"
+
+msgid "Exchange"
+msgstr "صرافی"
+
+msgid "Laundry"
+msgstr "خشکشویی"
+
+msgid "ATM"
+msgstr "خودپرداز"
+
+msgid "Pharmacy"
+msgstr "داروخانه"
+
+msgid "Clinic"
+msgstr "درمانگاه"
+
+msgid "Medical services"
+msgstr "خدمات پزشکی"
+
+msgid "Travel services office"
+msgstr "دفتر خدمات مسافرتی"
+
+msgid "24 hours room service"
+msgstr "روم سرویس 24 ساعته"
+
+msgid "24 hours reception"
+msgstr "پذیرش 24 ساعته"
+
+msgid "Private beach"
+msgstr "ساحل اختصاصی"
+
+msgid "Conference room"
+msgstr "سالن کنفرانس"
+
+msgid "Nightly entertainment"
+msgstr "سرگرمی های شبانه"
+
+msgid "Shrine service"
+msgstr "سرویس حرم"
+
+msgid "Buffet breakfast"
+msgstr "صبحانه بوفه"
+
+msgid "Breakfast in room"
+msgstr "صبحانه در اتاق"
+
+msgid "Lunch in room"
+msgstr "ناهار در اتاق"
+
+msgid "Dinner in room"
+msgstr "شام در اتاق"
+
+msgid "Safe box"
+msgstr "صندوق امانات"
+
+msgid "Shop in hotel"
+msgstr "فروشگاه در هتل"
+
+msgid "Landscape"
+msgstr "فضای سبز"
+
+msgid "Cafe net"
+msgstr "کافی نت"
+
+msgid "Car rental"
+msgstr "کرایه ماشین"
+
+msgid "Lobby"
+msgstr "لابی"
+
+msgid "Lobby services"
+msgstr "خدمات لابی"
+
+msgid "Lobby entertainment"
+msgstr "سرگرمی و موزیک در لابی"
+
+msgid "Translator for guests"
+msgstr "مترجم برای مهمانان خارجی"
+
+msgid "Close to beach"
+msgstr "نزدیک به ساحل"
+
+msgid "Close to airport"
+msgstr "نزدیک به فرودگاه"
+
+msgid "Close to shrine"
+msgstr "نزدیک به موقعیت زیارتی"
+
+msgid "Prayer room"
+msgstr "نمازخانه"
+
+msgid "Air conditioning"
+msgstr "تهویه مطبوع"
+
+msgid "Towel and slippers for everyone"
+msgstr "حوله و دمپایی به تعداد نفرات"
+
+msgid "Coffee shop in room service"
+msgstr "سرویس کافی شاپ در اتاق"
+
+msgid "Closet with hangers"
+msgstr "کمد دیواری همراه با جا لباسی"
+
+msgid "Full fridge"
+msgstr "یخچال با مینی بار شارژ شده"
+
+msgid "Hairdryer"
+msgstr "سشوار"
+
+msgid "Fire sensor"
+msgstr "سنسورهای دود یاب/ضد حریق"
+
+msgid "Library in room"
+msgstr "کتابخانه داخل اتاق"
+
+msgid "Toothbrush, toothpaste and soap"
+msgstr "مسواک، خمیر دندان و صابون"
+
+msgid "Children playroom"
+msgstr "اتاق بازی برای کودکان"
+
+msgid "Children park"
+msgstr "پارک کودک"
+
+msgid "Horse riding"
+msgstr "اسب سواری"
+
+msgid "Outdoor swimming pool"
+msgstr "استخر روباز"
+
+msgid "Indoor swimming pool"
+msgstr "استخر سر پوشیده"
+
+msgid "Boat dock"
+msgstr "اسکله قایق سواری"
+
+msgid "Squash"
+msgstr "اسکواش"
+
+msgid "Bowling"
+msgstr "بولینگ"
+
+msgid "Pool"
+msgstr "بیلیارد"
+
+msgid "Parasail"
+msgstr "پاراسل"
+
+msgid "Water park"
+msgstr "پارک آبی"
+
+msgid "Pedicure"
+msgstr "پدیکور"
+
+msgid "Table tennis"
+msgstr "تنیس روی میز"
+
+msgid "Jet ski"
+msgstr "جت اسکی"
+
+msgid "Jacuzzi"
+msgstr "جکوزی"
+
+msgid "Dart"
+msgstr "دارت"
+
+msgid "Rafting"
+msgstr "رفتینگ"
+
+msgid "Tennis court"
+msgstr "زمین تنیس"
+
+msgid "Football field"
+msgstr "زمین فوتبال"
+
+msgid "Gym"
+msgstr "سالن بدنسازی"
+
+msgid "Sports hall"
+msgstr "سالن ورزشی"
+
+msgid "Sauna"
+msgstr "سونا"
+
+msgid "Diving"
+msgstr "غواصی"
+
+msgid "Karaoke"
+msgstr "کارائوکه"
+
+msgid "Yoga classes"
+msgstr "کلاس‌های یوگا"
+
+msgid "Massage"
+msgstr "ماساژ"
+
+msgid "Manicure"
+msgstr "مانیکور"
+
+msgid "Fishing"
+msgstr "ماهیگیری"
+
+msgid "Sports and recreation complex"
+msgstr "مجتمع ورزشی و تفریحی"
+
+msgid "Spa and wellness center"
+msgstr "مرکز اسپا و سلامتی"
+
+msgid "Mini golf"
+msgstr "مینی گلف"
+
+msgid "Restaurant"
+msgstr "رستوران"
+
+msgid "Traditional restaurant"
+msgstr "رستوران سنتی"
+
+msgid "Traditional cafe"
+msgstr "کافه سنتی"
+
+msgid "Coffee shop"
+msgstr "کافی شاپ"
+
+msgid "Buffet lunch or dinner"
+msgstr "ناهار یا شام بوفه"
+
+msgid "Terrace"
+msgstr "تراس"
+
+msgid "Satellite"
+msgstr "ماهواره"
+
+msgid "WC in corridor"
+msgstr "سرویس بهداشتی در راهرو"
+
+msgid "House keeping services"
+msgstr "خدمات خانه‌داری"
+
+msgid "Newspaper"
+msgstr "روزنامه"
+
+msgid "Difficulty"
+msgstr "درجه سختی"
+
+msgid "Age range"
+msgstr "محدوده سنی"
+
+msgid "Weather forecast"
+msgstr "وضعیت آب و هوا"
+
+# Tour Search
+msgid "Destination Country"
+msgstr "کشور مقصد"
+
+msgid "Origin City"
+msgstr "شهر مبدأ"
+
+msgid "Destination City"
+msgstr "شهر مقصد"
+
+msgid "Choose"
+msgstr "انتخاب کنید"
+
+msgid "Trip Duration (nights)"
+msgstr "مدت سفر (شب)"
+
+msgid "From (just the number)"
+msgstr "از (فقط عدد وارد کنید)"
+
+msgid "To (just the number)"
+msgstr "تا (فقط عدد وارد کنید)"
+
+msgid "Trip Budget ($)"
+msgstr "بودجه سفر (تومان)"
+
+msgid "Discount"
+msgstr "تخفیف"
+
+msgid "Discounted Tours"
+msgstr "تورهای تخفیف‌دار"
+
+msgid "Tour Type"
+msgstr "نوع تور"
+
+msgid "Trip Type"
+msgstr "نوع سفر"
+
+msgid "Trip type"
+msgstr "نوع سفر"
+
+msgid "Hotel Type"
+msgstr "نوع هتل"
+
+msgid "None of our tours matches your search. Please refine your filters and try again."
+msgstr "هیچ توری برای جستجوی شما پیدا نشد. لطفا فیلترهای جستجو را تغییر دهید و مجددا تلاش کنید."
+
+msgid "Capital"
+msgstr "پایتخت"
+
+msgid "Currency"
+msgstr "واحد پول"
+
+msgid "Language"
+msgstr "زبان رسمی"
+
+msgid "Major cities"
+msgstr "شهرهای مهم"
+
+msgid "Voltage"
+msgstr "ولتاژ"
+
+msgid "Population"
+msgstr "جمعیت"
+
+msgid "Pre phone number"
+msgstr "پیش شماره تلفن"
+
+msgid "Time zone"
+msgstr "منطقه زمانی"
+
+msgid "Visa attachments"
+msgstr "فایل‌های ضمیمه"
+
+msgid "Visa price"
+msgstr "قیمت ویزا"
+
+msgid "Hotel website"
+msgstr "وبسایت هتل"
+
+msgid "Flight Outbound"
+msgstr "پرواز خارجی"
+
+msgid "Flight Outbound Charter"
+msgstr "پروازهای چارتری خارجی"
+
+msgid "Flight Domestic"
+msgstr "پرواز داخلی"
+
+msgid "Airport Transfer"
+msgstr "ترانسفر فرودگاهی"
+
+msgid "Local Hotel"
+msgstr "هتل داخلی"
+
+msgid "Foreign Hotel"
+msgstr "هتل خارجی"
+
+msgid "Tour And Package"
+msgstr "تور و پکیج"
+
+msgid "Train"
+msgstr "قطار"
+
+msgid "Bus"
+msgstr "اتوبوس"
+
+msgid "Travel Insurance"
+msgstr "بیمه مسافرتی"
+
+msgid "Airport CIP"
+msgstr "خدمات CIP فرودگاهی"
+
+msgid "Total Price ($)"
+msgstr "قیمت کل (ریال)"
+
+msgid "Total Price"
+msgstr "قیمت کل"
+
+msgid "Price Without Tax"
+msgstr "مبلغ بدون مالیات"
+
+msgid "One Way"
+msgstr "فقط رفت"
+
+msgid "Buy One Way"
+msgstr "خرید فقط رفت"
+
+msgid "Select Depart"
+msgstr "انتخاب رفت"
+
+msgid "Select Return"
+msgstr "انتخاب برگشت"
+
+msgid "Go & Return"
+msgstr "رفت و برگشت"
+
+msgid "Multiple Destinations"
+msgstr "چند مسیره"
+
+msgid "From"
+msgstr "مبدا"
+
+msgid "From "
+msgstr "از"
+
+msgid "To"
+msgstr "مقصد"
+
+msgid "Depart"
+msgstr "تاریخ حرکت"
+
+msgid "Return"
+msgstr "تاریخ برگشت"
+
+msgid "Adult (+12 years)"
+msgstr "بزرگسال (۱۲+ سال)"
+
+msgid "(+12 years)"
+msgstr "(۱۲+ سال)"
+
+msgid "Child (2 - 12 years)"
+msgstr "کودک (۲ تا ۱۲ سال)"
+
+msgid "(2 - 12 years)"
+msgstr "(۲ تا ۱۲ سال)"
+
+msgid "Infant (-2 years)"
+msgstr "نوزاد (۲- سال)"
+
+msgid "(-2 years)"
+msgstr "(۲- سال)"
+
+msgid "Seat Class"
+msgstr "کلاس پرواز"
+
+msgid "Search"
+msgstr "جستجو"
+
+msgid "Economy"
+msgstr "اکونومی"
+
+msgid "Business"
+msgstr "بیزنس"
+
+msgid "City or Airport"
+msgstr "نام شهر یا فرودگاه"
+
+msgid "Airport's City"
+msgstr "نام شهر فرودگاه"
+
+msgid "Adult Baggage"
+msgstr "بار بزرگسال"
+
+msgid "Child Baggage"
+msgstr "بار کودک"
+
+msgid "Infant Baggage"
+msgstr "بار نوزاد"
+
+msgid "City or Hotel"
+msgstr "شهر یا هتل"
+
+msgid "Check-in"
+msgstr "تاریخ ورود"
+
+msgid "Check-out"
+msgstr "تاریخ خروج"
+
+msgid "Rooms"
+msgstr "تعداد اتاق"
+
+msgid "Year"
+msgstr "سال"
+
+msgid "This Section Design Soon."
+msgstr "این بخش به زودی راه‌اندازی خواهد شد."
+
+msgid "(Go & Return reservations have discount)"
+msgstr "(رزرو های رفت و برگشت دارای تخفیف می باشد)"
+
+msgid "Minutes"
+msgstr "دقیقه"
+
+msgid "Hour"
+msgstr "ساعت"
+
+msgid "First Choose From"
+msgstr "ابتدا مبدا را انتخاب کنید."
+
+msgid "Coupe Charter"
+msgstr "کوپه دربست"
+
+msgid "Wagon Type"
+msgstr "نوع واگن"
+
+msgid "City Name"
+msgstr "نام شهر"
+
+msgid "For Men"
+msgstr "ویژه برادران"
+
+msgid "For Women"
+msgstr "ویژه خواهران"
+
+msgid "Family"
+msgstr "خانواده"
+
+msgid "Travel Insurance For Out Of Iran"
+msgstr "بیمه درمان مسافرت‌های خارجی"
+
+msgid "Travel insurance For Iran"
+msgstr "بیمه حوادث گروهی مسافرت‌های داخل ایران"
+
+msgid "Travel Time"
+msgstr "مدت سفر"
+
+msgid "Passengers Count"
+msgstr "تعداد افراد"
+
+msgid "Birthday Passenger"
+msgstr "تاریخ تولد نفر"
+
+msgid "Airport Name"
+msgstr "نام فرودگاه"
+
+msgid "Your Search Time"
+msgstr "مدت زمان اعتبار جستجوی شما"
+
+msgid "Re-Search"
+msgstr "جستجوی مجدد"
+
+msgid "Flight Type"
+msgstr "نوع پرواز"
+
+msgid "Before Day"
+msgstr "روز قبل"
+
+msgid "Next Day"
+msgstr "روز بعد"
+
+msgid "The Remaining Amount"
+msgstr "مبلغ باقیمانده"
+
+msgid "Your Search Time Has Go To End"
+msgstr "مدت زمان اعتبار جستجوی شما به پایان رسیده است"
+
+msgid "Ticket Rules"
+msgstr "قوانین بلیت"
+
+msgid "Detract Fines From"
+msgstr "کسر جریمه از"
+
+msgid "Ticket"
+msgstr "بلیت"
+
+msgid "Rules"
+msgstr "قوانین"
+
+msgid "Flight One"
+msgstr "پرواز اول"
+
+msgid "Flight Two"
+msgstr "پرواز دوم"
+
+msgid "Flight Two From"
+msgstr "مبدا پرواز دوم"
+
+msgid "Flight Two To"
+msgstr "مقصد پرواز دوم"
+
+msgid "Flight Two Returning Date"
+msgstr "تاریخ برگشت پرواز دوم"
+
+msgid "Airline"
+msgstr "هواپیمایی"
+
+msgid "Flight Number"
+msgstr "شماره پرواز"
+
+msgid "Flight Date"
+msgstr "تاریخ حرکت"
+
+msgid "Flight One Date"
+msgstr "تاریخ حرکت پرواز اول"
+
+msgid "Depart Date and Time"
+msgstr "تاریخ و ساعت حرکت"
+
+msgid "Payment Date and Time"
+msgstr "تاریخ و ساعت پرداخت"
+
+msgid "Price for Each Adult"
+msgstr "قیمت هر بزرگسال"
+
+msgid "Duration"
+msgstr "مدت سفر"
+
+msgid "Capacity"
+msgstr "ظرفیت"
+
+msgid "Capacity is Complete"
+msgstr "ظرفیت تکمیل"
+
+msgid "Low Capacity"
+msgstr "ظرفیت ناکافی"
+
+msgid "Capacity of This Flight is Bellow Than Selected Passengers Count"
+msgstr "ظرفیت این پرواز کمتر از تعداد مسافرهای انتخاب شده است"
+
+msgid "Price Class"
+msgstr "کلاس نرخی"
+
+msgid "Enter Date"
+msgstr "تاریخ ورود"
+
+msgid "Flight Route details"
+msgstr "جزئیات مسیر"
+
+msgid "Refund"
+msgstr "استرداد"
+
+msgid "Online Refund"
+msgstr "استرداد آنلاین"
+
+msgid "Non Refundable"
+msgstr "غیر قابل استرداد"
+
+msgid "Baggage Rules and Refund"
+msgstr "قوانین بار و استرداد"
+
+msgid "Refund Request"
+msgstr "درخواست استرداد"
+
+msgid "Refunded with fines"
+msgstr "استرداد شده با جریمه"
+
+msgid "Filter Results"
+msgstr "فیلتر کردن نتایج"
+
+msgid "Filter"
+msgstr "فیلتر"
+
+msgid "Remove Filters"
+msgstr "حذف فیلترها"
+
+msgid "Buy Type"
+msgstr "نوع خرید"
+
+msgid "Price ($)"
+msgstr "مبلغ (ریال)"
+
+msgid "Not Found Any Flight , Please Search Again"
+msgstr "هیچ پروازی پیدا نشد، لطفا مجددا تلاش کنید"
+
+msgid "An Error Happened in System. Please Try Again or Contact Site Admin"
+msgstr "خطایی در سیستم رخ داده است. لطفا مجددا تلاش کنید، یا با مدیر سایت تماس بگیرید"
+
+msgid "Choose All"
+msgstr "انتخاب همه"
+
+msgid "Only"
+msgstr "فقط"
+
+msgid "Buy Ticket"
+msgstr "خرید بلیت"
+
+msgid "Other Flight's Prices"
+msgstr "سایر قیمتهای پرواز"
+
+msgid "$"
+msgstr "$"
+
+msgid "Flight"
+msgstr "پرواز"
+
+msgid "Order By"
+msgstr "مرتب سازی بر اساس"
+
+msgid "Cheapest"
+msgstr "ارزان‌ترین قیمت"
+
+msgid "Shorter Time"
+msgstr "کوتاه‌ترین زمان"
+
+msgid "Shorter Go"
+msgstr "کوتاه‌ترین زمان رفت"
+
+msgid "Shorter Return"
+msgstr "کوتاه‌ترین زمان برگشت"
+
+msgid "Other Prices"
+msgstr "دیگر قیمتها"
+
+msgid "Go Flight"
+msgstr "پرواز رفت"
+
+msgid "Return Flight"
+msgstr "پرواز برگشت"
+
+msgid "Day to Night"
+msgstr "صبح تا شب"
+
+msgid "Special Offer"
+msgstr "پیشنهاد ویژه"
+
+msgid "Flight Count in Each Page"
+msgstr "تعداد پروازها در هر صفحه"
+
+msgid "Results Count in Each Page"
+msgstr "تعداد نتایج در هر صفحه"
+
+msgid "Adult"
+msgstr "بزرگسال"
+
+msgid "Child"
+msgstr "کودک"
+
+msgid "Infant"
+msgstr "نوزاد"
+
+msgid "and"
+msgstr "و"
+
+msgid "Search in"
+msgstr "جستجو در مسیر"
+
+msgid "Company Name"
+msgstr "نام شرکت"
+
+msgid "To "
+msgstr "به"
+
+msgid "in"
+msgstr "در تاریخ"
+
+msgid "For"
+msgstr "برای"
+
+msgid "Next"
+msgstr "بعدی"
+
+msgid "Previous"
+msgstr "قبلی"
+
+msgid "Not Found Any Rules For This Flight"
+msgstr "هیچ قانونی برای این پرواز پیدا نشد"
+
+msgid "To Display The Result At Least You Must Select An Airline"
+msgstr "جهت نمایش نتیجه حداقل باید یک شرکت هواپیمایی را انتخاب کنید"
+
+msgid "Person"
+msgstr "شخص"
+
+msgid "Weight"
+msgstr "وزن"
+
+msgid "Route"
+msgstr "مسیر"
+
+msgid "Baggage"
+msgstr "بار"
+
+msgid "For Buy Baggage Call Support, please"
+msgstr "لطفا جهت خرید بار با پشتیبانی تماس بگیرید"
+
+msgid "Re-Select"
+msgstr "انتخاب مجدد"
+
+msgid "Dollar"
+msgstr "دلار"
+
+msgid "Passengers"
+msgstr "مسافران"
+
+msgid "Ticket Price"
+msgstr "قیمت بلیت"
+
+msgid "Ticket Price / Each Passenger ($)"
+msgstr "قیمت بلیت / هر نفر (ریال)"
+
+msgid "Each"
+msgstr "هر نفر"
+
+msgid "Count"
+msgstr "تعداد"
+
+msgid "Error"
+msgstr "خطا"
+
+msgid "List of IDs"
+msgstr "لیست شناسه‌ها"
+
+msgid "ID"
+msgstr "شناسه‌"
+
+msgid "ID Number"
+msgstr "شناسه پرداخت"
+
+msgid "Enter First Name"
+msgstr "نام را وارد کنید"
+
+msgid "Enter Last Name"
+msgstr "نام خانوادگی را وارد کنید"
+
+msgid "Enter Email"
+msgstr "ایمیل را وارد کنید"
+
+msgid "Entered Email is not Correct"
+msgstr "ایمیل وارد شده صحیح نیست"
+
+msgid "Entered Mobile is not Correct"
+msgstr "شماره موبایل وارد شده صحیح نیست"
+
+msgid "Payer Mobile Number / Full Name"
+msgstr "شماره همراه / نام پرداخت کننده"
+
+msgid "Payer"
+msgstr "پرداخت کننده"
+
+msgid "Contract Number"
+msgstr "شماره قرارداد"
+
+msgid "Enter Mobile"
+msgstr "موبایل را وارد کنید"
+
+msgid "Enter Mobile Number Without Zero"
+msgstr "شماره موبایل را بدون صفر وارد کنید"
+
+msgid "Mobile Number Must be 10 Digits at Least"
+msgstr "شماره موبایل حداقل باید 10 عدد باشد"
+
+msgid "Password Must be 8 Characters at Least"
+msgstr "رمز عبور باید حداقل 8 کاراکتر باشد"
+
+msgid "Password and Confirm Password is not Equal"
+msgstr "رمز عبور با تکرار رمز عبور یکی نیست"
+
+msgid "Accept the Site Terms and Conditions"
+msgstr "قوانین و مقررات سایت را بپذیرید"
+
+msgid "Registration has Failed, Please Try Again"
+msgstr "ثبت نام با خطا مواجه شد، لطفا مجددا تلاش کنید"
+
+msgid "Confirm Your User Authenticity"
+msgstr "صحت کاربری خود را تایید کنید"
+
+msgid "Price Details"
+msgstr "جزئیات قیمت"
+
+msgid "User Status"
+msgstr "وضعیت کاربر"
+
+msgid "Enable"
+msgstr "فعال"
+
+msgid "Disable"
+msgstr "غیرفعال"
+
+msgid "Increase"
+msgstr "افزایش"
+
+msgid "Decrease"
+msgstr "کاهش"
+
+msgid "Baggage Rules"
+msgstr "قوانین بار"
+
+msgid "Visa Rules"
+msgstr "قوانین ویزا"
+
+msgid "Passengers Information"
+msgstr "ثبت اطلاعات مسافران"
+
+msgid "Fill All Field is Required"
+msgstr "پر کردن همه فیلدها الزامی است"
+
+msgid "Fill In Starred Fields (*) is Required"
+msgstr "پر کردن فیلدهای ستاره‌دار (*) الزامی است"
+
+msgid "Enter the information in English and in accordance with the information contained in the passport"
+msgstr "اطلاعات را به زبان انگلیسی و مطابق با اطلاعات مندرج در پاسپورت وارد نمایید"
+
+msgid "Adult Rules"
+msgstr "قوانین بزرگسال"
+
+msgid "Adult Price"
+msgstr "مبلغ بزرگسال"
+
+msgid "Child Price"
+msgstr "مبلغ کودک"
+
+msgid "Infant Price"
+msgstr "مبلغ نوزاد"
+
+msgid "Adult Information"
+msgstr "مشخصات بزرگسال"
+
+msgid "Child Rules"
+msgstr "قوانین کودک"
+
+msgid "Child Information"
+msgstr "مشخصات کودک"
+
+msgid "Infant Rules"
+msgstr "قوانین نوزاد"
+
+msgid "Infant Information"
+msgstr "مشخصات نوزاد"
+
+msgid "Added Baggage"
+msgstr "بار اضافه شده"
+
+msgid "Service Type"
+msgstr "نوع سرویس"
+
+msgid "Title"
+msgstr "عنوان"
+
+msgid "First Name (English)"
+msgstr "نام به انگلیسی"
+
+msgid "First Name (Persian)"
+msgstr "نام به فارسی"
+
+msgid "Last Name (English)"
+msgstr "نام خانوادگی به انگلیسی"
+
+msgid "Last Name (Persian)"
+msgstr "نام خانوادگی به فارسی"
+
+msgid "Nationality"
+msgstr "ملیت"
+
+msgid "Identification Certificate"
+msgstr "مدرک شناسایی"
+
+msgid "Citizenship"
+msgstr "تابعیت"
+
+msgid "Identity Code"
+msgstr "کد ملی"
+
+msgid "Identity Card"
+msgstr "کارت ملی"
+
+msgid "Passport"
+msgstr "پاسپورت"
+
+msgid "Passport is n't Valid"
+msgstr "پاسپورت نامعتبر است"
+
+msgid "Passport Number"
+msgstr "شماره پاسپورت"
+
+msgid "BirthDay Gregorian"
+msgstr "تاریخ تولد میلادی"
+
+msgid "Passport Expiration Gregorian Date"
+msgstr "تاریخ انقضا پاسپورت به میلادی"
+
+msgid "Passport Expiration Date"
+msgstr "تاریخ انقضاء پاسپورت"
+
+msgid "Information For Send Ticket"
+msgstr "اطلاعات مورد نیاز برای ارسال رسید بلیت"
+
+msgid "Email Address"
+msgstr "آدرس ایمیل"
+
+msgid "Factor Code"
+msgstr "کد فاکتور"
+
+msgid "User Edited Successfully"
+msgstr "کاربر با موفقیت ویرایش شد"
+
+msgid "Return to Users List"
+msgstr "بازگشت به لیست کاربران"
+
+msgid "Edit User has an Error, Please Try Again"
+msgstr "ویرایش کاربر با خطا مواجه شد، لطفا مجددا تلاش کنید"
+
+msgid "Foreign Hotels List"
+msgstr "لیست هتلهای خارجی"
+
+msgid "Submit Information"
+msgstr "ثبت اطلاعات"
+
+msgid "Information Validate"
+msgstr "صحت اطلاعات وارد شده"
+
+msgid "Canceling Information"
+msgstr "اطلاعات کنسلی"
+
+msgid "Confirm Passengers Information"
+msgstr "تایید اطلاعات مسافران"
+
+msgid "Your Ticket Final Price is"
+msgstr "مبلغ نهایی بلیت شما به شرح زیر می‌باشد"
+
+msgid "Credit pay"
+msgstr "پرداخت اعتباری"
+
+msgid "Online Pay"
+msgstr "پرداخت آنلاین"
+
+msgid "Online"
+msgstr "آنلاین"
+
+msgid "Print Ticket"
+msgstr "چاپ بلیت"
+
+msgid "Show Ticket"
+msgstr "مشاهده بلیط"
+
+msgid "Show Receipt"
+msgstr "مشاهده رسید"
+
+msgid "Print Receipt"
+msgstr "چاپ رسید"
+
+msgid "Insurances List"
+msgstr "لیست بیمه‌ها"
+
+msgid "Insurance Number"
+msgstr "شماره بیمه‌نامه"
+
+msgid "Travel Insurance Refund Request List"
+msgstr "لیست درخواست استرداد بیمه مسافرتی"
+
+msgid "Travel Insurance Refund Request"
+msgstr "درخواست استرداد بیمه مسافرتی"
+
+msgid "Bus Ticket Refund Request"
+msgstr "درخواست استرداد بلیت اتوبوس"
+
+msgid "Report of Refund Requests or Ticket Edit"
+msgstr "گزارش درخواست‌های استرداد یا اصلاح بلیت"
+
+msgid "Refund Status"
+msgstr "وضعیت استرداد"
+
+msgid "Systemic"
+msgstr "سیستمی"
+
+msgid "Charter"
+msgstr "چارتری"
+
+msgid "Refund Status Edit"
+msgstr "ویرایش وضعیت استرداد"
+
+msgid "Refund Status Changed Successfully"
+msgstr "ویرایش وضعیت استرداد با موفقیت انجام شد"
+
+msgid "Refund Status Change has an Error, Please Try Again"
+msgstr "ویرایش وضعیت استرداد با خطا مواجه شد، لطفا مجددا تلاش کنید"
+
+msgid "Are You Sure to Refund"
+msgstr "آیا از ثبت استرداد اطمینان دارید"
+
+msgid "Are You Sure for Refund Request for This Ticket"
+msgstr "آیا از درخواست استرداد این بلیت اطمینان دارید"
+
+msgid "Submit Refund"
+msgstr "ثبت استرداد"
+
+msgid "Are You Sure to Cancel Refund"
+msgstr "آیا از لغو استرداد اطمینان دارید"
+
+msgid "Cancel Refund"
+msgstr "لغو استرداد"
+
+msgid "Users List"
+msgstr "لیست کاربران"
+
+msgid "Add User"
+msgstr "افزودن کاربر"
+
+msgid "Not Found any Ticket"
+msgstr "بلیتی پیدا نشد"
+
+msgid "Ticket Refund Request"
+msgstr "درخواست استرداد بلیت"
+
+msgid "Your refund request has been successfully recorded. Please visit this page on the next working day to track down the refund"
+msgstr "درخواست استرداد شما با موفقیت ثبت شد. لطفا در روز کاری آینده جهت پیگیری استرداد، به همین صفحه مراجعه کنید"
+
+msgid "Travel Insurance Not Found"
+msgstr "بیمه مسافرتی پیدا نشد"
+
+msgid "Tickets List of Flight Outbound"
+msgstr "لیست بلیت‌های پرواز خارجی"
+
+msgid "Tickets List of Flight Domestic"
+msgstr "لیست بلیت‌های پرواز داخلی"
+
+msgid "Tickets List of Bus"
+msgstr "لیست بلیت‌های اتوبوس"
+
+msgid "Passenger Name"
+msgstr "نام مسافر"
+
+msgid "Fines"
+msgstr "جریمه"
+
+msgid "Type of Fines"
+msgstr "نوع جریمه"
+
+msgid "Percent"
+msgstr "درصد"
+
+msgid "Percent of Fines"
+msgstr "درصد جریمه"
+
+msgid "Price of Fines"
+msgstr "مبلغ جریمه"
+
+msgid "Buy Date"
+msgstr "تاریخ خرید"
+
+msgid "Buyer"
+msgstr "خریدار"
+
+msgid "in "
+msgstr "در"
+
+msgid "Request"
+msgstr "درخواست"
+
+msgid "Waiting for Confirmation"
+msgstr "در انتظار تایید"
+
+msgid "Not Found any Insurances"
+msgstr "بیمه‌نامه‌ای پیدا نشد"
+
+msgid "Insurance Refund Request"
+msgstr "درخواست استرداد بیمه‌نامه"
+
+msgid "Insurance Refunded successfully"
+msgstr "بیمه‌نامه با موفقیت استرداد شد"
+
+msgid "Ticket Refunded successfully"
+msgstr "استرداد بلیت با موفقیت انجام شد"
+
+msgid "In Order to Refund This Ticket, You Must Pay"
+msgstr "استرداد این بلیت شامل"
+
+msgid "$ as Fines and the Rest of Price will be add to your credit"
+msgstr "ریال جریمه می‌باشد و مابقی مبلغ بلیط به اعتبار شما اضافه خواهد شد"
+
+msgid "Refund Request Submission has an Error, Please Try Again"
+msgstr "ثبت درخواست استرداد با خطا مواجه شد، لطفا مجددا تلاش کنید"
+
+msgid "Are You Sure For Refund Request For This Insurance?"
+msgstr "آیا از درخواست استرداد این بیمه‌نامه اطمینان دارید؟"
+
+msgid "Not Found any Indexes"
+msgstr "شناسه‌ای پیدا نشد"
+
+msgid "Not Found ID Information"
+msgstr "اطلاعات شناسه پیدا نشد"
+
+msgid "Payment Receipt"
+msgstr "رسید پرداخت"
+
+msgid "Online Payment Receipt"
+msgstr "رسید پرداخت اینترنتی"
+
+msgid "Not Found Any User"
+msgstr "کاربری پیدا نشد"
+
+msgid "Edit User"
+msgstr "ویرایش کاربر"
+
+msgid "Bank Logo"
+msgstr "لوگو بانک"
+
+msgid "Select Your Baggage"
+msgstr "بار خود را انتخاب کنید"
+
+msgid "The length of the names entered exceeds the limit. In the ticket receipt, part of your name will be cut off"
+msgstr "طول اسامی وارد شده بیشتر از حد مجاز است. در رسید بلیت بخشی از نام شما بریده می‌شود"
+
+msgid "Mobile Number Should 10 Character and Without 0"
+msgstr "شماره موبایل را بدون 0 و حداکثر 10 کاراکتر مجاز میباشد"
+
+msgid "Example"
+msgstr "مثال"
+
+msgid "Maximum Character Count"
+msgstr "حداکثر تعداد کاراکتر"
+
+msgid "Connections Count"
+msgstr "تعداد توقف"
+
+msgid "Go Route"
+msgstr "مسیر رفت"
+
+msgid "Return Route"
+msgstr "مسیر برگشت"
+
+msgid "Flight Time"
+msgstr "زمان حرکت"
+
+msgid "Processing"
+msgstr "در حال پردازش"
+
+msgid "Users Login"
+msgstr "ورود کاربران"
+
+msgid "Mobile Number is Required"
+msgstr "شماره همراه الزامی میباشد"
+
+msgid "Register"
+msgstr "ثبت‌نام"
+
+msgid "Not Register ?"
+msgstr "قبلا عضو نشده‌اید"
+
+msgid "Gender"
+msgstr "جنسیت"
+
+msgid "Please Select Your Gender"
+msgstr "لطفا جنسیت خود را انتخاب کنید"
+
+msgid "Forget Your Password ?"
+msgstr "رمز عبورتان را فراموش کرده‌اید؟"
+
+msgid "Reset Password"
+msgstr "بازیابی رمز عبور"
+
+msgid "Specify your user authenticity"
+msgstr "صحت کاربری خود را مشخص کنید"
+
+msgid "Username is Required"
+msgstr "نام کاربری را وارد کنید"
+
+msgid "Password is Required"
+msgstr "رمز عبور را وارد کنید"
+
+msgid "Mobile Number is Not Valid"
+msgstr "شماره همراه وارد شده صحیح نیست"
+
+msgid "Mobile Number or Password is n't Valid"
+msgstr "نام کاربری و یا رمز عبور اشتباه است"
+
+msgid "Sign in"
+msgstr "ورود"
+
+msgid "Guest User"
+msgstr "کاربر مهمان"
+
+msgid "Enter Your Mobile Number"
+msgstr "شماره همراه را وارد کنید"
+
+msgid "New Password Will Send to You"
+msgstr "رمز عبور جدید به زودی برای شما ارسال می‌گردد"
+
+msgid "Do You Register ?"
+msgstr "قبلا عضو شده اید ؟"
+
+msgid "Mobile Number is Not in Our System"
+msgstr "شماره همراه وارد شده در سیستم وجود ندارد"
+
+msgid "Mobile Number"
+msgstr "موبایل"
+
+msgid "Required"
+msgstr "الزامی"
+
+msgid "Confirm Password"
+msgstr "تکرار رمز عبور"
+
+msgid "Edit Password"
+msgstr "تغییر رمز عبور"
+
+msgid "If You Want Change Password, Click on This"
+msgstr "چنانچه مایل به تغییر رمز هستید کلیک کنید"
+
+msgid "Sir"
+msgstr "آقا"
+
+msgid "Lady"
+msgstr "خانم"
+
+msgid "Price From"
+msgstr "مبلغ از"
+
+msgid "Price To"
+msgstr "مبلغ تا"
+
+msgid "Terms and Conditions"
+msgstr "قوانین و مقررات"
+
+msgid "Accepted"
+msgstr "سایت را می‌پذیرم"
+
+msgid "Register Successfully"
+msgstr "ثبت نام با موفقیت انجام شد"
+
+msgid "Password must more than 8 character and Have Alphabet and Number"
+msgstr "کلمه عبور باید شامل حروف و عدد و بیشتر از هشت حرف باشد"
+
+msgid "Track order"
+msgstr "پیگیری خرید"
+
+msgid "Tracking"
+msgstr "پیگیری"
+
+msgid "Password"
+msgstr "رمز عبور"
+
+msgid "Your Credit"
+msgstr "اعتبار شما"
+
+msgid "Credit"
+msgstr "اعتبار"
+
+msgid "Access Level"
+msgstr "سطح دسترسی"
+
+msgid "Price Level"
+msgstr "سطح قیمت"
+
+msgid "Welcome"
+msgstr "خوش آمدید"
+
+msgid "Exist"
+msgstr "خروج"
+
+msgid "User List"
+msgstr "فهرست کاربر"
+
+msgid "With"
+msgstr "با"
+
+msgid "Type"
+msgstr "نوع"
+
+msgid "First Name"
+msgstr "نام"
+
+msgid "Last Name"
+msgstr "نام خانوادگی"
+
+msgid "BirthDay"
+msgstr "تاریخ تولد"
+
+msgid "Passport Expire"
+msgstr "تاریخ انقضا پاسپورت"
+
+msgid "Ticket Number"
+msgstr "شماره بلیت"
+
+msgid "Chair Number"
+msgstr "شماره صندلی"
+
+msgid "Reference Number"
+msgstr "شماره رفرنس"
+
+msgid "Request Date"
+msgstr "تاریخ درخواست"
+
+msgid "Reference"
+msgstr "رفرنس"
+
+msgid "Invoice Number"
+msgstr "شماره فاکتور"
+
+msgid "Voucher Number"
+msgstr "شماره واچر"
+
+msgid "Voucher"
+msgstr "واچر"
+
+msgid "Markups List"
+msgstr "لیست مارک آپها"
+
+msgid "Discount Type"
+msgstr "نوع تخفیف"
+
+msgid "Start Price"
+msgstr "شروع مبلغ"
+
+msgid "End Price"
+msgstr "پایان مبلغ"
+
+msgid "Print Version"
+msgstr "نسخه چاپی"
+
+msgid "Print"
+msgstr "چاپ"
+
+msgid "Ticket Buy Successfully"
+msgstr "عملیات خرید با موفقیت انجام شد"
+
+msgid "Operations"
+msgstr "عملیات"
+
+msgid "Not Found any Markup"
+msgstr "مارک آپی پیدا نشد"
+
+msgid "New Markup"
+msgstr "ایجاد مارک آپ"
+
+msgid "Confirm Buy"
+msgstr "تایید خرید"
+
+msgid "Buy Date and Time"
+msgstr "تاریخ و ساعت خرید"
+
+msgid "Full Name"
+msgstr "نام و نام خانوادگی"
+
+msgid "Doy Sure About Buy this Ticket ?"
+msgstr "آیا از خرید این بلیط مطمئن هستید ؟"
+
+msgid "Yes"
+msgstr "بله"
+
+msgid "No"
+msgstr "نه"
+
+msgid "Buy Time"
+msgstr "زمان خرید"
+
+msgid "Confirm"
+msgstr "تایید می‌کنم"
+
+msgid "Buy Ticket Terms and Conditions"
+msgstr "قوانین و شرایط خرید بلیت"
+
+msgid "I Accept Terms and Conditions"
+msgstr "شرایط و قوانین خرید بلیت را می‌پذیرم"
+
+msgid "Ticket Type"
+msgstr "نوع بلیت"
+
+msgid "Age Range"
+msgstr "رده سنی"
+
+msgid "January"
+msgstr "فروردین"
+
+msgid "February"
+msgstr "اردیبهشت"
+
+msgid "March"
+msgstr "خرداد"
+
+msgid "April"
+msgstr "تیر"
+
+msgid "May"
+msgstr "مرداد"
+
+msgid "June"
+msgstr "شهریور"
+
+msgid "July"
+msgstr "مهر"
+
+msgid "August"
+msgstr "آبان"
+
+msgid "September"
+msgstr "آذر"
+
+msgid "October"
+msgstr "دی"
+
+msgid "November"
+msgstr "بهمن"
+
+msgid "December"
+msgstr "اسفند"
+
+msgid "Please Wait"
+msgstr "لطفا منتظر بمانید"
+
+msgid "You Have not Permission to Access This Page"
+msgstr "شما اجازه دسترسی به این صفحه را ندارید"
+
+msgid "Registering Ticket May Takes More Than 2 Minutes. Please Wait"
+msgstr "سامانه در حال ثبت بلیط میباشد، ممکن است ثبت بلیط شما بیشتر از ۲ دقیقه زمان نیاز داشته باشد. لطفا شکیبا باشید"
+
+msgid "Do Not Refresh This Page"
+msgstr "لطفا صفحه خود را رفرش نکنید"
+
+msgid "If Happened any Trouble Then Contact to Support Team. Tel"
+msgstr "در صورت به وجود آمدن هر مشکلی با پشتیبانی تماس حاصل فرمایید. شماره پشتیبانی"
+
+msgid "Information Loading"
+msgstr "در حال بررسی اطلاعات"
+
+msgid "Information Receiving"
+msgstr "در حال دریافت اطلاعات"
+
+msgid "Download Excel Version"
+msgstr "دریافت نسخه Excel"
+
+msgid "Search in List"
+msgstr "جستجو در لیست"
+
+msgid "Baggage Loading, Please Wait"
+msgstr "در حال بررسی بار منتظر بمانید"
+
+msgid "Select Baggage"
+msgstr "انتخاب بار"
+
+msgid "Select Depart Baggage"
+msgstr "انتخاب بار رفت"
+
+msgid "Select Return Baggage"
+msgstr "انتخاب بار برگشت"
+
+msgid "Identity Code is n't Valid"
+msgstr "کد ملی نامعتبر است"
+
+msgid "Exporter"
+msgstr "صادر کننده"
+
+msgid "Status"
+msgstr "وضعیت"
+
+msgid "If you do not receive the ticket number or reference number, please contact the site support"
+msgstr "در صورت عدم دریافت شماره بلیت یا شماره رفرنس، لطفا با پشتیبانی سایت تماس بگیرید"
+
+msgid "If you payment through the online gateway, the payment will be repaid to your account for up to 72 hours"
+msgstr "در صورت پرداخت وجه از طریق درگاه بانکی، مبلغ پرداخت شده حداکثر تا ۷۲ ساعت به حساب شما عودت داده خواهد شد"
+
+msgid "System is Registering Ticket , Please Wait "
+msgstr "سامانه در حال ثبت بلیت می باشد، لطفا منتظر بمانید"
+
+msgid "Ticket Register is Broken, Please For get Information About Reserve Status Call to Support"
+msgstr "ثبت بلیت با خطا مواجه شد. لطفا جهت پیگیری وضعیت رزرو با تلفن پشتیبانی تماس حاصل فرمایید"
+
+msgid "I Have Thoroughly Check the Round Trip Information (Enter and Exit Dates / Go and Return Times)"
+msgstr "اطلاعات بلیت رفت و برگشت را بطور دقیق بررسی و مطلالعه نموده ام (تاریخ ورود و خروج / ساعت رفت و برگشت)"
+
+msgid "I accept the obligation not to have a visa to enter the country of destination and not having a transit visa (note that you may be prevented from continuing your journey due to lack of transit visas in the middle of the country)"
+msgstr "مسئولیت نداشتن ویزا جهت ورود به کشور مقصد و نداشتن ویزای ترانزیت را می پذیرم (توجه کنید که ممکن است بعلت نداشتن ویزای ترانزیت در کشور میانی از ادامه سفر شما جلوگیری به عمل اید)"
+
+msgid "I Have Thoroughly Check the Canceling and Changing Ticket Rules"
+msgstr "قوانین کنسلی و تغییر را بطور دقیق مطلالعه نموده ام"
+
+msgid "I accept the lack of adequate passport credence from the beginning to the end of the trip (minimum validity of 6 months from the end of the trip)"
+msgstr "مسئولیت نداشتن اعتبار کافی گذرنامه را از ابتدا تا انتهای سفر می پذیرم (حداقل اعتبار 6 ماه از خاتمه سفر)"
+
+msgid "I accept the obligation of no exit (for any reason)"
+msgstr "مسئولیت ممنوع الخروج بودن (به هر دلیلی) را می پذیرم"
+
+msgid "One-way ticket is only available for travelers whose visas are for immigration, residence or student. Otherwise, a return ticket to the country of residence must be provided"
+msgstr "صدور بلیت یکطرفه فقط برای مسافرینی امکان پذیر می باشد که ویزای آن ها بصورت مهاجرتی، اقامتی یا دانشجوئی باشد در غیر اینصورت باید بلیت برگشت به کشور محل اقامت نیز تهیه شود"
+
+msgid "Travelers who intend to make a ticket to the Schengen countries must pay attention to the Schengen rules, the first entry must be to the country of the issuing visa, otherwise they may stop traveling passengers"
+msgstr "مسافرینی که قصد تهیه بلیت به کشورهای حوزه شنگن را دارند توجه داشته باشند طبق قوانین شنگن ، ورود اول باید به کشور صادر کننده ویزا باشد در غیر اینصورت ممکنست از ادامه سفر مسافر ممانعت بعمل آورند"
+
+msgid "For travelers traveling to North America, the issuance of tickets with more than one Schengen country is prohibited, and the consequences of the ticket issuance in case of non-compliance with the above conditions will be the passenger (such passenger will need a Schengen visa several times)"
+msgstr "برای مسافرینی که به امریکای شمالی سفر می کنند صدور بلیت با ترانزیت بیش از یک کشور حوزه شنگن ممنوع است و تبعات صدور بلیت در صورت عدم رعایت شرایط فوق بر عهده مسافر خواهد بود (چنین مسافری نیاز به ویزای چند بار ورود شنگن دارد)"
+
+msgid "Issuing tickets with more than two countries in the Schengen area is prohibited, and ticket issuance will be the responsibility of the passenger in case of non-compliance with the above conditions (such a passenger will need a Schengen visa several times)"
+msgstr "صدور بلیت با ترانزیت بیش از دو کشور حوزه ی شنگن ممنوع است وتبعات صدور بلیت در صورت عدم رعایت شرایط فوق بر عهده مسافر خواهد بود (چنین مسافری نیاز به ویزای چند بار ورود شنگن دارد)"
+
+msgid "The Responsibility for the Accuracy of the Information is With Passenger's Responsibility"
+msgstr "مسئولیت صحت و سقم اطلاعات وارد شده بر عهده مسافر می باشد"
+
+msgid "System is Broken , Please Try Again"
+msgstr "سیستم با خطا مواجه شد. لطفا مجددا تلاش کنید"
+
+msgid "Note that travelers whose country of residence is not Iran and whose stay in Iran has been more than three months should be allowed to leave the country when they return, otherwise their departure will be prevented"
+msgstr "توجه نمایید که مسافرینی که کشور محل اقامت آنان ایران نیست و مدت اقامت آنان در ایران بیش از سه ماه بوده است در هنگام بازگشت می بایست مجوز خروج از کشور را دارا باشند در غیر اینصورت از خروج آنان ممانعت به عمل خواهد آمد"
+
+msgid "Please be careful when choosing the airports for entering and leaving the country of transit (it is strongly recommended that the airport be the same)"
+msgstr "لطفا در انتخاب فرودگاه های ورود و خروج کشور ترانزیت دقت نمایید (اکیدا توصیه می شود که فرودگاه ورودی و خروجی یکی باشد)"
+
+msgid "It is strongly recommended that you let the country choose the place of transit to the airline; otherwise, I personally accept responsibility for the consequences of issuing any tickets with a transit time of less than 24 hours"
+msgstr "اکیدا توصیه می شود اجازه انتخاب کشور محل ترانزیت را به ایرلاین واگذار نمایید در غیر اینصورت مسئولیت عواقب صدور هرگونه بلیت با ترانزیت کمتر از 24 ساعت را شخصا می پذیرم"
+
+msgid "Identity Code Should Not Be Re-Use"
+msgstr "کد ملی نباید تکراری باشد"
+
+msgid "Passport Number Should Not Be Re-Use"
+msgstr "شماره پاسپورت نباید تکراری باشد"
+
+msgid "Passport Expire Date Not Valid"
+msgstr "تاریخ انقضا پاسپورت های وارد شده معتبر نمی‌باشد"
+
+msgid "Expire Date"
+msgstr "تاریخ انقضا"
+
+msgid "Creation Date / Payment Date"
+msgstr "تاریخ ایجاد / تاریخ پرداخت"
+
+msgid "Registration Date"
+msgstr "تاریخ ثبت نام"
+
+msgid "Entered Data Have some Unaccepted Character"
+msgstr "اطلاعات وارد شده حاوی کاراکترهای غیر مجاز می‌باشد"
+
+msgid "Birthdays Are Not Included in The Age Range Selected"
+msgstr "تاریخ تولدهای وارد شده در بازه سنی انتخاب شده نمی‌باشد"
+
+msgid "Result Not Found"
+msgstr "هیچ نتیجه ایی یافت نشد"
+
+msgid "Please For Buy Baggage Call Support"
+msgstr "لطفا جهت خرید بار با پشتیبانی تماس بگیرید"
+
+msgid "Enter Your From Location"
+msgstr "مبدا را وارد کنید"
+
+msgid "Enter Your To Location"
+msgstr "مقصد را وارد کنید"
+
+msgid "Enter Depart Date"
+msgstr "تاریخ رفت را وارد کنید"
+
+msgid "Depart Date"
+msgstr "تاریخ رفت"
+
+msgid "Enter Return Date"
+msgstr "تاریخ برگشت را وارد کنید"
+
+msgid "Return Date Before Depart Date"
+msgstr "تاریخ برگشت قبل از تاریخ رفت است"
+
+msgid "From Date"
+msgstr "از تاریخ"
+
+msgid "To Date"
+msgstr "تا تاریخ"
+
+msgid "Connection To Server is Broken , Please Try Again"
+msgstr "ارتباط با سرور برقرار نشد لطفا مجددا تلاش کنید"
+
+msgid "Re-Connect"
+msgstr "ارتباط مجدد"
+
+msgid "Read more"
+msgstr "مطالعه کنید"
+
+msgid "Footer"
+msgstr "فوتر"
+
+msgid "Travel to"
+msgstr "مسافر به"
+
+msgid "Posted on"
+msgstr "تاریخ انتشار"
+
+msgid "By"
+msgstr "توسط"
+
+msgid "Flight Connection"
+msgstr "پرواز کانکشن از طریق تهران"
+
+msgid "Non stop"
+msgstr "فقط پرواز مستقیم"
+
+msgid "Related posts"
+msgstr "نوشته‌های مرتبط"
+
+msgid "Comments"
+msgstr "دیدگاه‌ها"
+
+msgid "Social Networks"
+msgstr "شبکه‌های اجتماعی"
+
+msgid "Go Home"
+msgstr "برو به صفحه اصلی"
+
+# ==========================================
+msgid "Entered Email is Not in Our System"
+msgstr "ایمیل وارد شده در سیستم وجود ندارد"
+
+msgid "Entered Mobile is Not in Our System"
+msgstr "موبایل وارد شده در سیستم وجود ندارد"
+
+msgid "€"
+msgstr "€"
+
+msgid "euro"
+msgstr "یورو"
+
+msgid "rial"
+msgstr "ریال"
+
+msgid "Payer Full Name"
+msgstr "نام کامل پرداخت کننده"
+
+msgid "Local Insurances List"
+msgstr "لیست بیمه های داخلی"
+
+msgid "Price (rial)"
+msgstr "مبلغ (ریال)"
+
+msgid "Local Insurance Refund Request List"
+msgstr "لیست درخواست استرداد بیمه داخلی"
+
+msgid "Enter Airport Name"
+msgstr "نام فرودگاه را وارد کنید"
+
+msgid "Select Date"
+msgstr "انتخاب تاریخ"
+
+msgid "Select Your Airport"
+msgstr "فرودگاه خود را انتخاب کنید"
+
+msgid "Select Your Check-in / Check-out date"
+msgstr "تاریخ ورود / خروج را مشخص کنید"
+
+msgid "The depart and return route should not be same"
+msgstr "مسیر رفت و مسیر برگشت نباید یک مسیر باشند"
+
+msgid "Child Age"
+msgstr "سن کودک"
+
+msgid "Years"
+msgstr "سال"
+
+msgid "Room"
+msgstr "اتاق"
+
+msgid "Enter Destination Country"
+msgstr "نام کشور مقصد را وارد کنید"
+
+msgid "Enter Destination City"
+msgstr "نام شهر مقصد را وارد کنید"
+
+msgid "To 5 Days"
+msgstr "تا ۵ روز"
+
+msgid "To 7 Days"
+msgstr "تا ۷ روز"
+
+msgid "To 8 Days"
+msgstr "تا ۸ روز"
+
+msgid "To 10 Days"
+msgstr "تا ۱۰ روز"
+
+msgid "To 15 Days"
+msgstr "تا ۱۵ روز"
+
+msgid "To 23 Days"
+msgstr "تا ۲۳ روز"
+
+msgid "To 31 Days"
+msgstr "تا ۳۱ روز"
+
+msgid "To 45 Days"
+msgstr "تا ۴۵ روز"
+
+msgid "To 62 Days"
+msgstr "تا ۶۲ روز"
+
+msgid "To 92 Days"
+msgstr "تا ۹۲ روز"
+
+msgid "To 186 Days"
+msgstr "تا ۱۸۶ روز"
+
+msgid "To 365 Days"
+msgstr "تا ۳۶۵ روز"
+
+msgid "Must have value"
+msgstr "را وارد کنید"
+
+msgid "Search your destination city or hotel"
+msgstr "شهر یا هتل مورد نظر را جستجو کنید"
+
+msgid "Select"
+msgstr "انتخاب نمایید"
+
+msgid "Payment ID"
+msgstr "شناسه پرداخت"
+
+msgid "Submit"
+msgstr "ارسال"
+
+msgid "You can't request ticket for kids when you charter a coupe at same time"
+msgstr "همزمان امکان دربست کردن کوپه و گرفتن بلیت برای اطفال وجود ندارد"
+
+msgid "From Name"
+msgstr "نام مبدا"
+
+msgid "Select To"
+msgstr "انتخاب مقصد"
+
+msgid "Driver's Presence Date"
+msgstr "تاریخ حضور راننده"
+
+msgid "Dear Passenger"
+msgstr "مسافر گرامی"
+
+msgid "Thanks for your trust"
+msgstr "ضمن سپاس از اعتماد شما"
+
+msgid "Note"
+msgstr "توجه"
+
+msgid "Online payment system via payment identifier to facilitate deposit and also possibility quick and accurate follow up of your request has been created. At this point, write your identity payment code which you received by email or sms in the below box."
+msgstr "سامانه پرداخت آنلاین از طریق شناسه پرداخت با هدف تسهیل در واریز وجه و نیز امکان پیگیری سریع و دقیق درخواست شما ایجاد شده است. در این مرحله، کد شناسه پرداخت خود که از طریق پیامک و ایمیل دریافت نموده اید را در کادر زیر وارد نموده و ارسال نمایید."
+
+msgid "Payment is possible with all bank cards in the network"
+msgstr "پرداخت با تمامی کارت های بانکی عضو شبکه شتاب امکان پذیر است"
+
+msgid "Depart Day to Night"
+msgstr "رفت "
+
+msgid "Return Day to Night"
+msgstr "برگشت "
+
+msgid "Results found"
+msgstr "نتایج یافت شده "
+
+msgid "Number"
+msgstr " عدد"
+
+msgid "Looking for travel insurance for"
+msgstr "در حال جستجوی بیمه مسافرتی برای"
+
+msgid "For a period"
+msgstr "به مدت"
+
+msgid "People"
+msgstr "نفر"
+
+msgid "Please wait a bit, the system is receiving the best hotel rates"
+msgstr "لطفا کمی صبر کنید ،سامانه در حال دریافت بهترین نرخ هتل ها میباشد"
+
+msgid "No cip was found, please try again."
+msgstr "هیچ cip پیدا نشد، لطفا مجددا تلاش کنید."
+
+msgid "Tariffs for other services"
+msgstr "تعرفه سایر خدمات"
+
+msgid "Iranian"
+msgstr "ایرانی"
+
+msgid "Non-Iranian"
+msgstr "غیر ایرانی"
+
+msgid "Passenger"
+msgstr "مسافر"
+
+msgid "Final Price"
+msgstr "قیمت نهایی"
+
+msgid "Price without discounts"
+msgstr "قیمت بدون تخفیف"
+
+msgid "Free"
+msgstr "رایگان"
+
+msgid "Direct or contemporary"
+msgstr "مستقبل یا مشایعت کننده"
+
+msgid "Normal"
+msgstr "عادی"
+
+msgid "Guest"
+msgstr "مهمان"
+
+msgid "Airport transfer service"
+msgstr "خدمات ترانسفر فرودگاهی سالن"
+
+msgid "Other cases"
+msgstr "سایر موارد"
+
+msgid "Pet"
+msgstr "حیوان خانگی"
+
+msgid "Service description"
+msgstr "شرح خدمات"
+
+msgid "Wheelchair"
+msgstr "صندلی چرخ دار"
+
+msgid "Visa services"
+msgstr "خدمات ویزا"
+
+msgid "entrance time"
+msgstr "ساعت ورود"
+
+msgid "flight date"
+msgstr "تاریخ پرواز"
+
+msgid "Search again"
+msgstr "جستجو مجدد"
+
+msgid "Flight profile"
+msgstr "مشخصات پرواز"
+
+msgid "leaving hour"
+msgstr "ساعت خروج"
+
+msgid "Please"
+msgstr "لطفا"
+
+msgid "Enter the date of the flight"
+msgstr "تاریخ پرواز را وارد کتید"
+
+msgid "CIP"
+msgstr "سی ای پی"
+
+msgid "Type of service"
+msgstr "نوع خدمات"
+
+msgid "Internal"
+msgstr "داخلی"
+
+msgid "Foreign"
+msgstr "خارجی"
+
+msgid "Entrance"
+msgstr "ورودی"
+
+msgid "Output"
+msgstr "خروجی"
+
+msgid "Type of flight"
+msgstr "نوع پرواز"
+
+msgid "Mr"
+msgstr "آقای"
+
+msgid "profile"
+msgstr "مشخصات"
+
+msgid "Cost"
+msgstr "هزینه"
+
+msgid "Visa Fee"
+msgstr "هزینه ویزا"
+
+msgid "Wheelchair Cost"
+msgstr "هزینه ویلچر"
+
+msgid "Reservation"
+msgstr "رزرو"
+
+msgid "Services"
+msgstr "خدمات"
+
+msgid "Visa Number - Tracking Code / Mobile Number"
+msgstr "شماره ویزا - کد رهگیری / شماره موبایل"
+
+msgid "Compliant"
+msgstr "مشایعت کننده"
+
+msgid "Welcoming"
+msgstr "استقبال کننده"
+
+msgid "Is someone as"
+msgstr "آیا شخصی به عنوان"
+
+msgid "Have a companion ?"
+msgstr "همراه دارید ؟"
+
+msgid "Add"
+msgstr "اضافه کردن"
+
+msgid "Remove"
+msgstr "حذف کردن"
+
+msgid "Do you need airport transfer services ?"
+msgstr "آیا خدمات ترانسفر فرودگاهی نیاز دارید ؟"
+
+msgid "Car model"
+msgstr "مدل خودرو"
+
+msgid "Enter your address"
+msgstr "آدرس خود را وارد کنید"
+
+msgid "Hours of attendance"
+msgstr "ساعت حضور"
+
+msgid "Want to use other services ?"
+msgstr "آیا مایل به استفاده از سایر خدمات هستید ؟"
+
+msgid "Phone Coordinate"
+msgstr "تلفن هماهنگی"
+
+msgid "Suites"
+msgstr "سوئیت"
+
+msgid "Enter more details about your requested service"
+msgstr "توضیحات بیشتر در مورد سرویس درخواستی خود را وارد کنید"
+
+msgid "Information required to send a receipt"
+msgstr "اطلاعات مورد نیاز برای ارسال رسید"
+
+msgid "Please give the passenger's visa number"
+msgstr "لطفا شماره ویزا مسافر"
+
+msgid "Enter"
+msgstr "را وارد کنید"
+
+msgid "please enter your Email"
+msgstr "لطفا ایمیل خود را وارد کنید"
+
+msgid "Please enter your mobile"
+msgstr "لطفا موبایل خود را وارد کنید"
+
+msgid "Please enter flight number"
+msgstr "لطفا شماره پرواز را وارد کنید"
+
+msgid "Please enter Airline"
+msgstr "لطفا ایرلاین را وارد کنید"
+
+msgid "Please enter the source"
+msgstr "لطفا مبداء را وارد کنید"
+
+msgid "Please enter the flight time"
+msgstr "لطفا ساعت پرواز را وارد کنید"
+
+msgid "Please enter flight date"
+msgstr "لطفا تاریخ پرواز را وارد کنید"
+
+msgid "Please enter the selected airport transfer hour(s)"
+msgstr "لطفا ساعت(های) ترانسفر فرودگاهی انتخابی را وارد کنید"
+
+msgid "Please enter the selected airport transfer address(s)"
+msgstr "لطفا آدرس(های) ترانسفر فرودگاهی انتخابی را وارد کنید"
+
+msgid "Please enter the selected airport transfer phone(s)"
+msgstr "لطفا تلفن(های) ترانسفر فرودگاهی انتخابی را وارد کنید"
+
+msgid "coming back"
+msgstr "بازگشت"
+
+msgid "flight information"
+msgstr "اطلاعات پرواز"
+
+msgid "Traveler info"
+msgstr "اطلاعات مسافران"
+
+msgid "Negative"
+msgstr "خیر"
+
+msgid "the amount of"
+msgstr "مقدار"
+
+msgid "Information"
+msgstr "اطلاعات"
+
+msgid "Car name"
+msgstr "نام خودرو"
+
+msgid "total"
+msgstr "جمع کل"
+
+msgid "I accept the terms and conditions of reservation"
+msgstr "شرایط و قوانین رزرو را می پذیرم"
+
+msgid "online payment"
+msgstr "پرداخت آنلان"
+
+msgid "Buy tickets"
+msgstr "خرید بلیط"
+
+msgid "Are you sure about this reservation ?"
+msgstr "آیا از این رزرو مطمئن هستید ؟"
+
+msgid "Terms and Conditions of Purchase Airport Procedures"
+msgstr "قوانین و شرایط خرید تشریفات فرودگاهی"
+
+msgid "Reservation operation was successful"
+msgstr "عملیات رزرو با موفقیت انجام شد"
+
+msgid "The system is booking, your reservation may take more than 2 minutes. Please be patient"
+msgstr "سامانه در حال رزرو میباشد، ممکن است رزرو شما بیشتر از ۲ دقیقه زمان نیاز داشته باشد. لطفا شکیبا باشید"
+
+msgid "Refresh your page"
+msgstr "صفحه خود را رفرش کنید"
+
+msgid "reservation date"
+msgstr "تاریخ رزرو"
+
+msgid "Number of passengers"
+msgstr "تعداد مسافران"
+
+msgid "Check-in Date"
+msgstr "ورود"
+
+msgid "Check-out Date"
+msgstr "خروج"
+
+msgid "Enter the name or airport code"
+msgstr "نام یا کد فرودگاه را وارد نمایید"
+
+msgid "Date"
+msgstr "تاریخ"
+
+msgid "Error display"
+msgstr "نمایش خطا"
+
+msgid "entering the system"
+msgstr "ورود به سیستم"
+
+msgid "Create id"
+msgstr "ایجاد شناسه"
+
+msgid "User"
+msgstr "کاربر"
+
+msgid "Necessary"
+msgstr "الزامی"
+
+msgid "Enter the name, surname, mobile, or email of the user"
+msgstr "نام، نام خانوادگی، موبایل یا ایمیل کاربر را وارد کنید"
+
+msgid "Amount to Rials"
+msgstr "مبلغ به ریال"
+
+msgid "Expiration time"
+msgstr "ساعت انقضا"
+
+msgid "Pay attention"
+msgstr "پرداخت بابت"
+
+msgid "description"
+msgstr "شرح"
+
+msgid "Record"
+msgstr "ثبت"
+
+msgid "Enter the contract number"
+msgstr "شماره قرارداد را وارد کنید"
+
+msgid "Enter the user"
+msgstr "کاربر را وارد کنید"
+
+msgid "Enter the amount"
+msgstr "مبلغ را وارد کنید"
+
+msgid "Enter expiration time"
+msgstr "ساعت انقضا را وارد کنید"
+
+msgid "Enter the description"
+msgstr "شرح را وارد کنید"
+
+msgid "Identification error encountered. Please try again"
+msgstr "ثبت شناسه با خطا مواجه شد. لطفا مجددا تلاش کنید"
+
+msgid "Succeeded"
+msgstr "با موفقیت ایجاد شد"
+
+msgid "Enter the date of the move"
+msgstr "تاریخ حرکت را وارد کنید"
+
+msgid "Name of city or airport in English"
+msgstr "نام شهر یا فرودگاه به انگلیسی"
+
+msgid "Support Tel"
+msgstr "شماره پشتیبانی"
+
+msgid "Support Mobile"
+msgstr "شماره همراه"
+
+msgid "Username or password is wrong!"
+msgstr "نام کاربری یا رمز عبور اشتباه است!"
+
+msgid "select from last passengers"
+msgstr "انتخاب از مسافران قبلی"
+
+msgid "Discount Code"
+msgstr "کد تخفیف"
+
+msgid "Inquiry Code"
+msgstr "استعلام کد"
+
+msgid "Airplane"
+msgstr "هواپیما"
+
+msgid "Ship"
+msgstr "کشتی"
+
+msgid "We"
+msgstr "ما"
+
+msgid "You"
+msgstr "شما"
+
+msgid "Meal"
+msgstr "وعده"
+
+msgid "Breakfast"
+msgstr "صبحانه"
+
+msgid "Lunch"
+msgstr "ناهار"
+
+msgid "Dinner"
+msgstr "شام"
+
+msgid "Night"
+msgstr "شب"
+
+msgid "Stay"
+msgstr "اقامت"
+
+msgid "Stays"
+msgstr "اقامت‌ها"
+
+msgid "Row"
+msgstr "ردیف"
+
+msgid "Start"
+msgstr "شروع"
+
+msgid "End"
+msgstr "پایان"
+
+msgid "Validation Date"
+msgstr "تاریخ اعتبار"
+
+msgid "select"
+msgstr "انتخاب"
+
+msgid "Buy"
+msgstr "خرید"
+
+msgid "PLace"
+msgstr "مکان"
+
+msgid "Type of residence"
+msgstr "نوع اقامت"
+
+msgid "Necessary Tools"
+msgstr "لوازم ضروری"
+
+msgid "Suggested Tools"
+msgstr "لوازم پیشنهادی"
+
+msgid "Tour Depart Place"
+msgstr "محل حرکت تور"
+
+msgid "Hotelpackage Depart Place"
+msgstr "محل حرکت پکیج اقامت"
+
+msgid "Cheapest Date"
+msgstr "تاریخ ارزان‌ترین قیمت"
+
+msgid "light"
+msgstr "سبک"
+
+msgid "normal"
+msgstr "متوسط"
+
+msgid "hard"
+msgstr "سخت"
+
+msgid "weighty"
+msgstr "سنگین"
+
+msgid "super-weighty"
+msgstr "فوق سنگین"
+
+msgid "Leave Duration"
+msgstr "مدت مرخصی"
+
+msgid "ticket-go"
+msgstr "بلیط رفت و برگشت"
+
+msgid "transfer-to-airport"
+msgstr "ترانسفر به فرودگاه"
+
+msgid "transfer-to-hotel"
+msgstr "ترانسفر به هتل"
+
+msgid "tourist-visa"
+msgstr "ویزای توریستی"
+
+msgid "simcart"
+msgstr "سیم‌کارت"
+
+msgid "persian-tour-leader"
+msgstr "تور لیدر فارسی زبان"
+
+msgid "transfer-in-city"
+msgstr "ترانسفر بین شهری"
+
+msgid "ticket-city"
+msgstr "بلیط پرواز بین شهری"
+
+msgid "hotel-eghamat"
+msgstr "اقامت در هتل"
+
+msgid "food"
+msgstr "وعده غذایی"
+
+msgid "city-gasht"
+msgstr "گشت شهری"
+
+msgid "travel-insurance"
+msgstr "بیمه مسافرتی"
+
+msgid "water-park"
+msgstr "پارک آبی"
+
+msgid "special-trasfer"
+msgstr "ترانسفر اختصاصی"
+
+msgid "game-ticket"
+msgstr "بلیط بازی"
+
+msgid "fan-id"
+msgstr "Fan ID"
+
+msgid "Reception Table"
+msgstr "جدول پذیرایی"
+
+msgid "Nature"
+msgstr "طبیعت"
+
+msgid "Station"
+msgstr "اقامتگاه"
+
+msgid "Local-station"
+msgstr "اقامتگاه بومگردی"
+
+msgid "Local-home"
+msgstr "خانه محلی"
+
+msgid "Stay Floors"
+msgstr "طبقات اقامتگاه"
+
+msgid "Stay Built Year"
+msgstr "سال ساخت"
+
+msgid "Floors"
+msgstr "طبقه"
+
+msgid "Stay Rules"
+msgstr "قوانین اقامتگاه"
+
+msgid "Room Check-In"
+msgstr "ورود اتاق"
+
+msgid "Room Check-Out"
+msgstr "تخلیه اتاق"
+
+msgid "About Stay"
+msgstr "درباره اقامتگاه"
+
+msgid "Stay Position"
+msgstr "موقعیت اقامتگاه"
+
+msgid "District"
+msgstr "منطقه"
+
+msgid "Districts"
+msgstr "مناطق"
+
+msgid "Hotel Distance To Bold Points"
+msgstr "فاصله هتل تا مکان های مهم شهر"
+
+msgid "Blog"
+msgstr "بلاگ"
+
+msgid "Reading Duration"
+msgstr "زمان مورد نیاز برای مطالعه"
+
+msgid "More Items"
+msgstr "موارد بیشتر"
+
+msgid "Items for"
+msgstr "مطالب مربوط به موضوع"
+
+msgid "Select articles category"
+msgstr "انتخاب دسته بندی موضوعات"
+
+msgid "Unique Information"
+msgstr "مشخصات شاخص"
+
+msgid "About Location"
+msgstr "درباره دیدنی"
+
+msgid "Enterance Price"
+msgstr "هزینه ورودی"
+
+msgid "Visit Average Time"
+msgstr "میانگین زمان بازدید"
+
+msgid "Visit Hours"
+msgstr "ساعات بازدید"
+
+msgid "About Country"
+msgstr "درباره کشور"
+
+msgid "About City"
+msgstr "درباره شهر"
+
+msgid "Position"
+msgstr "موقعیت"
+
+msgid "Places"
+msgstr "مکان‌ها"
+
+msgid "Visa Information"
+msgstr "اطلاعات ویزا"

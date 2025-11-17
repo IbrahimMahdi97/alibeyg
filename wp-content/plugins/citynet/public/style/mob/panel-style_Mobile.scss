@@ -1,0 +1,2612 @@
+$primary_color_fly: #000;
+$secondary_color_fly: #dda627;
+$light_text_fly: #aeaeae;
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+  padding: 0px;
+}
+
+.adpmain {
+  table {
+    border-collapse: separate !important;
+  }
+}
+
+.Vue-Toastification__container.bottom-right .Vue-Toastification__toast,
+.Vue-Toastification__container.top-right .Vue-Toastification__toast {
+  margin-left: auto !important;
+  margin-right: unset !important;
+}
+
+@media (max-width: 1024px) {
+  .v-menu__content:not(.passenger__birthdate):not(.currencies-menu):not(
+      .search-by-menu
+    ).theme--light.menuable__content__active {
+    min-width: 95% !important;
+  }
+
+  .adpmain.persian .navFwd a:nth-child(2),
+  .adpmain.persian .navBack a:nth-child(2) {
+    top: 8% !important;
+  }
+
+  .adpmain {
+    table {
+      padding: 0px 5px !important;
+      //  border-collapse:  !important;
+      td > .weekday {
+        width: auto;
+        height: 45px !important;
+      }
+    }
+  }
+}
+
+.citynet-app#app {
+  background: #fff;
+
+  // font-size: 66.66666% !important;
+  label {
+    margin-bottom: 0px !important;
+  }
+
+  box-sizing: border-box;
+
+  .v-application--wrap {
+    min-height: fit-content !important;
+  }
+  &.citynet_vidagasht,
+  &.citynet_vidagashtnew {
+    &.theme--light.v-application {
+      background: transparent;
+    }
+    .v-card {
+      background-color: transparent;
+    }
+    .v-dialog__content--active {
+      background: #fff;
+    }
+  }
+
+  &.citynet_behshadgasht,
+  &.citynet_amirtravel {
+    background: unset !important;
+  }
+  #inspire {
+    margin-top: 0px !important;
+
+    .v-application--wrap > nav {
+      z-index: 100;
+    }
+
+    > div > header {
+      z-index: 102;
+    }
+  }
+
+  .col,
+  .col-1,
+  .col-10,
+  .col-11,
+  .col-12,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-auto,
+  .col-lg,
+  .col-lg-1,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-auto,
+  .col-md,
+  .col-md-1,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-auto,
+  .col-sm,
+  .col-sm-1,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-auto,
+  .col-xl,
+  .col-xl-1,
+  .col-xl-10,
+  .col-xl-11,
+  .col-xl-12,
+  .col-xl-2,
+  .col-xl-3,
+  .col-xl-4,
+  .col-xl-5,
+  .col-xl-6,
+  .col-xl-7,
+  .col-xl-8,
+  .col-xl-9,
+  .col-xl-auto {
+    padding: 12px;
+    position: relative;
+    min-height: unset !important;
+  }
+  i {
+    margin: 0 !important;
+  }
+
+  .panelHeader {
+    hr {
+      margin: 0px !important;
+    }
+
+    position: fixed;
+    top: 0;
+    // right: 0;
+    place-self: center;
+
+    &_defaultDrawer {
+      z-index: 3000 !important;
+    }
+
+    &.default {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      background-color: transparent;
+      margin: 0;
+      padding-right: 20px;
+
+      @media (min-width: 1200px) {
+      }
+
+      .panelHeader__span--userName {
+        font-size: 13px !important;
+        margin: 10px;
+        padding: 7px 10px;
+        border-radius: 10%;
+
+        &:hover:not(:first-child) {
+          font-size: 13px !important;
+          background-color: rgb(239, 239, 239);
+        }
+      }
+
+      .panelHeader__button {
+        &--signUp,
+        &--signIn,
+        &--panelAdmin,
+        &--trackOrder {
+          font-size: 13px !important;
+          margin: 10px;
+          margin-right: 0px;
+          padding: 7px 10px;
+          border-radius: 10%;
+
+          &:hover:not(:first-child) {
+            font-size: 13px !important;
+            background-color: rgb(239, 239, 239);
+          }
+        }
+
+        &--signUp {
+          background-color: var(--v-buttons-base);
+          color: white;
+
+          &:hover {
+            font-size: 13px !important;
+            opacity: 0.8;
+          }
+        }
+
+        &--exit {
+          background: transparent !important;
+        }
+      }
+    }
+
+    // &.theme1 {
+    // }
+  }
+
+  .research-class {
+    &.default {
+      .v-card.v-sheet.theme--light {
+        box-shadow: 0 6px 31px -12px rgba(0, 0, 0, 0.21);
+        border-radius: 10px;
+      }
+
+      .flight-panel__radiogroup {
+        margin-top: 10px;
+
+        & > div > div > div > div {
+          display: flex;
+          flex-direction: row;
+          font-size: 12px;
+        }
+      }
+
+      .flight-panel__select-container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .flight-panel__checkboxes {
+        width: 30%;
+      }
+    }
+
+    .flight-panel__radio {
+      &--oneway,
+      &--twoway {
+        & > div > label {
+          margin: 0;
+        }
+      }
+    }
+
+    .flight-panel__dynamic-component {
+      font-size: 14px;
+
+      // .oneway-form>form {
+      //     @media (min-width: 1024px) {
+      //         display: grid;
+      //         grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr [row2-end];
+      //         grid-template-columns: minmax(37.5%, 1.5fr) 0.5px minmax(37.5%, 1.5fr) minmax(25%, 1fr);
+      //         grid-template-areas: "origin swapbutton destination depdatepicker"". . passengers search";
+
+      //         &>div{
+      //             padding-top: 0px;
+      //             padding-bottom: 0px;
+      //             padding-left: 10px;
+      //             padding-right: 0px;
+      //         }
+      //         &>.oneway-form__swap-button{
+      //            justify-self: center;
+      //         }
+      //     }
+
+      //     // padding: 0em 1em;
+      //     display: grid;
+      //     grid-template-columns: repeat(1, minmax(60px, 1fr));
+      //     grid-auto-rows: minmax(70px, auto);
+      //     grid-template-areas: "origin""swapbutton""destination""depdatepicker""passengers""search";
+      //     // >*:not(.oneway-form__swap-button) {
+      //     //     padding: 0px .5em;
+      //     // }
+
+      //     .oneway-form {
+      //         font-size: 14px !important;
+
+      //         &__input {
+      //             & legend{
+      //                 direction: rtl !important;
+      //             }
+      //             &--origin {
+      //                 grid-area: origin;
+
+      //                 .v-autocomplete__content{
+      //                     left: 10px !important;
+      //                 }
+      //             }
+
+      //             &--destination {
+      //                 @media (max-width: 1024px) {
+      //                     // padding-top: 10px;
+      //                 }
+
+      //                 grid-area: destination;
+      //                 .v-autocomplete__content{
+      //                     left: 10px !important;
+      //                 }
+      //             }
+      //         }
+
+      //         &__swap-button {
+      //             display: flex;
+      //             justify-content: center;
+      //             align-items: center;
+      //             grid-area: swapbutton;
+      //             align-self: start;
+      //             //margin-top: 9px;
+
+      //             cursor: pointer;
+
+      //             >i {
+      //                 @media (max-width: 1024px) {
+      //                     margin-top: 8px;
+      //                     transform: rotate(90deg);
+      //                 }
+      //                 margin-top: 8px;
+      //                 padding: 6px;
+      //                 z-index: 10;
+      //                 border: 1px solid rgba(0, 0, 0, 0.38);
+      //                 background: white;
+      //                 border-radius: 50%;
+      //                 &:hover{
+      //                     background: #e6e6e6;;
+      //                 }
+      //             }
+      //         }
+
+      //         &__textfield--depdatepicker {
+      //             grid-area: depdatepicker;
+      //             input{
+      //                 color: rgba($color: #000000, $alpha: 0.6) !important;
+      //                 font-size: 14px;
+      //                 font-family: iranyekan !important;
+      //             }
+      //         }
+
+      //         &__menu--passengers {
+      //             @media (min-width: 1024px) {
+      //                 display: grid;
+      //                 grid-area: passengers;
+      //                 grid-template-rows: 1fr;
+      //                 grid-template-columns: repeat(3, 1fr [coloumn-passengers]);
+      //                 grid-template-areas: ". passenger_input passenger_input";
+
+      //                 .v-input {
+      //                     grid-area: passenger_input;
+      //                 }
+      //                 input{
+      //                     font-size: 12px !important;
+      //                     color: rgba($color: #000000, $alpha: 0.6) !important;
+      //                     font-family: iranyekan !important;
+      //                 }
+      //                 .v-menu__content.theme--light.menuable__content__active{
+      //                     border-bottom-left-radius: 10px;
+      //                     border-bottom-right-radius: 10px;
+      //                 }
+      //                 .v-list-item{
+      //                     justify-content: space-between;
+      //                     min-height: 35px;
+      //                     &::after{
+      //                         display: none;
+      //                     }
+      //                 }
+
+      //             }
+      //         }
+
+      //         &__btn--search {
+      //             grid-area: search;
+      //             > button{
+      //                 font-size: 16px;
+      //                 box-shadow: -1px 4px 11px -3px #5f5f5f;
+      //             }
+      //         }
+      //     }
+      // }
+      .oneway-form > form {
+        @media (max-width: 1024px) {
+          .v-input__slot,
+          .v-text-field__details {
+            margin-bottom: 0px;
+          }
+        }
+
+        position: relative;
+        display: grid;
+        grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr [row2-end];
+        grid-template-columns: repeat(2, minmax(25%, 1fr)) 0.5px repeat(
+            2,
+            minmax(25%, 1fr)
+          );
+        grid-template-areas: "origin origin button destination destination" "depdate retdate . passengers search";
+
+        & > div {
+          padding-top: 0px;
+          padding-bottom: 0px;
+          padding-left: 10px;
+          padding-right: 0px;
+        }
+
+        & > .oneway-form__swap-button {
+          justify-self: center;
+          cursor: pointer;
+        }
+
+        & > .oneway-form__textfield--depdatepicker {
+          // padding-left: 0em;
+          // padding-right: 0em;
+          input {
+            color: rgba($color: #000000, $alpha: 0.6) !important;
+            font-size: 14px;
+            font-family: iranyekan !important;
+          }
+        }
+
+        & > .oneway-form__textfield--retdatepicker {
+          // padding-left: 1em;
+          // padding-right: 0em;
+          input {
+            color: rgba($color: #000000, $alpha: 0.6) !important;
+            font-size: 14px;
+            font-family: iranyekan !important;
+          }
+        }
+
+        @media (max-width: 1024px) {
+          grid-template-columns: repeat(1, minmax(60px, 1fr));
+          grid-auto-rows: minmax(70px, auto);
+          grid-template-areas: "origin " "destination" "depdate" "retdate" "passengers" "search";
+
+          & > div:not(.oneway-form__swap-button) {
+            padding: 0 10px;
+            cursor: pointer;
+          }
+        }
+
+        .oneway-form > .v-input--is-disabled {
+          .v-input__slot > fieldset {
+            border: 1px solid #cecece !important;
+            border-radius: 8px;
+          }
+        }
+
+        .oneway-form {
+          & .v-input__slot > fieldset {
+            border: 1px solid #616161;
+            border-radius: 8px;
+          }
+
+          .v-btn {
+            border-radius: 8px;
+          }
+
+          &__input {
+            &--origin {
+              grid-area: origin;
+
+              .v-autocomplete__content {
+                left: 10px !important;
+              }
+            }
+
+            &--destination {
+              grid-area: destination;
+
+              .v-autocomplete__content {
+                left: 10px !important;
+              }
+            }
+          }
+
+          &__menu--passengers {
+            grid-area: passengers;
+
+            input {
+              font-size: 12px !important;
+              color: rgba($color: #000000, $alpha: 0.6) !important;
+              font-family: iranyekan !important;
+            }
+
+            .v-list-item {
+              justify-content: space-between;
+
+              &::after {
+                display: none;
+              }
+            }
+          }
+
+          &__textfield {
+            &--depdatepicker {
+              grid-area: depdate;
+            }
+
+            &--retdatepicker {
+              grid-area: retdate;
+            }
+          }
+
+          &__btn--search {
+            grid-area: search;
+
+            > button {
+              font-size: 16px;
+              box-shadow: -1px 4px 11px -3px #5f5f5f;
+            }
+          }
+
+          &__swap-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: start;
+            grid-area: button;
+            cursor: pointer;
+
+            @media (max-width: 1024px) {
+              position: absolute;
+              top: 9%;
+            }
+
+            > i {
+              z-index: 10;
+              background-color: white;
+              border: solid 1px #616161;
+              border-radius: 50%;
+              padding: 6px;
+              margin-top: 8px;
+
+              @media (max-width: 1024px) {
+                transform: rotate(90deg);
+              }
+
+              &:hover {
+                background: #e6e6e6;
+              }
+            }
+          }
+        }
+      }
+
+      .twoway-form > .v-input--is-disabled {
+        .v-input__slot > fieldset {
+          border: 1px solid #cecece !important;
+          border-radius: 8px;
+        }
+      }
+
+      .twoway-form > form {
+        & .v-input__slot > fieldset {
+          border: 1px solid #616161;
+          border-radius: 8px;
+        }
+
+        .v-btn {
+          border-radius: 8px;
+        }
+
+        @media (max-width: 1024px) {
+          .v-input__slot,
+          .v-text-field__details {
+            margin-bottom: 0px;
+          }
+        }
+
+        position: relative;
+        display: grid;
+        grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr [row2-end];
+        grid-template-columns: repeat(2, minmax(25%, 1fr)) 0.5px repeat(
+            2,
+            minmax(25%, 1fr)
+          );
+        grid-template-areas: "origin origin button destination destination" "depdate retdate . passengers search";
+
+        & > div {
+          padding-top: 0px;
+          padding-bottom: 0px;
+          padding-left: 10px;
+          padding-right: 0px;
+        }
+
+        & > .twoway-form__swap-button {
+          justify-self: center;
+          cursor: pointer;
+        }
+
+        & > .twoway-form__textfield--depdatepicker {
+          // padding-left: 0em;
+          // padding-right: 0em;
+          input {
+            color: rgba($color: #000000, $alpha: 0.6) !important;
+            font-size: 14px;
+            font-family: iranyekan !important;
+          }
+        }
+
+        & > .twoway-form__textfield--retdatepicker {
+          // padding-left: 1em;
+          // padding-right: 0em;
+          input {
+            color: rgba($color: #000000, $alpha: 0.6) !important;
+            font-size: 14px;
+            font-family: iranyekan !important;
+          }
+        }
+
+        & > div:not(.twoway-form__swap-button) {
+          padding: 0 10px;
+          cursor: pointer;
+        }
+      }
+
+      .twoway-form {
+        &__input {
+          &--origin {
+            grid-area: origin;
+
+            .v-autocomplete__content {
+              left: 10px !important;
+            }
+          }
+
+          &--destination {
+            grid-area: destination;
+
+            .v-autocomplete__content {
+              left: 10px !important;
+            }
+          }
+        }
+
+        &__menu--passengers {
+          grid-area: passengers;
+
+          input {
+            font-size: 12px !important;
+            color: rgba($color: #000000, $alpha: 0.6) !important;
+            font-family: iranyekan !important;
+          }
+
+          .v-list-item {
+            justify-content: space-between;
+
+            &::after {
+              display: none;
+            }
+          }
+        }
+
+        &__textfield {
+          &--depdatepicker {
+            grid-area: depdate;
+          }
+
+          &--retdatepicker {
+            grid-area: retdate;
+          }
+        }
+
+        &__btn--search {
+          grid-area: search;
+
+          > button {
+            font-size: 16px;
+            box-shadow: -1px 4px 11px -3px #5f5f5f;
+          }
+        }
+
+        &__swap-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-self: start;
+          grid-area: button;
+          cursor: pointer;
+
+          @media (max-width: 1024px) {
+            position: absolute;
+            top: 9%;
+          }
+
+          > i {
+            z-index: 10;
+            background-color: white;
+            border: solid 1px #616161;
+            border-radius: 50%;
+            padding: 6px;
+            margin-top: 8px;
+
+            @media (max-width: 1024px) {
+              transform: rotate(90deg);
+            }
+
+            &:hover {
+              background: #e6e6e6;
+            }
+          }
+        }
+      }
+    }
+
+    & .v-input__slot > fieldset {
+      border: 1px solid #616161;
+      border-radius: 8px;
+    }
+
+    .v-btn {
+      border-radius: 8px;
+    }
+
+    & > div {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 10px;
+      padding-right: 0px;
+    }
+  }
+}
+
+.main-homepage-class {
+  &.default {
+    width: 100%;
+    margin: auto;
+
+    .v-card.v-sheet.theme--light {
+      box-shadow: 0 6px 31px -12px rgba(0, 0, 0, 0.21);
+      border-radius: 20px;
+    }
+
+    .v-tabs-bar {
+      height: 20%;
+      border-radius: 20px;
+    }
+
+    // >div .v-tab {
+    //   padding: 10px 0 !important;
+    //   font-size: 12px;
+    //   letter-spacing: 0px !important;
+    //   max-width: 15%;
+
+    //   @media (max-width: 960px) {
+    //     max-width: 14%;
+    //     min-width: 14;
+    //   }
+
+    //   @media (max-width: 600px) {
+    //     max-width: 12%;
+    //     min-width: 12%;
+    //     margin-right: 8px !important;
+    //     margin-left: 8px !important;
+    //   }
+
+    //   >i {
+    //     margin-left: 0 !important;
+    //     margin-right: 0 !important;
+    //   }
+
+    //   >svg {
+    //     min-height: 24px;
+    //     max-width: 28px;
+    //   }
+
+    //   &--active {
+    //     border-bottom: 2px solid var(--v-primary-base) !important;
+
+    //     i {
+    //       color: var(--v-primary-base) !important;
+    //     }
+    //   }
+    // }
+
+    .flight-panel__radiogroup,
+    .hotel-panel__radiogroup {
+      margin-top: 10px;
+
+      & > div > div > div > div {
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+      }
+    }
+
+    .flight-panel__radio {
+      &--oneway,
+      &--twoway {
+        & > div > label {
+          margin: 0;
+        }
+      }
+    }
+
+    .hotel-panel__radio {
+      &--domestic,
+      &--foreign {
+        & > div > label {
+          margin: 0;
+        }
+      }
+    }
+
+    .flight-panel__select-container {
+      display: flex !important;
+      justify-content: space-between;
+    }
+
+    .flight-panel__checkboxes {
+      width: 50%;
+
+      .v-input--checkbox {
+        align-items: center;
+      }
+    }
+
+    .flight-panel__dynamic-component {
+      font-size: 14px;
+
+      // .oneway-form>form {
+      //     @media (min-width: 1024px) {
+      //         display: grid;
+      //         grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr [row2-end];
+      //         grid-template-columns: minmax(200px, 1.5fr) 0.5px minmax(200px, 1.5fr) minmax(200px, 1fr);
+      //         grid-template-areas: "origin swapbutton destination depdatepicker"". . passengers search";
+
+      //         &>div{
+      //             padding-top: 0px;
+      //             padding-bottom: 0px;
+      //             padding-left: 10px;
+      //             padding-right: 0px;
+      //         }
+      //         &>.oneway-form__swap-button{
+      //            justify-self: center;
+      //         }
+      //     }
+
+      //     // padding: 0em 1em;
+      //     display: grid;
+      //     grid-template-columns: repeat(1, minmax(60px, 1fr));
+      //     grid-auto-rows: minmax(70px, auto);
+      //     grid-template-areas: "origin""swapbutton""destination""depdatepicker""passengers""search";
+
+      //     // >*:not(.oneway-form__swap-button) {
+      //     //     padding: 0px .5em;
+      //     // }
+
+      //     .oneway-form {
+      //         font-size: 14px !important;
+
+      //         &__input {
+
+      //             &--origin {
+      //                 grid-area: origin;
+      //                 input{
+      //                     padding: 0px 15px;
+      //                 }
+      //                 .v-autocomplete__content{
+      //                     left: 10px !important;
+      //                 }
+      //             }
+
+      //             &--destination {
+      //                 @media (max-width: 1024px) {
+      //                     // padding-top: 10px;
+      //                 }
+
+      //                 grid-area: destination;
+      //                 input{
+      //                     padding: 0px 15px;
+      //                 }
+      //                 .v-autocomplete__content{
+      //                     left: 10px !important;
+      //                 }
+      //             }
+      //         }
+
+      //         &__swap-button {
+      //             display: flex;
+      //             justify-content: center;
+      //             align-items: center;
+      //             grid-area: swapbutton;
+      //             align-self: start;
+      //             //margin-top: 9px;
+
+      //             cursor: pointer;
+
+      //             >i {
+      //                 @media (max-width: 1024px) {
+      //                     margin-top: 8px;
+      //                     transform: rotate(90deg);
+      //                 }
+      //                 margin-top: 8px;
+      //                 padding: 6px;
+      //                 z-index: 10;
+      //                 border: 1px solid rgba(0, 0, 0, 0.38);
+      //                 background: white;
+      //                 border-radius: 50%;
+      //                 &:hover{
+      //                     background: #e6e6e6;;
+      //                 }
+      //             }
+      //         }
+
+      //         &__textfield--depdatepicker {
+      //             grid-area: depdatepicker;
+      //             input{
+      //                 color: rgba($color: #000000, $alpha: 0.6) !important;
+      //                 font-size: 14px;
+      //                 font-family: iranyekan !important;
+      //             }
+      //         }
+
+      //         &__menu--passengers {
+      //             @media (min-width: 1024px) {
+      //                 display: grid;
+      //                 grid-area: passengers;
+      //                 grid-template-rows: 1fr;
+      //                 grid-template-columns: repeat(3, 1fr [coloumn-passengers]);
+      //                 grid-template-areas: ". passenger_input passenger_input";
+
+      //                 .v-input {
+      //                     grid-area: passenger_input;
+      //                 }
+      //                 input{
+      //                     font-size: 12px !important;
+      //                     color: rgba($color: #000000, $alpha: 0.6) !important;
+      //                     font-family: iranyekan !important;
+      //                 }
+      //                 .v-menu__content.theme--light.menuable__content__active{
+      //                     border-bottom-left-radius: 10px;
+      //                     border-bottom-right-radius: 10px;
+      //                 }
+      //                 .v-list-item{
+      //                     justify-content: space-between;
+      //                     min-height: 35px;
+      //                     &::after{
+      //                         display: none;
+      //                     }
+      //                     &:nth-child(3){
+      //                         margin-bottom: 10px;
+      //                     }
+      //                 }
+
+      //                 .v-menu__content{
+      //                     & > div{
+      //                         & .homepage-icon-color:not(.v-icon--disabled){
+      //                             color: orangered !important;
+      //                         }
+      //                     }
+      //                 }
+      //             }
+      //         }
+
+      //         &__btn--search {
+      //             grid-area: search;
+      //             > button{
+      //                 font-size: 16px;
+      //                 box-shadow: -1px 4px 11px -3px #5f5f5f;
+      //             }
+      //         }
+      //     }
+      // }
+
+      .v-input--is-disabled {
+        .v-input__slot > fieldset {
+          border: 1px solid #cecece !important;
+          border-radius: 8px;
+        }
+      }
+    }
+
+    .hotel-panel__dynamic-component {
+      font-size: 14px;
+
+      .domestic-form > form {
+        @media (min-width: 1024px) {
+          display: grid;
+          grid-template-columns: minmax(250px, 2fr) repeat(
+              2,
+              minmax(250px, 1fr)
+            );
+          grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr [row2-end];
+          grid-template-areas: "hotel checkin checkout" ". guests search";
+          //grid-template-areas: "checkout checkin chekin""checkin checkin checkin";
+
+          & > div {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+            padding-right: 0px;
+          }
+        }
+      }
+
+      // >*:not(.oneway-form__swap-button) {
+      //     padding: 0px .5em;
+      // }
+
+      .domestic-form {
+        font-size: 14px !important;
+
+        &__input {
+          &--hotel {
+            grid-area: hotel;
+
+            .v-autocomplete__content {
+              left: 10px !important;
+            }
+          }
+        }
+
+        &__textfield--checkinDatepicker {
+          grid-area: checkin;
+
+          input {
+            color: rgba($color: #000000, $alpha: 0.6) !important;
+            font-size: 14px;
+            font-family: iranyekan !important;
+          }
+          .pdp.persian-input input[name="pdpInput"] {
+            font-family: "YekanBakhFaNum" !important;
+          }
+        }
+
+        &__textfield--checkoutDatepicker {
+          grid-area: checkout;
+
+          input {
+            color: rgba($color: #000000, $alpha: 0.6) !important;
+            font-size: 14px;
+            // font-family: iranyekan !important;
+          }
+        }
+
+        &__menu--guests {
+          @media (min-width: 1024px) {
+            grid-area: guests;
+
+            .v-input {
+              grid-area: guest_input;
+            }
+
+            input {
+              font-size: 12px !important;
+              color: rgba($color: #000000, $alpha: 0.6) !important;
+              font-family: iranyekan !important;
+            }
+
+            .v-menu__content.theme--light.menuable__content__active {
+              border-bottom-left-radius: 10px;
+              border-bottom-right-radius: 10px;
+            }
+
+            .v-list-item {
+              justify-content: space-between;
+              min-height: 35px;
+
+              &::after {
+                display: none;
+              }
+
+              &:nth-child(3) {
+                margin-bottom: 10px;
+              }
+            }
+
+            .v-menu__content {
+              & > div {
+                & > button {
+                  border: 1.5px solid rgb(46, 196, 182) !important;
+                  color: rgb(46, 196, 182) !important;
+                  background-color: white !important;
+                  box-shadow: none !important;
+                  width: 90%;
+                  margin: 0.4rem 0;
+                }
+              }
+            }
+          }
+        }
+
+        &__btn--search {
+          grid-area: search;
+
+          > button {
+            font-size: 16px;
+            box-shadow: -1px 4px 11px -3px #5f5f5f;
+          }
+        }
+      }
+
+      .foreign-form > form {
+        position: relative;
+        display: grid;
+        grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr [row2-end];
+        grid-template-columns: repeat(4, minmax(250px, 1fr));
+        grid-template-areas: "hotel hotel checkin checkout" "guests nationality country search";
+
+        & > div {
+          padding-top: 0px;
+          padding-bottom: 0px;
+          padding-left: 10px;
+          padding-right: 0px;
+        }
+
+        & > .foreign-form__textfield--checkinDatepicker {
+          // padding-left: 0em;
+          // padding-right: 0em;
+          input {
+            color: rgba($color: #000000, $alpha: 0.6) !important;
+            font-size: 14px;
+            font-family: iranyekan !important;
+          }
+        }
+
+        & > .foreign-form__textfield--checkoutDatepicker {
+          // padding-left: 1em;
+          // padding-right: 0em;
+          input {
+            color: rgba($color: #000000, $alpha: 0.6) !important;
+            font-size: 14px;
+            font-family: iranyekan !important;
+          }
+        }
+
+        @media (max-width: 1024px) {
+          grid-template-columns: repeat(1, minmax(60px, 1fr));
+          grid-auto-rows: minmax(70px, auto);
+          grid-template-areas: "hotel" "checkin" "checkout" "guests" "nationality" "country" "search";
+        }
+
+        .foreign-form {
+          &__input {
+            &--hotel {
+              grid-area: hotel;
+
+              .v-autocomplete__content {
+                left: 10px !important;
+              }
+            }
+          }
+
+          &__menu--guests {
+            grid-area: guests;
+
+            input {
+              font-size: 12px !important;
+              color: rgba($color: #000000, $alpha: 0.6) !important;
+              font-family: iranyekan !important;
+            }
+
+            .v-list-item {
+              justify-content: space-between;
+
+              &::after {
+                display: none;
+              }
+
+              &:nth-child(3) {
+                margin-bottom: 10px;
+              }
+            }
+
+            .v-menu__content {
+              & > div {
+                & > button {
+                  border: 1.5px solid rgb(46, 196, 182) !important;
+                  color: rgb(46, 196, 182) !important;
+                  background-color: white !important;
+                  box-shadow: none !important;
+                  width: 90%;
+                  margin: 0.4rem 0;
+                }
+              }
+            }
+          }
+
+          &__menu--country {
+            grid-area: country;
+
+            input {
+              font-size: 12px !important;
+              color: rgba($color: #000000, $alpha: 0.6) !important;
+              font-family: iranyekan !important;
+            }
+
+            .v-list-item {
+              justify-content: space-between;
+
+              &::after {
+                display: none;
+              }
+            }
+          }
+
+          &__menu--nationality {
+            grid-area: nationality;
+
+            input {
+              font-size: 12px !important;
+              color: rgba($color: #000000, $alpha: 0.6) !important;
+              font-family: iranyekan !important;
+            }
+
+            .v-list-item {
+              justify-content: space-between;
+
+              &::after {
+                display: none;
+              }
+            }
+          }
+
+          &__textfield {
+            &--checkinDatepicker {
+              grid-area: checkin;
+            }
+
+            &--checkoutDatepicker {
+              grid-area: checkout;
+            }
+          }
+
+          &__btn--search {
+            grid-area: search;
+
+            > button {
+              font-size: 16px;
+              box-shadow: -1px 4px 11px -3px #5f5f5f;
+            }
+          }
+        }
+      }
+    }
+
+    .v-divider {
+      max-width: 96%;
+      margin: auto !important;
+    }
+  }
+  &.theme4 {
+    width: 100%;
+    margin: auto;
+    .tabsInMobile {
+      .v-tabs-bar__content .v-tab:not(.v-tab--active) {
+        background: rgba(255, 255, 255, 0.5);
+      }
+    }
+    .v-card.v-sheet.theme--light {
+      box-shadow: 0 6px 31px -12px rgba(0, 0, 0, 0.21);
+      border-radius: 20px;
+    }
+
+    .v-tabs-bar {
+      height: 20%;
+      border-radius: 20px;
+    }
+
+    .main-homepage-class__tabs {
+      > .v-tabs > .v-tabs-bar {
+        background: #ffffff26 !important;
+      }
+    }
+    .v-card:not(.defaultMenu) {
+      background: #ffffffba !important;
+    }
+    .flight-panel {
+      .v-input__slot {
+        background: #ffffff26 !important;
+      }
+      .v-autocomplete__content {
+        background: white;
+      }
+    }
+    // >div .v-tab {
+    //   padding: 10px 0 !important;
+    //   font-size: 12px;
+    //   letter-spacing: 0px !important;
+    //   max-width: 15%;
+
+    //   @media (max-width: 960px) {
+    //     max-width: 14%;
+    //     min-width: 14;
+    //   }
+
+    //   @media (max-width: 600px) {
+    //     max-width: 12%;
+    //     min-width: 12%;
+    //     margin-right: 8px !important;
+    //     margin-left: 8px !important;
+    //   }
+
+    //   >i {
+    //     margin-left: 0 !important;
+    //     margin-right: 0 !important;
+    //   }
+
+    //   >svg {
+    //     min-height: 24px;
+    //     max-width: 28px;
+    //   }
+
+    //   &--active {
+    //     border-bottom: 2px solid var(--v-primary-base) !important;
+
+    //     i {
+    //       color: var(--v-primary-base) !important;
+    //     }
+    //   }
+    // }
+
+    .flight-panel__radiogroup,
+    .hotel-panel__radiogroup {
+      margin-top: 10px;
+
+      .v-input__slot {
+        background-color: transparent !important;
+      }
+      & > div > div > div > div {
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+      }
+    }
+
+    .flight-panel__radio {
+      &--oneway,
+      &--twoway {
+        & > div > label {
+          margin: 0;
+        }
+      }
+    }
+
+    .hotel-panel__radio {
+      &--domestic,
+      &--foreign {
+        & > div > label {
+          margin: 0;
+        }
+      }
+    }
+
+    .flight-panel__select-container {
+      display: flex !important;
+      justify-content: space-between;
+    }
+
+    .flight-panel__checkboxes {
+      width: 50%;
+
+      .v-input--checkbox {
+        align-items: center;
+      }
+    }
+
+    .flight-panel__dynamic-component {
+      font-size: 14px;
+
+      // .oneway-form>form {
+      //     @media (min-width: 1024px) {
+      //         display: grid;
+      //         grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr [row2-end];
+      //         grid-template-columns: minmax(200px, 1.5fr) 0.5px minmax(200px, 1.5fr) minmax(200px, 1fr);
+      //         grid-template-areas: "origin swapbutton destination depdatepicker"". . passengers search";
+
+      //         &>div{
+      //             padding-top: 0px;
+      //             padding-bottom: 0px;
+      //             padding-left: 10px;
+      //             padding-right: 0px;
+      //         }
+      //         &>.oneway-form__swap-button{
+      //            justify-self: center;
+      //         }
+      //     }
+
+      //     // padding: 0em 1em;
+      //     display: grid;
+      //     grid-template-columns: repeat(1, minmax(60px, 1fr));
+      //     grid-auto-rows: minmax(70px, auto);
+      //     grid-template-areas: "origin""swapbutton""destination""depdatepicker""passengers""search";
+
+      //     // >*:not(.oneway-form__swap-button) {
+      //     //     padding: 0px .5em;
+      //     // }
+
+      //     .oneway-form {
+      //         font-size: 14px !important;
+
+      //         &__input {
+
+      //             &--origin {
+      //                 grid-area: origin;
+      //                 input{
+      //                     padding: 0px 15px;
+      //                 }
+      //                 .v-autocomplete__content{
+      //                     left: 10px !important;
+      //                 }
+      //             }
+
+      //             &--destination {
+      //                 @media (max-width: 1024px) {
+      //                     // padding-top: 10px;
+      //                 }
+
+      //                 grid-area: destination;
+      //                 input{
+      //                     padding: 0px 15px;
+      //                 }
+      //                 .v-autocomplete__content{
+      //                     left: 10px !important;
+      //                 }
+      //             }
+      //         }
+
+      //         &__swap-button {
+      //             display: flex;
+      //             justify-content: center;
+      //             align-items: center;
+      //             grid-area: swapbutton;
+      //             align-self: start;
+      //             //margin-top: 9px;
+
+      //             cursor: pointer;
+
+      //             >i {
+      //                 @media (max-width: 1024px) {
+      //                     margin-top: 8px;
+      //                     transform: rotate(90deg);
+      //                 }
+      //                 margin-top: 8px;
+      //                 padding: 6px;
+      //                 z-index: 10;
+      //                 border: 1px solid rgba(0, 0, 0, 0.38);
+      //                 background: white;
+      //                 border-radius: 50%;
+      //                 &:hover{
+      //                     background: #e6e6e6;;
+      //                 }
+      //             }
+      //         }
+
+      //         &__textfield--depdatepicker {
+      //             grid-area: depdatepicker;
+      //             input{
+      //                 color: rgba($color: #000000, $alpha: 0.6) !important;
+      //                 font-size: 14px;
+      //                 font-family: iranyekan !important;
+      //             }
+      //         }
+
+      //         &__menu--passengers {
+      //             @media (min-width: 1024px) {
+      //                 display: grid;
+      //                 grid-area: passengers;
+      //                 grid-template-rows: 1fr;
+      //                 grid-template-columns: repeat(3, 1fr [coloumn-passengers]);
+      //                 grid-template-areas: ". passenger_input passenger_input";
+
+      //                 .v-input {
+      //                     grid-area: passenger_input;
+      //                 }
+      //                 input{
+      //                     font-size: 12px !important;
+      //                     color: rgba($color: #000000, $alpha: 0.6) !important;
+      //                     font-family: iranyekan !important;
+      //                 }
+      //                 .v-menu__content.theme--light.menuable__content__active{
+      //                     border-bottom-left-radius: 10px;
+      //                     border-bottom-right-radius: 10px;
+      //                 }
+      //                 .v-list-item{
+      //                     justify-content: space-between;
+      //                     min-height: 35px;
+      //                     &::after{
+      //                         display: none;
+      //                     }
+      //                     &:nth-child(3){
+      //                         margin-bottom: 10px;
+      //                     }
+      //                 }
+
+      //                 .v-menu__content{
+      //                     & > div{
+      //                         & .homepage-icon-color:not(.v-icon--disabled){
+      //                             color: orangered !important;
+      //                         }
+      //                     }
+      //                 }
+      //             }
+      //         }
+
+      //         &__btn--search {
+      //             grid-area: search;
+      //             > button{
+      //                 font-size: 16px;
+      //                 box-shadow: -1px 4px 11px -3px #5f5f5f;
+      //             }
+      //         }
+      //     }
+      // }
+
+      .v-input--is-disabled {
+        .v-input__slot > fieldset {
+          border: 1px solid #cecece !important;
+          border-radius: 8px;
+        }
+      }
+    }
+
+    .hotel-panel__dynamic-component {
+      font-size: 14px;
+
+      .domestic-form > form {
+        @media (min-width: 1024px) {
+          display: grid;
+          grid-template-columns: minmax(250px, 2fr) repeat(
+              2,
+              minmax(250px, 1fr)
+            );
+          grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr [row2-end];
+          grid-template-areas: "hotel checkin checkout" ". guests search";
+          //grid-template-areas: "checkout checkin chekin""checkin checkin checkin";
+
+          & > div {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+            padding-right: 0px;
+          }
+        }
+      }
+
+      // >*:not(.oneway-form__swap-button) {
+      //     padding: 0px .5em;
+      // }
+
+      .domestic-form {
+        font-size: 14px !important;
+
+        &__input {
+          &--hotel {
+            grid-area: hotel;
+
+            .v-autocomplete__content {
+              left: 10px !important;
+            }
+          }
+        }
+
+        &__textfield--checkinDatepicker {
+          grid-area: checkin;
+
+          input {
+            color: rgba($color: #000000, $alpha: 0.6) !important;
+            font-size: 14px;
+            font-family: iranyekan !important;
+          }
+        }
+
+        &__textfield--checkoutDatepicker {
+          grid-area: checkout;
+
+          input {
+            color: rgba($color: #000000, $alpha: 0.6) !important;
+            font-size: 14px;
+            font-family: iranyekan !important;
+          }
+        }
+
+        &__menu--guests {
+          @media (min-width: 1024px) {
+            grid-area: guests;
+
+            .v-input {
+              grid-area: guest_input;
+            }
+
+            input {
+              font-size: 12px !important;
+              color: rgba($color: #000000, $alpha: 0.6) !important;
+              font-family: iranyekan !important;
+            }
+
+            .v-menu__content.theme--light.menuable__content__active {
+              border-bottom-left-radius: 10px;
+              border-bottom-right-radius: 10px;
+            }
+
+            .v-list-item {
+              justify-content: space-between;
+              min-height: 35px;
+
+              &::after {
+                display: none;
+              }
+
+              &:nth-child(3) {
+                margin-bottom: 10px;
+              }
+            }
+
+            .v-menu__content {
+              & > div {
+                & > button {
+                  border: 1.5px solid rgb(46, 196, 182) !important;
+                  color: rgb(46, 196, 182) !important;
+                  background-color: white !important;
+                  box-shadow: none !important;
+                  width: 90%;
+                  margin: 0.4rem 0;
+                }
+              }
+            }
+          }
+        }
+
+        &__btn--search {
+          grid-area: search;
+
+          > button {
+            font-size: 16px;
+            box-shadow: -1px 4px 11px -3px #5f5f5f;
+          }
+        }
+      }
+
+      .foreign-form > form {
+        position: relative;
+        display: grid;
+        grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr [row2-end];
+        grid-template-columns: repeat(4, minmax(250px, 1fr));
+        grid-template-areas: "hotel hotel checkin checkout" "guests nationality country search";
+
+        & > div {
+          padding-top: 0px;
+          padding-bottom: 0px;
+          padding-left: 10px;
+          padding-right: 0px;
+        }
+
+        & > .foreign-form__textfield--checkinDatepicker {
+          // padding-left: 0em;
+          // padding-right: 0em;
+          input {
+            color: rgba($color: #000000, $alpha: 0.6) !important;
+            font-size: 14px;
+            font-family: iranyekan !important;
+          }
+        }
+
+        & > .foreign-form__textfield--checkoutDatepicker {
+          // padding-left: 1em;
+          // padding-right: 0em;
+          input {
+            color: rgba($color: #000000, $alpha: 0.6) !important;
+            font-size: 14px;
+            font-family: iranyekan !important;
+          }
+        }
+
+        @media (max-width: 1024px) {
+          grid-template-columns: repeat(1, minmax(60px, 1fr));
+          grid-auto-rows: minmax(70px, auto);
+          grid-template-areas: "hotel" "checkin" "checkout" "guests" "nationality" "country" "search";
+        }
+
+        .foreign-form {
+          &__input {
+            &--hotel {
+              grid-area: hotel;
+
+              .v-autocomplete__content {
+                left: 10px !important;
+              }
+            }
+          }
+
+          &__menu--guests {
+            grid-area: guests;
+
+            input {
+              font-size: 12px !important;
+              color: rgba($color: #000000, $alpha: 0.6) !important;
+              font-family: iranyekan !important;
+            }
+
+            .v-list-item {
+              justify-content: space-between;
+
+              &::after {
+                display: none;
+              }
+
+              &:nth-child(3) {
+                margin-bottom: 10px;
+              }
+            }
+
+            .v-menu__content {
+              & > div {
+                & > button {
+                  border: 1.5px solid rgb(46, 196, 182) !important;
+                  color: rgb(46, 196, 182) !important;
+                  background-color: white !important;
+                  box-shadow: none !important;
+                  width: 90%;
+                  margin: 0.4rem 0;
+                }
+              }
+            }
+          }
+
+          &__menu--country {
+            grid-area: country;
+
+            input {
+              font-size: 12px !important;
+              color: rgba($color: #000000, $alpha: 0.6) !important;
+              font-family: iranyekan !important;
+            }
+
+            .v-list-item {
+              justify-content: space-between;
+
+              &::after {
+                display: none;
+              }
+            }
+          }
+
+          &__menu--nationality {
+            grid-area: nationality;
+
+            input {
+              font-size: 12px !important;
+              color: rgba($color: #000000, $alpha: 0.6) !important;
+              font-family: iranyekan !important;
+            }
+
+            .v-list-item {
+              justify-content: space-between;
+
+              &::after {
+                display: none;
+              }
+            }
+          }
+
+          &__textfield {
+            &--checkinDatepicker {
+              grid-area: checkin;
+            }
+
+            &--checkoutDatepicker {
+              grid-area: checkout;
+            }
+          }
+
+          &__btn--search {
+            grid-area: search;
+
+            > button {
+              font-size: 16px;
+              box-shadow: -1px 4px 11px -3px #5f5f5f;
+            }
+          }
+        }
+      }
+    }
+
+    .v-divider {
+      max-width: 96%;
+      margin: auto !important;
+    }
+  }
+}
+
+.research-class {
+  .flight-panel__radio {
+    &--oneway,
+    &--twoway,
+    &--multiway {
+      & > div > label {
+        margin: 0;
+      }
+
+      margin: 5px;
+    }
+  }
+
+  .flight-panel__dynamic-component {
+    font-size: 14px;
+
+    .oneway-form > form {
+      @media (max-width: 1024px) {
+        .v-input__slot,
+        .v-text-field__details {
+          margin-bottom: 0px;
+        }
+      }
+      position: relative;
+      display: grid;
+      grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr [row2-end];
+      grid-template-columns: repeat(2, minmax(25%, 1fr)) 0.5px repeat(
+          2,
+          minmax(25%, 1fr)
+        );
+      grid-template-areas: "origin origin button destination destination" "depdate retdate . passengers search";
+
+      & > div {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        padding-right: 0px;
+      }
+      & > .oneway-form__swap-button {
+        justify-self: center;
+        cursor: pointer;
+      }
+      & > .oneway-form__textfield--depdatepicker {
+        // padding-left: 0em;
+        // padding-right: 0em;
+        input {
+          color: rgba($color: #000000, $alpha: 0.6) !important;
+          font-size: 14px;
+          font-family: iranyekan !important;
+        }
+      }
+      & > .oneway-form__textfield--retdatepicker {
+        // padding-left: 1em;
+        // padding-right: 0em;
+        input {
+          color: rgba($color: #000000, $alpha: 0.6) !important;
+          font-size: 14px;
+          font-family: iranyekan !important;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        grid-template-columns: repeat(1, minmax(60px, 1fr));
+        grid-auto-rows: minmax(70px, auto);
+        grid-template-areas: "origin " "destination" "depdate" "retdate" "passengers" "search";
+
+        & > div:not(.oneway-form__swap-button) {
+          padding: 0 10px;
+          cursor: pointer;
+        }
+      }
+
+      .oneway-form {
+        &__input {
+          &--origin {
+            grid-area: origin;
+            .v-autocomplete__content {
+              left: 10px !important;
+            }
+          }
+
+          &--destination {
+            grid-area: destination;
+            .v-autocomplete__content {
+              left: 10px !important;
+            }
+          }
+        }
+
+        &__menu--passengers {
+          grid-area: passengers;
+          input {
+            font-size: 12px !important;
+            color: rgba($color: #000000, $alpha: 0.6) !important;
+            font-family: iranyekan !important;
+          }
+
+          .v-list-item {
+            justify-content: space-between;
+            &::after {
+              display: none;
+            }
+          }
+        }
+
+        &__textfield {
+          &--depdatepicker {
+            grid-area: depdate;
+          }
+
+          &--retdatepicker {
+            grid-area: retdate;
+          }
+        }
+
+        &__btn--search {
+          grid-area: search;
+          > button {
+            font-size: 16px;
+            box-shadow: -1px 4px 11px -3px #5f5f5f;
+          }
+        }
+
+        &__swap-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-self: start;
+          grid-area: button;
+          cursor: pointer;
+          @media (max-width: 1024px) {
+            position: absolute;
+            top: 9%;
+          }
+
+          > i {
+            z-index: 10;
+            background-color: white;
+            border: solid 1px rgba(0, 0, 0, 0.38);
+            border-radius: 50%;
+            padding: 6px;
+            margin-top: 8px;
+            @media (max-width: 1024px) {
+              transform: rotate(90deg);
+            }
+            &:hover {
+              background: #e6e6e6;
+            }
+          }
+        }
+      }
+    }
+
+    .twoway-form > form {
+      @media (max-width: 1024px) {
+        .v-input__slot,
+        .v-text-field__details {
+          margin-bottom: 0px;
+        }
+      }
+      position: relative;
+      display: grid;
+      grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr [row2-end];
+      grid-template-columns: repeat(2, minmax(25%, 1fr)) 0.5px repeat(
+          2,
+          minmax(25%, 1fr)
+        );
+      grid-template-areas: "origin origin button destination destination" "depdate retdate . passengers search";
+
+      & > div {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        padding-right: 0px;
+      }
+      & > .twoway-form__swap-button {
+        justify-self: center;
+        cursor: pointer;
+      }
+      & > .twoway-form__textfield--depdatepicker {
+        // padding-left: 0em;
+        // padding-right: 0em;
+        input {
+          color: rgba($color: #000000, $alpha: 0.6) !important;
+          font-size: 14px;
+          font-family: iranyekan !important;
+        }
+      }
+      & > .twoway-form__textfield--retdatepicker {
+        // padding-left: 1em;
+        // padding-right: 0em;
+        input {
+          color: rgba($color: #000000, $alpha: 0.6) !important;
+          font-size: 14px;
+          font-family: iranyekan !important;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        grid-template-columns: repeat(1, minmax(60px, 1fr));
+        grid-auto-rows: minmax(70px, auto);
+        grid-template-areas: "origin " "destination" "depdate" "retdate" "passengers" "search";
+
+        & > div:not(.twoway-form__swap-button) {
+          padding: 0 10px;
+          cursor: pointer;
+        }
+      }
+
+      .twoway-form {
+        &__input {
+          &--origin {
+            grid-area: origin;
+            .v-autocomplete__content {
+              left: 10px !important;
+            }
+          }
+
+          &--destination {
+            grid-area: destination;
+            .v-autocomplete__content {
+              left: 10px !important;
+            }
+          }
+        }
+
+        &__menu--passengers {
+          grid-area: passengers;
+          input {
+            font-size: 12px !important;
+            color: rgba($color: #000000, $alpha: 0.6) !important;
+            font-family: iranyekan !important;
+          }
+
+          .v-list-item {
+            justify-content: space-between;
+            &::after {
+              display: none;
+            }
+          }
+        }
+
+        &__textfield {
+          &--depdatepicker {
+            grid-area: depdate;
+          }
+
+          &--retdatepicker {
+            grid-area: retdate;
+          }
+        }
+
+        &__btn--search {
+          grid-area: search;
+          > button {
+            font-size: 16px;
+            box-shadow: -1px 4px 11px -3px #5f5f5f;
+          }
+        }
+
+        &__swap-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-self: start;
+          grid-area: button;
+          cursor: pointer;
+          @media (max-width: 1024px) {
+            position: absolute;
+            top: 9%;
+          }
+
+          > i {
+            z-index: 10;
+            background-color: white;
+            border: solid 1px rgba(0, 0, 0, 0.38);
+            border-radius: 50%;
+            padding: 6px;
+            margin-top: 8px;
+            @media (max-width: 1024px) {
+              transform: rotate(90deg);
+            }
+            &:hover {
+              background: #e6e6e6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// .main-homepage-class {
+//   &.theme2 {
+
+//     .v-card {
+//         box-shadow: unset;
+//         .v-tabs-slider { display: none; }
+//         .v-divider { display: none; }
+//         .v-tabs-bar {
+//             height: 80px;
+//             .v-slide-group__content{
+//                 flex-wrap: nowrap;
+//                 overflow-x: scroll;
+//                 justify-content: end;
+//                 > .tabs {
+//                   min-width: 100px;
+//                   min-height: 100px;
+//                   background: transparent !important;
+//                   border-radius: 10px;
+//                   border: 1px solid grey;
+//                   margin: 2px;
+//                   overflow: hidden;
+//                   transition: all .4s;
+//                   font-size: .9rem !important;
+//                   padding: 0;
+//                   flex-direction: column-reverse !important;
+//                   &:hover { color: $secondary_color_fly !important; }
+//                   // &::before { content: none; }
+//                   &::after {
+//                       background: url(images/icons.png) 171px -143px;
+//                   }
+//                   &.v-tab--active {
+//                       border-color: grey !important;
+//                       color: $secondary_color_fly !important;
+//                       &::before {
+//                           content: '';
+//                           background: linear-gradient(45deg, $primary_color_fly 0% ,lighten($primary_color_fly, 35%) 100%);
+//                           z-index: -1;
+//                           opacity: 1;
+//                       }
+//                   }
+//                   >.v-icon { display: none !important; }
+//                   &::after {
+//                       content: '';
+//                       width: 43px;
+//                       display: block;
+//                   }
+//                   &.flight {
+//                       &::after {
+//                         background:url(../images/icons.png) 47px -89px;
+//                       }
+//                   }
+//                   &.hotel {
+//                       &::after {
+//                           background: url(../images/icons.png) 106px -143px;
+//                       }
+//                   }
+//                   &.flightandhotel{
+//                     margin-left: 8px!important;
+//                   }
+//                   &.insurance {
+//                       &::after {
+//                           background: url(../images/icons.png) 315px -143px;
+//                       }
+//                   }
+//                   &.cip {
+//                       &::after {
+//                           background: url(../images/icons.png) 244px -143px;
+//                       }
+//                   }
+//                 }
+//             }
+//             @media (min-width: 768px) {
+//                 height: 100px !important ;
+//                 .v-slide-group__content > .tabs {
+//                     display: flex;
+//                     &:not(:last-child):not(:first-child) { margin: 0 0 0 5px; }
+//                     &:last-child { margin: 0 0 0 auto; }
+//                     &:first-child { margin: 0 auto; }
+//                 }
+//             }
+//         }
+//     }
+
+//     .flight-panel__radiogroup {
+//         &>div>div>div>div {
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: center;
+//         }
+//     }
+
+//     .flight-panel__radio {
+
+//         &--oneway,
+//         &--twoway ,
+//         &--multiway{
+//             &>div {
+//                 &.v-item--active {
+//                     >label {
+//                         background: linear-gradient(45deg, $primary_color_fly 0% ,lighten($primary_color_fly, 35%) 100%);
+//                         color: $secondary_color_fly !important;
+//                         .caption { color: $secondary_color_fly !important; }
+//                     }
+//                 }
+//                 >label {
+//                     margin: 0;
+//                     border: 1px solid grey;
+//                     padding: 2px 0;
+//                     border-radius: 7px;
+//                     display: flex;
+//                     justify-content: center;
+//                     min-width: 85px;
+//                     .caption { color: grey !important; }
+//                 }
+//                 >.v-input--selection-controls__input { display: none; }
+//             }
+//             margin: .5em .25em;
+//         }
+//     }
+
+//     .flight-panel__dynamic-component {
+//         font-size: 14px;
+
+//         .oneway-form>form {
+//             >*:not(.oneway-form__swap-button) {
+//                 padding: 0px .5em;
+//                 .v-input {
+//                     &__slot {
+//                         //min-height: 35px !important;
+//                         border-radius: 7px;
+//                         fieldset {
+//                             padding: 0;
+//                             legend {
+//                                 margin-right: 17px;
+//                             }
+//                         }
+//                         .v-input__append-inner {
+//                             margin-right: unset;
+//                             padding-right: unset;
+//                             margin: 0 0 0 100%;
+//                             align-self: center;
+//                             position: absolute;
+//                             > i {
+//                                 margin: 0;
+//                                 color: $secondary_color_fly !important;
+//                             }
+//                         }
+//                         .v-select__slot {
+//                             .v-select__selections {
+//                                 padding: 0 1.5rem 0 0;
+//                                 > .body-2 {
+//                                     width: 130px;
+//                                     overflow: hidden;
+//                                     text-overflow: ellipsis;
+//                                     white-space: nowrap;
+//                                 }
+//                                 > input {
+//                                     padding: 0;
+//                                     min-width: 5px;
+//                                 }
+//                             }
+//                         }
+//                         .v-label {
+//                           padding-right: 1.5em !important;
+//                         }
+//                     }
+//                 }
+//             }
+//             .oneway-form {
+//                 font-size: 1.4em !important;
+//                 &__input {
+
+//                     &--origin {
+//                         grid-area: origin;
+//                         .v-input {
+//                           &__slot {
+//                               .v-label{
+//                                 margin-right: 23%;
+//                               }
+//                           }
+//                         }
+//                     }
+
+//                     &--destination {
+//                         grid-area: destination;
+//                     }
+//                 }
+
+//                 &__swap-button {
+//                     display: flex;
+//                     justify-content: center;
+//                     align-items: center;
+//                     grid-area: swapbutton;
+//                     align-self: start;
+//                     cursor: pointer;
+//                     >i {
+//                         margin-top: -0.1em !important;
+//                         padding: 6px;
+//                         z-index: 10;
+//                         background: $secondary_color_fly;
+//                         border-radius: 7px;
+//                         color: $primary_color_fly;
+//                     }
+//                 }
+
+//                 &__textfield--depdatepicker {
+//                     grid-area: depdatepicker;
+//                 }
+//                 &__textfield--retdatepicker {
+//                   .v-input {
+//                     &__append-inner{
+//                       >i{display: none;}
+//                     }
+//                   }
+//                 }
+//                 &__menu--passengers {
+//                     .v-text-field__slot > input {
+//                         padding-right: 2rem;
+//                         color: $light_text_fly;
+//                     }
+//                     .v-input {
+//                       &__append-inner{
+//                         i{color: $secondary_color_fly !important;}
+//                       }
+//                     }
+//                     @media (min-width: 1024px) {
+//                         grid-area: passengers;
+//                     }
+//                 }
+
+//                 &__btn--search {
+//                     grid-area: search;
+//                     > button {
+//                         background: linear-gradient(45deg, $primary_color_fly 0% ,lighten($primary_color_fly, 35%) 100%);
+//                         grid-area: submit;
+//                         color: $secondary_color_fly;
+//                         font-size: 1em !important;
+//                         border-radius: 7px;
+//                         box-shadow: unset;
+//                         .v-icon { display: none; }
+//                     }
+//                     @media (min-width: 768px) {
+//                       display: grid;
+//                       grid-template-columns: repeat(2, 1fr);
+//                       grid-template-areas: " . submit";
+//                     }
+//                     @media (min-width: 992px) {
+//                       display: grid;
+//                       grid-template-columns: repeat(5, 1fr);
+//                       grid-template-areas: ". . submit . .";
+//                     }
+//                     @media (min-width: 1024px) {
+//                       grid-template-columns: repeat(3, 1fr);
+//                       grid-template-areas: ". . submit";
+//                   }
+//                 }
+//             }
+//         }
+
+//         .twoway-form>form {
+//             >*:not(.twoway-form__swap-button) {
+//                 padding: 0px .5em;
+//                 .v-input {
+//                     &__slot {
+//                         //min-height: 35px !important;
+//                         border-radius: 7px;
+//                         input {
+//                             &::placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder {
+//                                 color: $light_text_fly !important;
+//                                 opacity: 1;
+//                             }
+//                         }
+//                         fieldset {
+//                             padding: 0;
+//                             legend {
+//                               margin-right: 17px;
+//                             }
+//                         }
+//                         .v-input__append-inner {
+//                             margin-right: unset;
+//                             padding-right: unset;
+//                             margin: 0 0 0 100%;
+//                             align-self: center;
+//                             position: absolute;
+//                             > i {
+//                                 margin: 0;
+//                                 color: $secondary_color_fly !important;
+//                             }
+//                         }
+//                         .v-select__slot {
+//                             .v-select__selections {
+//                                 padding: 0 1.5rem 0 0;
+//                                 > .body-2 {
+//                                     width: 130px;
+//                                     overflow: hidden;
+//                                     text-overflow: ellipsis;
+//                                     white-space: nowrap;
+//                                 }
+//                                 > input {
+//                                     padding: 0;
+//                                     min-width: 5px;
+//                                 }
+//                             }
+//                             //input { display: none; }
+//                         }
+
+//                     }
+//                 }
+//             }
+
+//             .twoway-form {
+
+//                 &__input {
+//                     &--origin {
+//                         grid-area: origin;
+//                         .v-input {
+//                           &__slot {
+//                               .v-label{
+//                                 margin-right: 23%;
+//                               }
+//                           }
+//                         }
+//                     }
+
+//                     &--destination {
+//                         grid-area: destination;
+//                     }
+//                 }
+
+//                 &__menu--passengers {
+//                     .v-text-field__slot > input {
+//                         padding-right: 2rem;
+//                         color: $light_text_fly;
+//                     }
+//                     .v-input {
+//                       &__append-inner{
+//                         i{
+//                           color: $secondary_color_fly !important;
+//                         }
+//                       }
+//                     }
+//                     grid-area: passengers;
+//                 }
+
+//                 &__textfield {
+//                     &--depdatepicker {
+//                         grid-area: depdate;
+//                         padding-left: 0;
+//                         .v-input__slot {
+//                             @media (min-width: 1025px) {
+//                                 border-top-left-radius: 0;
+//                                 border-bottom-left-radius: 0;
+//                             }
+//                             .v-text-field__slot {
+//                                 label { padding-right: 1.5em !important; }
+//                             }
+//                             .v-input__append-inner{
+//                               >i{ margin-right: 10px;}
+//                             }
+//                             fieldset{
+//                               >legend{
+//                                 width: 58px !important;
+//                               }
+//                             }
+//                         }
+//                     }
+
+//                     &--retdatepicker {
+//                         grid-area: retdate;
+//                         padding-right: 0;
+//                         .v-input__slot {
+//                             @media (min-width: 1025px) {
+//                                 border-top-right-radius: 0;
+//                                 border-bottom-right-radius: 0;
+//                             }
+//                             .v-text-field__slot {
+//                                 label { padding-right: 1.5em !important; }
+//                             }
+//                             .v-input__append-inner{
+//                               >i{ margin-right: 10px;}
+//                             }
+//                             fieldset{
+//                               >legend{
+//                                 width: 69px !important;
+//                               }
+//                             }
+//                         }
+//                     }
+//                 }
+
+//                 &__btn--search {
+//                     grid-area: search;
+//                     > button {
+//                         background: linear-gradient(45deg, $primary_color_fly 0% ,lighten($primary_color_fly, 35%) 100%);
+//                         grid-area: submit;
+//                         color: $secondary_color_fly;
+//                         font-size: 1em !important;
+//                         border-radius: 7px;
+//                         box-shadow: unset;
+//                         .v-icon { display: none; }
+//                     }
+//                     @media (min-width: 768px) {
+//                       display: grid;
+//                       grid-template-columns: repeat(2, 1fr);
+//                       grid-template-areas: " . submit";
+//                     }
+//                     @media (min-width: 992px) {
+//                         display: grid;
+//                         grid-template-columns: repeat(5, 1fr);
+//                         grid-template-areas: ". . submit . .";
+//                     }
+//                     @media (min-width: 1024px) {
+//                         grid-template-columns: repeat(3, 1fr);
+//                         grid-template-areas: ". . submit";
+//                     }
+//                     @media (min-width: 1200px) {
+//                         grid-template-columns: repeat(5, 1fr);
+//                         grid-template-areas: ". . submit . .";
+//                     }
+//                 }
+
+//                 &__swap-button {
+//                     display: flex;
+//                     justify-content: center;
+//                     align-items: center;
+//                     align-self: start;
+//                     grid-area: button;
+
+//                     >i {
+//                         margin-top: -0.1em !important;
+//                         padding: 6px;
+//                         z-index: 10;
+//                         background: $secondary_color_fly;
+//                         border-radius: 7px;
+//                         color: $primary_color_fly;
+//                     }
+
+//                 }
+//             }
+//         }
+//     }
+//   }
+// }

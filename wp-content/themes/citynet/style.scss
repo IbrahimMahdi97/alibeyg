@@ -1,0 +1,50 @@
+/*!
+Theme Name: Citynet
+Theme URI: http://underscores.me/
+Author:
+Author URI: http://citynet.ir/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: citynet
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Citynet is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+
+@charset "UTF-8";
+
+@import "scss/_vars";
+@import 'scss/_mixins';
+
+// @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    src: url('fonts/ttf/Lato-Regular.ttf') format('truetype');
+}
+
+$font: 'Lato', sans-serif;
+
+@import 'scss/_underscore';
+@import 'scss/_general';
+@import "scss/_header";
+@import "scss/_home";
+@import "scss/_footer";
+@import "scss/_inside";
+@import "scss/_mobile";
+@import "scss/_small";
+@import "scss/_medium";
+@import "scss/_large";
+@import "scss/_xlarge";
+@import "scss/_print";

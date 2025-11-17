@@ -1,0 +1,259 @@
+//--------------------------------------
+.testi-grid {
+    text-align: center;
+    &__img {
+        margin-bottom: 20px;
+        img {
+            border-radius: 50%;
+        }
+    }
+    &__name {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    &__desig {
+        color: $theme-color;
+        font-size: 14px;
+        margin-bottom: 22px;
+        display: block;
+    }
+    &__content {
+        background-color: $white-color;
+        box-shadow: 0px 5px 5px rgba(22, 25, 33, 0.02);
+        border-radius: 6px;
+        padding: 40px 30px;
+        position: relative;
+    }
+    &__text {
+        margin-bottom: -0.5em;
+    }
+    &__review {
+        margin-top: -0.3em;
+        margin-bottom: 12px;
+        color: $yellow-color;
+    }
+    .left-icon,
+    .right-icon {
+        position: absolute;
+        color: $theme-color;
+        font-size: 30px;
+        transform: skewX(-20deg);
+    }
+    .left-icon {
+        top: -10px;
+        left: 35px;
+    }
+    .right-icon {
+        right: 35px;
+        bottom: -18px;
+    }
+}
+
+/* Testimonial 2 ---------------------------------- */
+.testi-block {
+    background-color: $smoke-color2;
+    border-radius: 8px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    text-align: left;
+    &_shape {
+        position: absolute;
+        top: 45px;
+        right: 30px;
+    }
+    &_review {
+        i {
+            font-size: 14px;
+            margin-right: 3px;
+            color: $theme-color;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &_profile {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: -0.3em;
+    }
+    &_avater {
+        width: 80px;
+        height: 80px;
+        border-radius: 99px;
+        position: relative;
+        img {
+            border-radius: 50%;
+            width: 100%;
+        }
+    }
+    &_name {
+        font-size: 22px;
+        margin-bottom: 3px;
+    }
+    &_desig {
+        font-size: 14px;
+        margin-bottom: 0px;
+        display: block;
+    }
+    &_text {
+        margin-bottom: -0.5em;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+}
+
+@include xs {
+    .testi-block {
+        &_text {
+            font-size: 16px;
+        }
+    }
+}
+
+@include vxs {
+    .testi-block {
+        padding: 30px;
+        &_shape {
+            opacity: 0.3;
+        }
+    }
+}
+
+//-------------------------------------
+@media (min-width: 1400px) {
+    .testi-map {
+        margin-left: 50px;
+    }
+}
+
+.testi-map {
+    margin-right: -120px;
+}
+
+.testi-block-arrow {
+    position: absolute;
+    left: -80px;
+    bottom: 60px;
+    max-width: 56px;
+    .slick-arrow {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .testi-block-arrow {
+        right: -80px;
+        left: unset;
+    }
+}
+
+@include lg {
+    .testi-map {
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+//--------------------------------------------------------
+.testi-tab {
+    &-area {
+        padding: 70px;
+        background-color: $title-color;
+        background-size: auto 100%;
+        background-position: right center;
+        border-radius: 5px;
+    }
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.1);
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        .tab-btn {
+            border-radius: 99px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .indicator {
+            position: absolute;
+            bottom: var(--pos-y);
+            left: var(--pos-x);
+            height: 2px;
+            width: var(--width-set);
+            background-color: $theme-color;
+            transition: 0.4s ease-in-out;
+        }
+    }
+    position: relative;
+    &_shape {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    &_text {
+        font-size: 20px;
+        color: $white-color;
+        line-height: 32px;
+        margin-bottom: 25px;
+    }
+    &_name {
+        color: $white-color;
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    &_desig {
+        font-weight: 500;
+        color: $theme-color;
+        margin-bottom: -0.5em;
+        display: block;
+    }
+}
+
+@include ml {
+    .testi-tab-area {
+        background-size: 66% 100%;
+        padding: 60px;
+    }
+}
+
+@include lg {
+    .testi-tab {
+        &-area {
+            background-size: 66% 100%;
+            background-position: right -100px center;
+        }
+        &_text {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+}
+
+@include md {
+    .testi-tab {
+        &-area {
+            background-size: 0;
+            text-align: center;
+        }
+    }
+}
+
+@include xs {
+    .testi-tab {
+        &-menu {
+            gap: 5px;
+        }
+        &-area {
+            padding: 45px 20px;
+        }
+        &_shape {
+            display: none;
+        }
+    }
+}

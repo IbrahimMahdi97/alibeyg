@@ -1,0 +1,449 @@
+/*!
+Theme Name: Citynet
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+/*-------------------
+CSS Find Helper List
+
+101 - Header
+102 - Reservation
+103 - HomePage
+104 - Inside
+105 - Isotope
+106 - Footer
+201 - Media small
+202 - Media medium
+203 - Media large
+
+--------------------*/
+
+@font-face {
+    font-family: IRANYekan;
+    font-style: normal;
+    font-weight: bold;
+    src: url('fonts/eot/iranyekanwebbold.eot');
+    src: url('fonts/eot/iranyekanwebbold.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('fonts/woff/iranyekanwebbold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/ttf/iranyekanwebbold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANYekan;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/eot/iranyekanwebregular.eot');
+    src: url('fonts/eot/iranyekanwebregular.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('fonts/woff/iranyekanwebregular.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/ttf/iranyekanwebregular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANYekan;
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/eot/iranyekanweblight.eot');
+    src: url('fonts/eot/iranyekanweblight.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('fonts/woff/iranyekanweblight.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/ttf/iranyekanweblight.ttf') format('truetype');
+}
+
+$font: 'IRANYekan', Tahoma, sans-serif;
+$secondFont: 'IRANYekan', Tahoma, sans-serif;
+
+@import "scss/_vars";
+@import 'scss/_mixins';
+
+/* General */
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: $font;
+    line-height: 1.8;
+    unicode-bidi: embed;
+}
+
+#page {
+    direction: rtl;
+}
+body:not(.home) #page {
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold; // if your font supports bold
+    line-height: 1.4;
+    font-family: $secondFont;
+}
+
+h1 {
+    font-size: 1.9rem
+}
+
+h2 {
+    font-size: 1.7rem
+}
+
+h3 {
+    font-size: 1.5rem
+}
+
+h4 {
+    font-size: 1.3rem
+}
+
+h5 {
+    font-size: 1.1rem
+}
+
+h6 {
+    font-size: 1rem
+}
+.main-article-format {
+    p { text-align: justify; }
+    blockquote {
+        border-left: unset;
+        border-right: 3px solid $primary;
+    }
+    ul:not(.rating_form):not(.tml-links) {
+        li {
+            &:before {
+                margin-right: 0;
+                margin-left: 10px;
+                float: right;
+            }
+            ul {
+                padding-left: 0;
+                padding-right: 1.4em;
+            }
+        }
+    }
+    ol {
+        padding-left: 0;
+        padding-right: 1em;
+        list-style-type: persian;
+        li {
+            padding-left: 0;
+            padding-right: 6px; 
+        }
+    }
+}
+.search-form {
+    .search-field {
+        padding: 0 10px 0 45px;
+    }
+    .search-submit {
+        right: auto;
+        left: 0;
+    }
+}
+
+.wpcf7 {
+    direction: rtl !important;
+    .wpcf7-form-control-wrap {
+        min-height: 50px;
+    }
+}
+
+img.ajax-loader {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.popover {
+    right: unset;
+}
+
+.image-gallery {
+    &.with-slider {
+        .gallery-image-item {
+            margin-right: 0;
+            margin-left: 15px;
+        }
+    }
+}
+
+body:not(.page-template-app-templates) {
+    .alert-dismissible .close {
+        left: 1rem;
+        right: unset;
+    }
+
+    .main-article-format {
+        p { text-align: justify; }
+        ul {
+            li {
+                &:before {
+                    margin-right: 0;
+                    margin-left: 15px;
+                    float: right;
+                }
+            }
+        }
+    }
+
+    .slick-arrow {
+        &.slick-prev {
+            left: unset;
+            right: 10px;
+            &:before { content: '\f105'; }
+        }
+        &.slick-next {
+            right: unset;
+            left: 10px;
+            &:before { content: '\f104'; }
+        }
+    }
+}
+
+/*---------------------------------------------
+# 101 Header
+------------------------------------------------*/
+#masthead {
+    // font-family: $secondFont;
+    .main-content {
+        .logo { float: left; }
+        .phone-box {
+            .header-phone { font-family: "YekanBakhVF" !important; }
+        }
+    }
+    #site-navigation {
+        .menu-toggle-close {
+            right: unset;
+            left: 15px;
+        }
+        #main-menu {
+            margin-left: 0;
+            li {
+                i.fa {
+                    margin-right: 0;
+                    margin-left: 5px;
+                }
+                &.menu-item-has-children {
+                    > a {
+                        padding-right: 1em;
+                        padding-left: 43px;
+                    }
+                }
+            }
+            .sub-menu {
+                a {
+                    padding-left: 1em;
+                    padding-right: 2em !important;
+                }
+                .sub-menu {
+                    a {
+                        padding-left: 1em;
+                        padding-right: 3em !important;
+                    }
+                    .sub-menu {
+                        a {
+                            padding-left: 1em;
+                            padding-right: 4em !important;
+                        }
+                    }
+                }
+            }
+        }
+        &.show {
+            #main-menu {  margin-right: 0; }
+        }
+    }
+    .wpml-ls-legacy-dropdown-click{
+        a{
+            &.wpml-ls-item-toggle{
+                &::after{
+                    left: unset;
+                    right: 90%;
+                }
+            }
+        }
+    }
+}
+/*------------------------------------------------------
+# 103 HomePage
+-------------------------------------------------------*/
+
+/*------------------------------------------------------
+# 104 Inside
+-------------------------------------------------------*/
+.contact-form-complaint {
+    input {
+      direction: rtl !important;
+    }
+  }
+body:not(.page-template-app-templates) {
+    #archives-filter-area {
+        .select-area {
+            span {
+                padding: 7px 7px 7px 28px;
+                &:after {
+                    right: unset;
+                    left: 11px;
+                }
+            }
+            ul { direction: ltr; }
+        }
+    }
+}
+#archives-filter-area .select-area{
+    span{
+        &::after{
+            right: unset;
+             left: 11px;
+        }
+    }
+    ul {
+        direction: ltr;
+    }
+}
+ 
+
+/*------------------------------------------------------
+# 105 Isotope
+-------------------------------------------------------*/
+
+
+/*------------------------------------------------------
+# 106 Footer
+-------------------------------------------------------*/
+#colophon {
+    .site-info {
+        direction: rtl !important;
+        ul.socials {
+            text-align: left;
+            li a {
+                margin-right: 15px;
+                margin-left: 0;
+            }
+        }
+        i.fa-map-marker {
+            margin-left: 5px;
+            margin-right: 0;
+        }
+    }
+    .footer-logo {
+        margin-top: 0;
+    }
+    .lufthansa {
+        float: right;
+        margin: 0.5em 0 10px 10px;
+    }
+}
+
+.social-networks {
+    li {
+        a {
+            i { vertical-align: middle; }
+        }
+    }
+}
+
+/*------------------------------------------------------
+# 201 Media small
+-------------------------------------------------------*/
+@media(min-width: 576px) {
+}
+
+/*------------------------------------------------------
+# 202 Media medium
+-------------------------------------------------------*/
+@media (min-width: 768px) {
+}
+
+/*------------------------------------------------------
+# 203 Media Large
+-------------------------------------------------------*/
+@media (min-width: 992px) {
+    #masthead {
+        #site-navigation.desktop {
+            #main-menu {
+                > li {
+                    > a { padding: 1em; }
+                    &.menu-item-has-children {
+                        > a {
+                            &:after {
+                                margin-left: 0;
+                                margin-right: 0.5em;
+                            }
+                        }
+                    }
+                }
+                .sub-menu {
+                    left: unset;
+                    right: -1px;
+                    a {
+                        padding-right: 1em !important;
+                        padding-left: 1.7em !important;
+                    }
+                    .menu-item-has-children {
+                        > a {
+                            &:after {
+                                content: '\f104';
+                                right: unset;
+                                left: 1em;
+                            }
+                        }
+                    }
+                    .sub-menu {
+                        left: unset;
+                        right: 100%;
+                        a {
+                            padding-right: 1em !important;
+                            padding-left: 1.7em !important;
+                        }
+                        .sub-menu {
+                            a {
+                                padding-right: 1em !important;
+                                padding-left: 1.7em !important;
+                            }
+                        }
+                    }
+                }
+                > li.mega-menu.menu-item-has-children {
+                    > .sub-menu {
+                        left: unset;
+                        right: 0;
+                        padding-right: 15px;
+                        padding-left: 0;
+                        > li {
+                            margin: 0 0 15px 15px;
+                            float: right;
+                        }
+                        li {
+                            > a { padding-left: 1em !important; }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------
+# 204 Media xLarge
+-------------------------------------------------------*/
+@media (min-width: 1200px) {
+
+}
+
+.list-view > article a.image-wrapper.thumb {
+    float: right;
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+
+

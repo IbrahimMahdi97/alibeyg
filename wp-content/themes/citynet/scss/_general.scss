@@ -1,0 +1,412 @@
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "YekanBakhVF" !important;
+  color: #363636;
+  position: relative;
+  font-size: 1rem;
+  background-color: $body_background;
+  line-height: 1.4;
+  direction: ltr;
+  font-weight: normal;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold; // if your font supports bold
+  line-height: 1.2;
+  margin: 1em 0 0.5em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0 0 1em;
+}
+
+a,
+a:link,
+a:visited {
+  color: $secondary;
+  text-decoration: none;
+  transition: all 250ms ease-out;
+}
+
+a:hover,
+a:active {
+  color: $primary;
+}
+
+a:focus,
+button:focus {
+  outline: 0 !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  max-width: 100%;
+}
+
+.fbx-count {
+  display: none;
+}
+
+b,
+bold,
+strong {
+  font-weight: bold;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
+}
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.dropdown-menu {
+  font-size: 0.8rem;
+}
+
+.lg-outer.lg-visible {
+  z-index: 9999;
+}
+body.single-location,
+body.page,
+body.single-tour,
+body.page-template-about {
+  .lg-outer.lg-visible {
+    direction: ltr !important;
+  }
+}
+.lg-backdrop {
+  z-index: 9998 !important;
+}
+
+.image-gallery {
+  &.without-slider {
+    img {
+      border-radius: 10px;
+      cursor: zoom-in;
+    }
+  }
+  &.with-slider {
+    .gallery-image-item,
+    .load-more-photos {
+      transition: filter 0.3s;
+      border-radius: 10px;
+      cursor: zoom-in;
+      &.active {
+        filter: brightness(0.5);
+      }
+    }
+    .gallery-image-item {
+      height: 101px;
+      background-size: cover;
+      background-position: center;
+      margin-right: 15px;
+      flex: 22%;
+      max-width: calc(33.3333% - 15px);
+    }
+    .load-more-photos {
+      direction: ltr;
+      line-height: 99px;
+      border: 1px solid #dfe0e6;
+      background: #eaebf0;
+      text-align: center;
+      font-size: 1.5em;
+      color: #808080;
+      display: inline-block;
+      width: calc(100% - 7.5px);
+    }
+  }
+}
+.main-article-format {
+  color: #515151;
+  p {
+    line-height: 2.1em;
+    text-align: justify;
+  }
+  img {
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+  }
+  h2 {
+    font-size: 1.4rem !important;
+  }
+  h3 {
+    font-size: 1.3rem !important;
+  }
+  h4 {
+    font-size: 1.2rem !important;
+  }
+  > p:last-of-type {
+    margin-bottom: 0;
+  }
+  a {
+    color: $primary;
+  }
+  blockquote {
+    border-left: 3px solid $primary;
+    padding: 1em;
+    background: #f9f9f9;
+    > p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  ul:not(.rating_form),
+  ol {
+    li {
+      line-height: 2.2em;
+    }
+  }
+  ul:not(.v-pagination) {
+    padding: 0;
+    li {
+      list-style: none;
+      &:before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background-color: $text1;
+        vertical-align: middle;
+        background-color: $secondary;
+        margin-right: 10px;
+        margin: 12px 0;
+        border-radius: 50%;
+      }
+      ul {
+        padding-left: 1.4em;
+        li {
+          &:before {
+            content: "\ea16";
+          }
+        }
+      }
+    }
+  }
+  ol {
+    padding-left: 1em;
+    li {
+      padding-left: 6px;
+    }
+  }
+  .citynet-aparat-video {
+    margin-bottom: 1em;
+  }
+}
+#image-gallery-slider {
+  div.slick-slide > div > li {
+    cursor: zoom-in;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    .description {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.2);
+      width: 100%;
+      color: #ffffff;
+      text-align: center;
+      padding: 0.8em;
+      pointer-events: none;
+    }
+  }
+  .slick-arrow {
+    background: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+  }
+}
+
+.search-form {
+  position: relative;
+  width: 300px;
+  max-width: 100%;
+  .search-field {
+    width: 100%;
+    margin: 0;
+    padding: 0 45px 0 10px;
+    height: 40px;
+    line-height: 40px;
+    background-color: $grey10;
+  }
+  label {
+    width: 300px;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  label,
+  input {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .search-submit {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: Fontawesome;
+    border: 0;
+    background-color: transparent;
+    font-size: 1.5rem;
+    width: 40px !important;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    color: $grey75 !important;
+    &:hover {
+      color: $secondary !important;
+    }
+  }
+}
+
+#commentform,
+.wpcf7-form {
+  .g-recaptcha {
+    margin-bottom: 10px;
+  }
+}
+
+.wpcf7-validation-errors,
+span.wpcf7-not-valid-tip,
+.wpcf7-mail-sent-ng {
+  color: $red;
+  clear: both;
+}
+.wpcf7-validation-errors {
+  color: $primary;
+}
+
+.wpcf7 {
+  direction: ltr !important;
+  p:empty {
+    display: none;
+  }
+}
+
+label {
+  display: block;
+  font-weight: normal;
+}
+
+select {
+  outline: 0;
+  width: 100%;
+  border-radius: 4px;
+}
+
+abbr[title] {
+  border-bottom: 0;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.img-thumbnail {
+  border-radius: 0;
+}
+
+.excerpt {
+  color: $grey75;
+}
+
+i {
+  vertical-align: middle;
+  font-size: 1.2em;
+  margin: 0 0.2em;
+}
+
+button.close span {
+  font-size: 1.5rem;
+}
+
+#form-allowed-tags {
+  display: none;
+}
+
+.wpcf7-not-valid-tip {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+input.wpcf7-not-valid {
+  border-color: red; // change to your preferred color
+}
+div.wpcf7-response-output {
+  margin: 0 15px 15px;
+  border: 0;
+  padding: 0;
+}
+
+.wpcf7-form br {
+  display: none;
+}
+
+.wpcf7 {
+  direction: ltr !important;
+}
+
+img.ajax-loader {
+  margin-left: 5px;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+
+body.search-results,body.page-template-about , body.page-template-contact-us ,body.blog{
+  .citynet-app {
+    display: none;
+  }
+}

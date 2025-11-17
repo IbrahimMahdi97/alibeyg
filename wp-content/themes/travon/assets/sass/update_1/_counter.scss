@@ -1,0 +1,191 @@
+//---------------------------
+.counter-box {
+    &-wrap {
+        border-right: 1px solid #A9AFBF;
+        border-color: #A9AFBF !important;
+        &:last-child {
+            border-right: none;
+        }
+    }
+    padding: 60px 6px;
+    text-align: center;
+    &__number {
+        font-size: 36px;
+        font-weight: 400;
+        color: $theme-color;
+        line-height: 1;
+        margin-top: -0.4em;
+        leading-trim: both;
+        text-edge: cap;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+    .counter-number {
+        font-size: 56px;
+        font-weight: bold;
+        color: $title-color;
+    }
+    &__text {
+        margin-bottom: -0.5em;
+        font-size: 18px;
+    }
+}
+
+.counter-sec2 {
+    background-image: linear-gradient(to left, $smoke-color, $smoke-color);
+    background-size: 1764px 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+@include lg {
+    .counter-box {
+        padding: 50px 6px;
+    }
+}
+@include md {
+    .counter-box {
+        &-wrap {
+            &:nth-child(even) {
+                border-right: none;
+            }
+            &:nth-child(odd) {
+                border-right: 1px solid;
+            }
+            &:nth-child(n + 1) {
+                border-bottom: 1px solid;
+            }
+        }
+    }
+}
+
+@include xs {
+    .counter-box {
+        padding: 40px 6px;
+        &-wrap {
+            &:nth-child(even) {
+                border-left: 1px solid;
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+//---------------------------
+.counter-block {
+    &-wrap {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
+    }
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8.6px);
+    border-radius: 10px;
+    padding: 24px 8px;
+    &_number {
+        font-size: 30px;
+        color: $theme-color;
+        font-weight: 400;
+        margin-top: -0.4em;
+        margin-bottom: 7px;
+        leading-trim: both;
+        text-edge: cap;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+    .counter-number {
+        font-weight: 800;
+        color: $white-color;
+    }
+    &_text {
+        margin-bottom: -0.5em;
+        color: $light-color;
+    }
+}
+
+@include xl {
+    .counter-block {
+        &-wrap {
+            gap: 24px;
+        }
+    }
+}
+
+@include md {
+    .counter-block {
+        &-wrap {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+@include xs {
+    .counter-block {
+        &-wrap {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+@media (max-width: 350px) {
+    .counter-block {
+        &-wrap {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+//---------------------------
+.counter-list {
+    background-color: $smoke-color2;
+    border-radius: 5px;
+    background-size: 100% auto;
+    background-position: bottom center;
+    text-align: center;
+    padding: 40px 10px;
+    border: 2px dashed transparent;
+    transition: 0.3s ease-in-out;
+    &-wrap {
+        &:nth-child(even) {
+            margin-top: 40px;
+            @include lg {
+                margin-top: 24px;
+            }
+        }
+        @include xs {
+            margin-top: 24px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    .box-icon {
+        @include equal-size-lineHeight(150px);
+        background-color: $white-color;
+        mask-size: 100% 100%;
+        margin: 0 auto 8px auto;
+    }
+    &_number {
+        font-size: 50px;
+        font-weight: 900;
+        margin-bottom: 10px;
+        color: $theme-color;
+        leading-trim: both;
+        text-edge: cap;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        .counter-number {
+            color: $title-color;
+        }
+    }
+    .box-text {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &:hover {
+        border-color: $theme-color;
+        .box-icon {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}

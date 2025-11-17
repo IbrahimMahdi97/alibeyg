@@ -1,0 +1,77 @@
+
+---Downloaded files---
+The import files for: Travon Demo were successfully downloaded!
+Initial max execution time = 60
+Files info:
+Site URL = https://alibeyg.com.iq
+Data file = /home/alibeygc/public_html/wp-content/themes/travon/inc/demo-data/travon-demo.xml
+Widget file = /home/alibeygc/public_html/wp-content/themes/travon/inc/demo-data/travon-widgets-demo.json
+Customizer file = not defined!
+Redux files:
+travon_opt -> /home/alibeygc/public_html/wp-content/themes/travon/inc/demo-data/redux_options_demo.json 
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+WP Travel Engine Sidebar : 
+
+المكوّن - No Title - Imported
+
+Blog Sidebar : 
+
+المكوّن - No Title - Imported
+المكوّن - No Title - Imported
+المكوّن - No Title - Imported
+المكوّن - No Title - Imported
+Travon :: Recent Posts - Recent Posts - Imported
+المكوّن - No Title - Imported
+
+Page Sidebar : 
+
+المكوّن - No Title - Imported
+المكوّن - No Title - Imported
+
+Footer Widgets Area 1 : 
+
+Travon :: About Us Widget - No Title - Imported
+
+Footer Widgets Area 2 : 
+
+القوائم - Quick Links - Imported
+
+Footer Widgets Area 3 : 
+
+المكوّن - No Title - Imported
+
+Footer Widgets Area 4 : 
+
+Travon :: Gallery - Gallery Showcase - Imported
+
+Offcanvas Sidebar : 
+
+Travon :: About Us Widget - No Title - Imported
+Travon :: Recent Posts - Recent Posts - Imported
+المكوّن - No Title - Imported
+
+
+
+---Importing Redux settings---
+Redux settings import for: travon_opt finished successfully!
+
+---ocdi/after_import---
+

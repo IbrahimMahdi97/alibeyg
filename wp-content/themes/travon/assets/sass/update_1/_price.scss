@@ -1,0 +1,81 @@
+//---------------------------
+.price-card {
+    background-color: $white-color;
+    box-shadow: 0px 2px 15px rgba(22, 25, 33, 0.05);
+    .ot-btn {
+
+    }
+    &__price {
+        display: flex;
+        align-items: flex-end;
+        margin-top: -0.1em;
+        margin-bottom: 30px;
+    }
+    .price {
+        font-family: $title-font;
+        font-size: 54px;
+        margin-bottom: 0;
+        color: $title-color;
+        font-weight: bold;
+        .small {
+            font-size: 20px;
+            color: $theme-color;
+        }
+    }
+    .package-duration {
+        color: $body-color;
+        margin-left: 5px;
+    }
+    &__title {
+        font-size: 30px;
+        margin-bottom: 0;
+        text-align: center;
+        height: 125px;
+        background-position: bottom center;
+        padding: 30px 10px;
+    }
+    &__content {
+        padding: 30px 60px 60px 60px;
+        @include ml {
+            padding: 30px 40px 40px 40px;
+        }
+    }
+    .checklist {
+        margin-bottom: 30px;
+    }
+    &.active {
+        --body-color: #A9AFBF;
+        --title-color: #fff;
+        background-color: #161921;
+        .price-card {
+            &__price {
+                margin-bottom: 35px;
+            }
+        }
+        .checklist {
+            margin-bottom: 35px;
+        }
+        .price-card {
+            
+        }
+    }
+}
+
+@include xs {
+    .price-card {
+        &__title {
+            font-size: 26px;
+        }
+    }
+}
+
+@include vxs {
+    .price-card {
+        .price {
+            font-size: 44px;
+        }
+        &__content {
+            padding: 28px;
+        }
+    }
+}

@@ -1,0 +1,143 @@
+//-------------------------------
+.dest-card {
+    --space: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    backdrop-filter: blur(9.2px);
+    padding: 20px;
+    &__img {
+        position: relative;
+        overflow: hidden;
+        &:after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            transition: 0.4s ease-in-out;
+            background: linear-gradient(180deg, rgba(22, 25, 33, 0) 0%, #161921 100%);
+            transform-origin: bottom center;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    &__content {
+        position: absolute;
+        left: var(--space);
+        bottom: -110px;
+        z-index: 3;
+        transition: 0.4s ease-in-out;
+        padding-right: 15px;
+    }
+    &__title {
+        color: $white-color;
+        font-size: 30px;
+    }
+    &__text {
+        color: $white-color;
+        margin-bottom: 20px;
+        opacity: 0;
+        transition: 0.4s ease-in-out;
+        height: 56px;
+    }
+    .ot-btn {
+        --white-color: #3CB371;
+        padding: 12px 20px;
+        min-width: 130px;
+        opacity: 0;
+        &:hover {
+            color: #fff;
+        }
+    }
+    &:hover {
+        .ot-btn {
+            opacity: 1;
+        }
+        .dest-card {
+            &__img {
+                &:after {
+                    transform: scaleY(1.5);
+                }
+            }
+            &__content {
+                bottom: var(--space);
+            }
+            &__text {
+                height: auto;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+#destSlide1 .slick-list {
+    padding-right: 291px;
+}
+
+@include ml {
+    #destSlide1 .slick-list {
+        padding-right: 0;
+    }
+}
+
+@include sm {
+    .dest-card {
+        max-width: 575px;
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+}
+
+@include xs {
+    .dest-card {
+        --space: 20px;
+        &__title {
+            font-size: 26px;
+        }
+    }
+}
+
+//-------------------------------
+.dest-box {
+    --space: 30px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    &:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(22, 25, 33, 0) 59.37%, #161921 100%);
+        border-radius: inherit;
+    }
+    .box-content {
+        position: absolute;
+        left: var(--space);
+        bottom: var(--space);
+        z-index: 3;
+    }
+    .box-title {
+        position: absolute;
+        top: var(--space);
+        left: var(--space);
+        z-index: 3;
+        color: $white-color;
+        background-color: $theme-color;
+        border-radius: 99px;
+        padding: 0px 18px 2px 18px;
+        margin: 0;
+        line-height: 30px;
+        a {
+            &:hover {
+                color: $title-color;
+            }
+        }
+    }
+    .box-text {
+        color: $white-color;
+        margin-top: 13px;
+        .price {
+            color: $theme-color;
+            font-weight: 700;
+        }
+    }
+}

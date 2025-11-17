@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+    #masthead {
+        .main-content {
+            height: 75px;
+            padding: 0;
+            #nav-icon {
+                display: none;
+            }
+        }
+    }
+    #colophon {
+        .menu-wrapper {
+            ul {
+                flex-direction: row;
+                li {
+                    margin-left: 25px;
+                }
+            }
+        }
+    } 
+    .bg-app { 
+        min-height: 250px;
+        clip-path: ellipse(80% 60% at 50% 40%);
+        -webkit-clip-path: ellipse(80% 60% at 50% 40%);  
+    }
+
+}

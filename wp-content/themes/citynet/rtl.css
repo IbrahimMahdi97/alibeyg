@@ -1,0 +1,351 @@
+/*!
+Theme Name: Citynet
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+/*-------------------
+CSS Find Helper List
+
+101 - Header
+102 - Reservation
+103 - HomePage
+104 - Inside
+105 - Isotope
+106 - Footer
+201 - Media small
+202 - Media medium
+203 - Media large
+
+--------------------*/
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/eot/iranyekanwebbold.eot");
+  src: url("fonts/eot/iranyekanwebbold.eot?#iefix") format("embedded-opentype"), url("fonts/woff/iranyekanwebbold.woff") format("woff"), url("fonts/ttf/iranyekanwebbold.ttf") format("truetype");
+}
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/eot/iranyekanwebregular.eot");
+  src: url("fonts/eot/iranyekanwebregular.eot?#iefix") format("embedded-opentype"), url("fonts/woff/iranyekanwebregular.woff") format("woff"), url("fonts/ttf/iranyekanwebregular.ttf") format("truetype");
+}
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/eot/iranyekanweblight.eot");
+  src: url("fonts/eot/iranyekanweblight.eot?#iefix") format("embedded-opentype"), url("fonts/woff/iranyekanweblight.woff") format("woff"), url("fonts/ttf/iranyekanweblight.ttf") format("truetype");
+}
+/* Material design box shadows */
+/* General */
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "IRANYekan", Tahoma, sans-serif;
+  line-height: 1.8;
+  unicode-bidi: embed;
+}
+
+#page {
+  direction: rtl;
+}
+
+body:not(.home) #page {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.4;
+  font-family: "IRANYekan", Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 1.9rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.main-article-format p {
+  text-align: justify;
+}
+.main-article-format blockquote {
+  border-left: unset;
+  border-right: 3px solid #0053a4;
+}
+.main-article-format ul:not(.rating_form):not(.tml-links) li:before {
+  margin-right: 0;
+  margin-left: 10px;
+  float: right;
+}
+.main-article-format ul:not(.rating_form):not(.tml-links) li ul {
+  padding-left: 0;
+  padding-right: 1.4em;
+}
+.main-article-format ol {
+  padding-left: 0;
+  padding-right: 1em;
+  list-style-type: persian;
+}
+.main-article-format ol li {
+  padding-left: 0;
+  padding-right: 6px;
+}
+
+.search-form .search-field {
+  padding: 0 10px 0 45px;
+}
+.search-form .search-submit {
+  right: auto;
+  left: 0;
+}
+
+.wpcf7 {
+  direction: rtl !important;
+}
+.wpcf7 .wpcf7-form-control-wrap {
+  min-height: 50px;
+}
+
+img.ajax-loader {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.popover {
+  right: unset;
+}
+
+.image-gallery.with-slider .gallery-image-item {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+body:not(.page-template-app-templates) .alert-dismissible .close {
+  left: 1rem;
+  right: unset;
+}
+body:not(.page-template-app-templates) .main-article-format p {
+  text-align: justify;
+}
+body:not(.page-template-app-templates) .main-article-format ul li:before {
+  margin-right: 0;
+  margin-left: 15px;
+  float: right;
+}
+body:not(.page-template-app-templates) .slick-arrow.slick-prev {
+  left: unset;
+  right: 10px;
+}
+body:not(.page-template-app-templates) .slick-arrow.slick-prev:before {
+  content: "\f105";
+}
+body:not(.page-template-app-templates) .slick-arrow.slick-next {
+  right: unset;
+  left: 10px;
+}
+body:not(.page-template-app-templates) .slick-arrow.slick-next:before {
+  content: "\f104";
+}
+
+/*---------------------------------------------
+# 101 Header
+------------------------------------------------*/
+#masthead .main-content .logo {
+  float: left;
+}
+#masthead .main-content .phone-box .header-phone {
+  font-family: "YekanBakhVF" !important;
+}
+#masthead #site-navigation .menu-toggle-close {
+  right: unset;
+  left: 15px;
+}
+#masthead #site-navigation #main-menu {
+  margin-left: 0;
+}
+#masthead #site-navigation #main-menu li i.fa {
+  margin-right: 0;
+  margin-left: 5px;
+}
+#masthead #site-navigation #main-menu li.menu-item-has-children > a {
+  padding-right: 1em;
+  padding-left: 43px;
+}
+#masthead #site-navigation #main-menu .sub-menu a {
+  padding-left: 1em;
+  padding-right: 2em !important;
+}
+#masthead #site-navigation #main-menu .sub-menu .sub-menu a {
+  padding-left: 1em;
+  padding-right: 3em !important;
+}
+#masthead #site-navigation #main-menu .sub-menu .sub-menu .sub-menu a {
+  padding-left: 1em;
+  padding-right: 4em !important;
+}
+#masthead #site-navigation.show #main-menu {
+  margin-right: 0;
+}
+#masthead .wpml-ls-legacy-dropdown-click a.wpml-ls-item-toggle::after {
+  left: unset;
+  right: 90%;
+}
+
+/*------------------------------------------------------
+# 103 HomePage
+-------------------------------------------------------*/
+/*------------------------------------------------------
+# 104 Inside
+-------------------------------------------------------*/
+.contact-form-complaint input {
+  direction: rtl !important;
+}
+
+body:not(.page-template-app-templates) #archives-filter-area .select-area span {
+  padding: 7px 7px 7px 28px;
+}
+body:not(.page-template-app-templates) #archives-filter-area .select-area span:after {
+  right: unset;
+  left: 11px;
+}
+body:not(.page-template-app-templates) #archives-filter-area .select-area ul {
+  direction: ltr;
+}
+
+#archives-filter-area .select-area span::after {
+  right: unset;
+  left: 11px;
+}
+#archives-filter-area .select-area ul {
+  direction: ltr;
+}
+
+/*------------------------------------------------------
+# 105 Isotope
+-------------------------------------------------------*/
+/*------------------------------------------------------
+# 106 Footer
+-------------------------------------------------------*/
+#colophon .site-info {
+  direction: rtl !important;
+}
+#colophon .site-info ul.socials {
+  text-align: left;
+}
+#colophon .site-info ul.socials li a {
+  margin-right: 15px;
+  margin-left: 0;
+}
+#colophon .site-info i.fa-map-marker {
+  margin-left: 5px;
+  margin-right: 0;
+}
+#colophon .footer-logo {
+  margin-top: 0;
+}
+#colophon .lufthansa {
+  float: right;
+  margin: 0.5em 0 10px 10px;
+}
+
+.social-networks li a i {
+  vertical-align: middle;
+}
+
+/*------------------------------------------------------
+# 201 Media small
+-------------------------------------------------------*/
+/*------------------------------------------------------
+# 202 Media medium
+-------------------------------------------------------*/
+/*------------------------------------------------------
+# 203 Media Large
+-------------------------------------------------------*/
+@media (min-width: 992px) {
+  #masthead #site-navigation.desktop #main-menu > li > a {
+    padding: 1em;
+  }
+  #masthead #site-navigation.desktop #main-menu > li.menu-item-has-children > a:after {
+    margin-left: 0;
+    margin-right: 0.5em;
+  }
+  #masthead #site-navigation.desktop #main-menu .sub-menu {
+    left: unset;
+    right: -1px;
+  }
+  #masthead #site-navigation.desktop #main-menu .sub-menu a {
+    padding-right: 1em !important;
+    padding-left: 1.7em !important;
+  }
+  #masthead #site-navigation.desktop #main-menu .sub-menu .menu-item-has-children > a:after {
+    content: "\f104";
+    right: unset;
+    left: 1em;
+  }
+  #masthead #site-navigation.desktop #main-menu .sub-menu .sub-menu {
+    left: unset;
+    right: 100%;
+  }
+  #masthead #site-navigation.desktop #main-menu .sub-menu .sub-menu a {
+    padding-right: 1em !important;
+    padding-left: 1.7em !important;
+  }
+  #masthead #site-navigation.desktop #main-menu .sub-menu .sub-menu .sub-menu a {
+    padding-right: 1em !important;
+    padding-left: 1.7em !important;
+  }
+  #masthead #site-navigation.desktop #main-menu > li.mega-menu.menu-item-has-children > .sub-menu {
+    left: unset;
+    right: 0;
+    padding-right: 15px;
+    padding-left: 0;
+  }
+  #masthead #site-navigation.desktop #main-menu > li.mega-menu.menu-item-has-children > .sub-menu > li {
+    margin: 0 0 15px 15px;
+    float: right;
+  }
+  #masthead #site-navigation.desktop #main-menu > li.mega-menu.menu-item-has-children > .sub-menu li > a {
+    padding-left: 1em !important;
+  }
+}
+/*------------------------------------------------------
+# 204 Media xLarge
+-------------------------------------------------------*/
+.list-view > article a.image-wrapper.thumb {
+  float: right;
+  margin-right: 0;
+  margin-left: 15px;
+}/*# sourceMappingURL=rtl.css.map */

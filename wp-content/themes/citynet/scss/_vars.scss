@@ -1,0 +1,98 @@
+// Citynet colors
+$primary: #0053a4;
+$primarydarker: darken($primary, 10%);
+$secondary: #f06543;
+$secondarydarker: darken($secondary, 10%);
+$body_background: #f5f6fa;
+
+$red:#da251c;
+$taxi: #f0cb2f;
+$grey5: darken(#fff, 5%);
+$grey10: darken(#fff, 10%);
+$grey25: darken(#fff, 25%);
+$grey75: darken(#fff, 75%);
+
+$text1: #221e1f;
+$text2:#616161;
+$text3:#b2b2b2;
+$text4:#f5f6fa;
+
+$facebook_color: #3b5998;
+$twitter_color: #1da1f2;
+$instagram_color: #c13584;
+$youtube_color: #ff0000;
+$telegram_color: #0088cc;
+$aparat_color: #df0f50;
+$whatsapp_color: #128c7e;
+$tumblr_color: #35465c;
+$medium_color: #00ab6c;
+$reddit_color: #ff4500;
+$pinterest_color: #bd081c;
+$linkedin_color: #0a66c2;
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -ms-transform: $transform;
+    transform: $transform;
+}
+
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex($values) {
+    -webkit-box-flex: $values;
+    -moz-box-flex:  $values;
+    -webkit-flex:  $values;
+    -ms-flex:  $values;
+    flex:  $values;
+}
+
+@mixin order($val) {
+    -webkit-box-ordinal-group: $val;
+    -moz-box-ordinal-group: $val;
+    -ms-flex-order: $val;
+    -webkit-order: $val;
+    order: $val;
+}
+
+/* Material design box shadows */
+/// Gives a card depth effect.
+/// @param {Number} $depth - depth level (between 1 and 5)
+/// @link http://www.google.com/design/spec/layout/layout-principles.html#layout-principles-dimensionality Google Design
+/// @requires {function} top-shadow
+/// @requires {function} bottom-shadow
+@mixin card($depth) {
+    @if $depth < 1 {
+        box-shadow: none;
+    } @else if $depth > 5 {
+        @warn "Invalid $depth `#{$depth}` for mixin `card`.";
+    } @else {
+        box-shadow: bottom-shadow($depth), top-shadow($depth);
+    }
+}
+/// Computes a top-shadow for a card effect.
+/// @param {Number} $depth - depth level
+/// @return {List}
+@function top-shadow($depth) {
+    $primary-offset: nth(1.5 3 10 14 19, $depth) * 1px;
+    $blur: nth(1.5 3 10 14 19, $depth) * 4px;
+    $color: rgba(black, nth(.12 .16 .19 .25 .30, $depth));
+
+    @return 0 $primary-offset $blur $color;
+}
+
+/// Computes a bottom-shadow for a card effect.
+/// @param {Number} $depth - depth level
+/// @return {List}
+@function bottom-shadow($depth) {
+    $primary-offset: nth(1.5 3 6 10 15, $depth) * 1px;
+    $blur: nth(1 3 3 5 6, $depth) * 4px;
+    $color: rgba(black, nth(.24 .23 .23 .22 .22, $depth));
+
+    @return 0 $primary-offset $blur $color;
+}

@@ -1,0 +1,73 @@
+//----------------------------------
+.why-feature {
+    &-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-bottom: 30px;
+        @include xl {
+            gap: 24px;
+        }
+        @include xs {
+            grid-template-columns: auto;
+            margin-bottom: 0;
+        }
+    }
+    background-color: $white-color;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    text-align: center;
+    padding: 40px 30px;
+    position: relative;
+    z-index: 2;
+    &:nth-child(even) {
+        transform: translateY(30px);
+        @include xs {
+            transform: translateY(0);
+        }
+    }
+    &__icon {
+        margin-bottom: 30px;
+    }
+    &__text {
+        margin-bottom: -0.5em;
+    }
+}
+
+//-----------------------------------------
+.feature-box {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+    &:last-child {
+        margin-bottom: 0 !important;
+    }
+    .box-icon {
+        @include equal-size-lineHeight(80px);
+        text-align: center;
+        background-color: $smoke-color;
+        border-radius: 10px;
+    }
+    .box-title {
+        margin-bottom: 7px;
+        text-transform: capitalize;
+    }
+}
+
+@include lg {
+    .feature-box {
+        max-width: 535px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 35px;
+    }
+}
+
+@include sm {
+    .feature-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

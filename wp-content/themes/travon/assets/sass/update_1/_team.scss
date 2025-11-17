@@ -1,0 +1,59 @@
+//--------------------------------------------
+.team-card {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    .team-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 40px 10px;
+        background-size: cover;
+        background-position: center top;
+    }
+    .team-desig {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .team-title {
+        margin-bottom: -0.32em;
+    }
+    .ot-social {
+        transform: scaleY(0);
+        transform-origin: top center;
+        transition: 0.4s ease-in-out;
+        a {
+            --icon-size: 40px;
+            border: none;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    }
+    .icon-btn {
+        --btn-size: 40px;
+        border: none;
+        background-color: $theme-color;
+        color: $white-color;
+        cursor: pointer;
+    }
+    .team-social {
+        visibility: visible;
+        opacity: 1;
+        width: 40px;
+        display: block;
+        left: 30px;
+        top: 30px;
+        &:hover {
+            .ot-social {
+                transform: scaleY(1);
+            }
+        }
+    }
+}
+
+.team-sec2 {
+    margin-top: -45px;
+    padding-top: 45px;
+}
