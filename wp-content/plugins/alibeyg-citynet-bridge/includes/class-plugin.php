@@ -20,7 +20,7 @@ class ABG_Citynet_Bridge_Plugin {
      *
      * @var string
      */
-    const VERSION = '0.5.0';
+    const VERSION = '0.5.2';
 
     /**
      * Plugin directory path
@@ -148,6 +148,35 @@ class ABG_Citynet_Bridge_Plugin {
 
         // Enqueue assets
         add_action('wp_enqueue_scripts', array($this->shortcodes, 'enqueue_assets'), 100001);
+
+        // Enqueue CityNet bridge script on flight page
+        add_action('wp_enqueue_scripts', array($this, 'enqueue_citynet_bridge'), 100002);
+    }
+
+    /**
+     * Enqueue CityNet bridge script
+     *
+     * This script bridges the custom search widget with CityNet's Vue.js app
+     * Loads on the flight page to pass search parameters from sessionStorage
+     */
+    public function enqueue_citynet_bridge() {
+        // Only load on flight page or pages with [citynet] shortcode
+        if (is_page('flight') || (is_page() && has_shortcode(get_post()->post_content, 'citynet'))) {
+            wp_enqueue_script(
+                'abg-citynet-bridge',
+                $this->plugin_url . 'assets/js/citynet-bridge.js',
+                array(), // No dependencies - needs to run early
+                '0.5.2',
+                true  // Load in footer
+            );
+
+            // Add inline script to log bridge loading
+            wp_add_inline_script(
+                'abg-citynet-bridge',
+                'console.log("[Alibeyg] CityNet Bridge script loaded");',
+                'before'
+            );
+        }
     }
 
     /**
