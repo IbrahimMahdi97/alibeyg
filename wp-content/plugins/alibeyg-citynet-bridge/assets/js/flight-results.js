@@ -3,11 +3,11 @@
  *
  * This script should be included on the flight results page (e.g., /flight/)
  * It reads search parameters from sessionStorage/URL and triggers the search
- * CRITICAL: Injects API results directly into CityNet's Vuex store for display
+ * CRITICAL: Injects API results directly into CityNet's COMPONENT DATA (not Vuex!)
  *
  * @package Alibeyg_Citynet_Bridge
  * @since 0.5.1
- * @version 0.5.6
+ * @version 0.5.7
  */
 
 (function() {
@@ -192,68 +192,86 @@
     },
 
     /**
-     * Inject API results into CityNet's Vuex store
-     * This makes CityNet's UI display the results
+     * Inject API results into CityNet's flight results component
+     * CRITICAL: CityNet stores results in component local data, NOT Vuex!
      */
     injectResultsIntoCityNet: function(data) {
-      console.log('[Alibeyg Flight Results] Injecting results into CityNet store...');
+      console.log('[Alibeyg Flight Results] Injecting results into CityNet component...');
 
       const app = document.getElementById('app');
       if (!app || !app.__vue__) {
-        console.warn('[Alibeyg Flight Results] CityNet Vue app not found, cannot inject results');
+        console.warn('[Alibeyg Flight Results] CityNet Vue app not found');
         return;
       }
 
       const vueInstance = app.__vue__;
-      if (!vueInstance.$store) {
-        console.warn('[Alibeyg Flight Results] CityNet Vuex store not found');
+
+      // Find the flight results component (uid 34, has originalAvailFlights property)
+      let flightComponent = null;
+
+      // Try to find via $refs first
+      function findFlightComponent(component) {
+        if (component.$refs && component.$refs.resultFlight) {
+          return component.$refs.resultFlight;
+        }
+
+        // Check if this component has the flight data properties
+        if (component.$data &&
+            component.hasOwnProperty('originalAvailFlights') &&
+            component.hasOwnProperty('customAvailFlights')) {
+          return component;
+        }
+
+        // Recurse through children
+        if (component.$children) {
+          for (let i = 0; i < component.$children.length; i++) {
+            const found = findFlightComponent(component.$children[i]);
+            if (found) return found;
+          }
+        }
+
+        return null;
+      }
+
+      flightComponent = findFlightComponent(vueInstance);
+
+      if (!flightComponent) {
+        console.error('[Alibeyg Flight Results] ✗ Could not find flight results component');
         return;
       }
 
-      // Try multiple mutation names that CityNet might use for flight results
-      const resultMutations = [
-        'flightStore/setFlightResult',
-        'flightStore/SET_FLIGHT_RESULT',
-        'flightStore/setSearchResults',
-        'flightStore/SET_SEARCH_RESULTS',
-        'flightStore/setFlights',
-        'flightStore/SET_FLIGHTS',
-        'flightStore/setFlightData',
-        'setFlightResult',
-        'SET_FLIGHT_RESULT'
-      ];
+      console.log('[Alibeyg Flight Results] ✓ Found flight component (uid: ' + flightComponent._uid + ')');
 
-      let injected = false;
-      resultMutations.forEach(function(mutation) {
-        try {
-          vueInstance.$store.commit(mutation, data);
-          console.log('[Alibeyg Flight Results] ✓ Results injected via mutation: ' + mutation);
-          injected = true;
-        } catch (e) {
-          // Silent fail - mutation doesn't exist
+      // Inject the results using Vue.set() for reactivity
+      try {
+        // The data structure from API: {Success: true, Items: Array(108), ClosedFlight: Array(0)}
+        if (typeof vueInstance.$set === 'function') {
+          vueInstance.$set(flightComponent, 'originalAvailFlights', data.Items || []);
+          vueInstance.$set(flightComponent, 'customAvailFlights', data.Items || []);
+          vueInstance.$set(flightComponent, 'ClosedFlights', data.ClosedFlight || []);
+          vueInstance.$set(flightComponent, 'loading', false);
+          vueInstance.$set(flightComponent, 'isInitializing', false);
+          console.log('[Alibeyg Flight Results] ✓ Injected ' + (data.Items ? data.Items.length : 0) + ' flights using Vue.set()');
+        } else {
+          // Fallback to direct assignment
+          flightComponent.originalAvailFlights = data.Items || [];
+          flightComponent.customAvailFlights = data.Items || [];
+          flightComponent.ClosedFlights = data.ClosedFlight || [];
+          flightComponent.loading = false;
+          flightComponent.isInitializing = false;
+          console.log('[Alibeyg Flight Results] ✓ Injected ' + (data.Items ? data.Items.length : 0) + ' flights (direct)');
         }
-      });
 
-      // Fallback: Direct state injection using Vue.set() for reactivity
-      if (!injected && vueInstance.$store.state.flightStore) {
-        try {
-          if (typeof vueInstance.$set === 'function') {
-            vueInstance.$set(vueInstance.$store.state.flightStore, 'flightResult', data);
-            vueInstance.$set(vueInstance.$store.state.flightStore, 'searchResults', data);
-            vueInstance.$set(vueInstance.$store.state.flightStore, 'flights', data);
-            console.log('[Alibeyg Flight Results] ⚠ Results force-injected via Vue.set()');
-          } else {
-            vueInstance.$store.state.flightStore.flightResult = data;
-            vueInstance.$store.state.flightStore.searchResults = data;
-            vueInstance.$store.state.flightStore.flights = data;
-            console.log('[Alibeyg Flight Results] ⚠ Results force-injected via direct assignment');
-          }
-        } catch (e) {
-          console.error('[Alibeyg Flight Results] Failed to inject results:', e);
+        // Force Vue to update
+        if (flightComponent.$forceUpdate) {
+          flightComponent.$forceUpdate();
+          console.log('[Alibeyg Flight Results] ✓ Forced component update');
         }
+
+        console.log('[Alibeyg Flight Results] ===== INJECTION SUCCESS =====');
+      } catch (e) {
+        console.error('[Alibeyg Flight Results] ✗ Injection failed:', e);
       }
-
-      console.log('[Alibeyg Flight Results] Results injection complete');
     },
 
     /**

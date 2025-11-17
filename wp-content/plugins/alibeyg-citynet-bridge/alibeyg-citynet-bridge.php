@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Alibeyg Citynet Bridge
  * Description: Server-side proxy to Citynet API (Flights/Hotels/Visa) + modern travel widget with autocomplete & i18n + CityNet Vue.js integration.
- * Version: 0.5.6
+ * Version: 0.5.7
  * Author: Alibeyg
  * Text Domain: alibeyg-citynet
  *
@@ -17,7 +17,7 @@ if (!defined('ABSPATH')) {
 /**
  * Define plugin constants
  */
-define('ABG_CITYNET_VERSION', '0.5.6');
+define('ABG_CITYNET_VERSION', '0.5.7');
 define('ABG_CITYNET_PLUGIN_FILE', __FILE__);
 define('ABG_CITYNET_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('ABG_CITYNET_PLUGIN_URL', plugin_dir_url(__FILE__));
