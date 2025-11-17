@@ -1,49 +1,127 @@
 /**
- * CityNet Bridge Script
+ * CityNet Bridge Script v2
  *
- * This script acts as a bridge between the custom Alibeyg search widget
- * and the CityNet Vue.js application.
+ * This script bridges the custom Alibeyg search widget with CityNet's Vue.js app
+ * by making CityNet perform its own search with the custom widget's parameters.
  *
  * Flow:
- * 1. Custom widget stores search data in sessionStorage
- * 2. This script reads that data when /flight/ page loads
- * 3. Passes data to CityNet Vue app for display
+ * 1. Custom widget stores search payload in sessionStorage
+ * 2. This script reads payload and converts to CityNet format
+ * 3. Stores data in CityNet's expected locations (localStorage + URL)
+ * 4. Triggers CityNet's internal search mechanism
  *
  * @package Alibeyg_Citynet_Bridge
- * @since 0.5.2
+ * @since 0.5.3
  */
 
 (function() {
   'use strict';
 
-  console.log('[CityNet Bridge] Initializing...');
+  console.log('[CityNet Bridge] v2 Initializing...');
+
+  /**
+   * Convert custom widget payload to CityNet format
+   */
+  function convertToCitynetFormat(payload) {
+    // The payload is already in CityNet's API format from the widget
+    // Just ensure it has all required fields
+    const citynetPayload = {
+      Lang: payload.Lang || 'FA',
+      TravelPreference: payload.TravelPreference,
+      TravelerInfoSummary: payload.TravelerInfoSummary,
+      SpecificFlightInfo: payload.SpecificFlightInfo || { Airline: [] },
+      OriginDestinationInformations: payload.OriginDestinationInformations,
+      DeepLink: payload.DeepLink || 0
+    };
+
+    // Add CIP and Insurance if present
+    if (payload.CIP) citynetPayload.CIP = true;
+    if (payload.Insurance) citynetPayload.Insurance = true;
+
+    return citynetPayload;
+  }
+
+  /**
+   * Store search data in CityNet's expected locations
+   */
+  function storeCitynetSearchData(payload, params) {
+    console.log('[CityNet Bridge] Storing data in CityNet format');
+
+    // CityNet might read from these keys
+    const citynetKeys = [
+      'flightSearchData',
+      'cn_flight_search',
+      'citynet_search_data',
+      'searchFlightData',
+      'flightSearch'
+    ];
+
+    // Try storing in multiple locations to maximize compatibility
+    citynetKeys.forEach(function(key) {
+      try {
+        localStorage.setItem(key, JSON.stringify(payload));
+        sessionStorage.setItem(key, JSON.stringify(payload));
+      } catch (e) {
+        console.warn('[CityNet Bridge] Failed to store in ' + key);
+      }
+    });
+
+    // Store params in a readable format
+    try {
+      localStorage.setItem('citynet_search_params', JSON.stringify(params));
+      sessionStorage.setItem('citynet_search_params', JSON.stringify(params));
+    } catch (e) {}
+  }
+
+  /**
+   * Build URL hash for Vue Router
+   */
+  function buildVueRouterHash(params) {
+    // Build hash route that Vue Router can read
+    // Common patterns: #/flight or #/flight/search
+    const queryParams = [];
+
+    if (params.origin) queryParams.push('from=' + params.origin);
+    if (params.destination) queryParams.push('to=' + params.destination);
+    if (params.departureDate) queryParams.push('departDate=' + params.departureDate);
+    if (params.returnDate) queryParams.push('returnDate=' + params.returnDate);
+    if (params.adults) queryParams.push('adults=' + params.adults);
+    if (params.children) queryParams.push('children=' + params.children);
+    if (params.infants) queryParams.push('infants=' + params.infants);
+    if (params.cabin) queryParams.push('cabin=' + params.cabin);
+    if (params.tripType) queryParams.push('type=' + (params.tripType === 'round-trip' ? 'twoWay' : 'oneWay'));
+
+    return '#/flight?' + queryParams.join('&');
+  }
 
   /**
    * Wait for CityNet Vue app to be ready
    */
-  function waitForCitynetApp(callback) {
+  function waitForCitynetApp(callback, timeout) {
+    timeout = timeout || 10000; // 10 seconds
     let attempts = 0;
-    const maxAttempts = 50; // 5 seconds max
+    const maxAttempts = timeout / 100;
 
     const checkInterval = setInterval(function() {
       attempts++;
 
-      // Check if Vue app is mounted (look for the #app element with Vue instance)
+      // Check if Vue app is mounted
       const appElement = document.getElementById('app');
 
       if (appElement && appElement.__vue__) {
         clearInterval(checkInterval);
-        console.log('[CityNet Bridge] Vue app detected, ready to inject data');
+        console.log('[CityNet Bridge] Vue app detected');
         callback(appElement.__vue__);
       } else if (attempts >= maxAttempts) {
         clearInterval(checkInterval);
         console.warn('[CityNet Bridge] Timeout waiting for Vue app');
+        callback(null);
       }
     }, 100);
   }
 
   /**
-   * Inject search parameters into CityNet Vue app
+   * Inject search parameters and trigger CityNet search
    */
   function injectSearchData(vueInstance) {
     try {
@@ -60,138 +138,179 @@
       const payload = JSON.parse(payloadStr);
       const params = paramsStr ? JSON.parse(paramsStr) : null;
 
-      console.log('[CityNet Bridge] Search data found:', {payload, params});
+      console.log('[CityNet Bridge] Payload to inject:', payload);
+      console.log('[CityNet Bridge] Params:', params);
 
-      // Try to access Vuex store
-      if (vueInstance.$store) {
-        console.log('[CityNet Bridge] Vuex store detected');
+      // Convert and store in CityNet format
+      const citynetPayload = convertToCitynetFormat(payload);
+      storeCitynetSearchData(citynetPayload, params);
 
-        // Option 1: Try to set search parameters in Vuex store
-        // The exact mutation name depends on CityNet's implementation
-        // Common patterns:
-        if (typeof vueInstance.$store.commit === 'function') {
-          try {
-            // Try common mutation names
-            vueInstance.$store.commit('setFlightSearchParams', payload);
-          } catch (e) {
-            console.log('[CityNet Bridge] Mutation setFlightSearchParams not found');
-          }
-
-          try {
-            vueInstance.$store.commit('flight/setSearchParams', payload);
-          } catch (e) {
-            console.log('[CityNet Bridge] Mutation flight/setSearchParams not found');
-          }
+      if (!vueInstance) {
+        console.warn('[CityNet Bridge] Vue instance not available, using fallback methods');
+        // Set URL hash and hope CityNet reads it
+        if (params) {
+          const hash = buildVueRouterHash(params);
+          console.log('[CityNet Bridge] Setting URL hash:', hash);
+          window.location.hash = hash;
         }
-
-        // Option 2: Try to dispatch an action
-        if (typeof vueInstance.$store.dispatch === 'function') {
-          try {
-            vueInstance.$store.dispatch('searchFlights', payload);
-          } catch (e) {
-            console.log('[CityNet Bridge] Action searchFlights not found');
-          }
-
-          try {
-            vueInstance.$store.dispatch('flight/search', payload);
-          } catch (e) {
-            console.log('[CityNet Bridge] Action flight/search not found');
-          }
-        }
+        sessionStorage.setItem('autoSearch', 'false');
+        return;
       }
 
-      // Option 3: Use Vue Router to pass data
-      if (vueInstance.$router) {
-        console.log('[CityNet Bridge] Vue Router detected');
+      console.log('[CityNet Bridge] Vue instance available, attempting direct injection');
+
+      // Strategy 1: Try Vuex store mutations (most common in CityNet apps)
+      if (vueInstance.$store && typeof vueInstance.$store.commit === 'function') {
+        console.log('[CityNet Bridge] Attempting Vuex mutations...');
+
+        // List of possible mutation names CityNet might use
+        const mutationAttempts = [
+          'setFlightSearchData',
+          'setSearchParams',
+          'flight/setSearchData',
+          'flight/setParams',
+          'flightStore/setSearchData',
+          'search/setFlightData'
+        ];
+
+        mutationAttempts.forEach(function(mutation) {
+          try {
+            vueInstance.$store.commit(mutation, citynetPayload);
+            console.log('[CityNet Bridge] ✓ Mutation succeeded: ' + mutation);
+          } catch (e) {
+            // Silent fail - this is expected for non-existent mutations
+          }
+        });
+      }
+
+      // Strategy 2: Try Vuex store actions (might trigger API call)
+      if (vueInstance.$store && typeof vueInstance.$store.dispatch === 'function') {
+        console.log('[CityNet Bridge] Attempting Vuex actions...');
+
+        const actionAttempts = [
+          'performFlightSearch',
+          'searchFlights',
+          'flight/search',
+          'flight/performSearch',
+          'flightStore/search',
+          'search/performFlight'
+        ];
+
+        actionAttempts.forEach(function(action) {
+          try {
+            vueInstance.$store.dispatch(action, citynetPayload);
+            console.log('[CityNet Bridge] ✓ Action dispatched: ' + action);
+          } catch (e) {
+            // Silent fail
+          }
+        });
+      }
+
+      // Strategy 3: Navigate with Vue Router (force route change with query)
+      if (vueInstance.$router && params) {
+        console.log('[CityNet Bridge] Attempting Vue Router navigation...');
 
         try {
-          // Navigate with query parameters
           vueInstance.$router.push({
-            path: '/flight',
+            name: 'flight', // Common route name
             query: {
-              from: params?.from || '',
-              to: params?.to || '',
-              departDate: params?.departDate || '',
-              returnDate: params?.returnDate || '',
-              adults: params?.adults || 1,
-              children: params?.children || 0,
-              infants: params?.infants || 0,
-              class: params?.class || 'economy',
-              tripType: params?.tripType || 'roundtrip'
+              from: params.origin,
+              to: params.destination,
+              departDate: params.departureDate,
+              returnDate: params.returnDate || '',
+              adults: params.adults,
+              children: params.children,
+              infants: params.infants,
+              cabin: params.cabin,
+              type: params.tripType === 'round-trip' ? 'twoWay' : 'oneWay'
             }
           });
-          console.log('[CityNet Bridge] Navigated with query params');
+          console.log('[CityNet Bridge] ✓ Router navigation attempted');
         } catch (e) {
-          console.error('[CityNet Bridge] Router navigation failed:', e);
+          // Try alternative route patterns
+          try {
+            vueInstance.$router.push('/flight?' + Object.keys(params).map(function(k) {
+              return k + '=' + encodeURIComponent(params[k]);
+            }).join('&'));
+          } catch (e2) {
+            console.log('[CityNet Bridge] Router navigation failed');
+          }
         }
       }
 
-      // Option 4: Try global event bus
+      // Strategy 4: Global event bus (Vue 2 pattern)
       if (vueInstance.$root && typeof vueInstance.$root.$emit === 'function') {
-        console.log('[CityNet Bridge] Emitting search event on global bus');
-        vueInstance.$root.$emit('performFlightSearch', payload);
-        vueInstance.$root.$emit('flight:search', payload);
+        console.log('[CityNet Bridge] Emitting global events...');
+
+        vueInstance.$root.$emit('flight:search', citynetPayload);
+        vueInstance.$root.$emit('performFlightSearch', citynetPayload);
+        vueInstance.$root.$emit('search:flight', citynetPayload);
+        console.log('[CityNet Bridge] ✓ Global events emitted');
       }
 
-      // Option 5: Direct localStorage approach (CityNet might read from here)
-      try {
-        localStorage.setItem('citynet_flight_search', JSON.stringify(payload));
-        localStorage.setItem('citynet_search_trigger', Date.now().toString());
-        console.log('[CityNet Bridge] Stored search data in localStorage');
-      } catch (e) {
-        console.error('[CityNet Bridge] localStorage write failed:', e);
+      // Strategy 5: Try calling a method directly on the component
+      if (vueInstance.performSearch && typeof vueInstance.performSearch === 'function') {
+        try {
+          vueInstance.performSearch(citynetPayload);
+          console.log('[CityNet Bridge] ✓ Direct component method called');
+        } catch (e) {}
       }
 
-      // Option 6: Trigger a custom event that CityNet might listen to
-      const searchEvent = new CustomEvent('citynet:flight-search', {
-        detail: {
-          payload: payload,
-          params: params
-        }
+      // Strategy 6: Set window global that CityNet might check
+      window.citynetFlightSearch = citynetPayload;
+      window.citynetSearchTrigger = Date.now();
+      console.log('[CityNet Bridge] ✓ Global window variables set');
+
+      // Strategy 7: Dispatch DOM event
+      const domEvent = new CustomEvent('citynet:flight-search', {
+        detail: { payload: citynetPayload, params: params },
+        bubbles: true
       });
-      window.dispatchEvent(searchEvent);
-      console.log('[CityNet Bridge] Dispatched citynet:flight-search event');
+      document.dispatchEvent(domEvent);
+      window.dispatchEvent(domEvent);
+      console.log('[CityNet Bridge] ✓ DOM events dispatched');
 
-      // Clean up auto-search flag (so it doesn't trigger again)
+      // Clean up auto-search flag
       sessionStorage.setItem('autoSearch', 'false');
 
-      console.log('[CityNet Bridge] Search data injection complete');
+      console.log('[CityNet Bridge] ===== INJECTION COMPLETE =====');
+      console.log('[CityNet Bridge] If results don\'t appear, inspect Vue app with:');
+      console.log('[CityNet Bridge]   console.log(document.getElementById("app").__vue__.$store)');
 
     } catch (error) {
-      console.error('[CityNet Bridge] Error injecting search data:', error);
+      console.error('[CityNet Bridge] Error during injection:', error);
     }
   }
 
   /**
-   * Alternative: Direct URL parameter injection
-   *
-   * If Vue app reads from URL hash, we can manipulate it
+   * Diagnostic: Inspect CityNet Vue app structure
    */
-  function tryURLHashInjection() {
-    try {
-      const payloadStr = sessionStorage.getItem('flightSearchPayload');
-      const paramsStr = sessionStorage.getItem('flightSearchParams');
-      const autoSearch = sessionStorage.getItem('autoSearch');
+  function inspectCitynetApp() {
+    console.log('[CityNet Bridge] ===== DIAGNOSTIC MODE =====');
 
-      if (!payloadStr || autoSearch !== 'true') {
-        return;
-      }
-
-      const params = paramsStr ? JSON.parse(paramsStr) : null;
-
-      if (params) {
-        // Build URL hash for Vue Router
-        const hashPath = `#/flight?from=${params.from || ''}&to=${params.to || ''}&departDate=${params.departDate || ''}&returnDate=${params.returnDate || ''}&adults=${params.adults || 1}&children=${params.children || 0}&infants=${params.infants || 0}&class=${params.class || 'economy'}`;
-
-        console.log('[CityNet Bridge] Setting URL hash:', hashPath);
-        window.location.hash = hashPath;
-
-        // Clean up
-        sessionStorage.setItem('autoSearch', 'false');
-      }
-    } catch (error) {
-      console.error('[CityNet Bridge] URL hash injection failed:', error);
+    const app = document.getElementById('app');
+    if (!app || !app.__vue__) {
+      console.warn('[CityNet Bridge] Vue app not found!');
+      return;
     }
+
+    const vue = app.__vue__;
+
+    console.log('[CityNet Bridge] Vue instance:', vue);
+
+    if (vue.$store) {
+      console.log('[CityNet Bridge] Vuex Store State:', vue.$store.state);
+      console.log('[CityNet Bridge] Available Mutations:', Object.keys(vue.$store._mutations));
+      console.log('[CityNet Bridge] Available Actions:', Object.keys(vue.$store._actions));
+    }
+
+    if (vue.$router) {
+      console.log('[CityNet Bridge] Current Route:', vue.$router.currentRoute);
+      console.log('[CityNet Bridge] Available Routes:', vue.$router.options.routes);
+    }
+
+    console.log('[CityNet Bridge] Component Methods:', Object.keys(vue).filter(k => typeof vue[k] === 'function'));
+    console.log('[CityNet Bridge] ===== END DIAGNOSTIC =====');
   }
 
   /**
@@ -206,27 +325,33 @@
       return;
     }
 
-    console.log('[CityNet Bridge] On flight page, checking for search data...');
+    console.log('[CityNet Bridge] ===== BRIDGE ACTIVE =====');
+    console.log('[CityNet Bridge] On flight page, preparing to inject search data');
 
-    // Try URL hash injection first (works immediately)
-    tryURLHashInjection();
+    // Check if we have search data
+    const hasSearchData = sessionStorage.getItem('flightSearchPayload') &&
+                          sessionStorage.getItem('autoSearch') === 'true';
 
-    // Then wait for Vue app and inject via Vue instance
-    waitForCitynetApp(injectSearchData);
+    if (!hasSearchData) {
+      console.log('[CityNet Bridge] No pending search data found');
+      console.log('[CityNet Bridge] User likely navigated directly to /flight/');
+      return;
+    }
 
-    // Also emit a global event that can be caught by any listener
-    setTimeout(function() {
-      const payloadStr = sessionStorage.getItem('flightSearchPayload');
-      if (payloadStr) {
-        try {
-          const payload = JSON.parse(payloadStr);
-          window.alibeyg_flight_search_data = payload;
-          console.log('[CityNet Bridge] Global search data available at window.alibeyg_flight_search_data');
-        } catch (e) {
-          console.error('[CityNet Bridge] Failed to set global search data');
+    console.log('[CityNet Bridge] Search data found! Initiating injection sequence...');
+
+    // Wait for Vue app to load, then inject
+    waitForCitynetApp(function(vueInstance) {
+      // Small delay to ensure Vue app is fully initialized
+      setTimeout(function() {
+        injectSearchData(vueInstance);
+
+        // Run diagnostic if in debug mode
+        if (window.location.search.includes('debug=bridge')) {
+          setTimeout(inspectCitynetApp, 1000);
         }
-      }
-    }, 100);
+      }, 500);
+    }, 15000); // 15 second timeout
   }
 
   // Run on DOM ready
@@ -236,12 +361,19 @@
     init();
   }
 
-  // Expose API for manual triggering
+  // Expose API for manual control and debugging
   window.AlibeyqCitynetBridge = {
+    /**
+     * Manually trigger injection
+     */
     inject: function() {
       console.log('[CityNet Bridge] Manual injection triggered');
       waitForCitynetApp(injectSearchData);
     },
+
+    /**
+     * Get stored search data
+     */
     getSearchData: function() {
       const payloadStr = sessionStorage.getItem('flightSearchPayload');
       const paramsStr = sessionStorage.getItem('flightSearchParams');
@@ -249,7 +381,48 @@
         payload: payloadStr ? JSON.parse(payloadStr) : null,
         params: paramsStr ? JSON.parse(paramsStr) : null
       };
+    },
+
+    /**
+     * Inspect CityNet Vue app
+     */
+    inspect: function() {
+      inspectCitynetApp();
+    },
+
+    /**
+     * Clear search data
+     */
+    clear: function() {
+      sessionStorage.removeItem('flightSearchPayload');
+      sessionStorage.removeItem('flightSearchParams');
+      sessionStorage.removeItem('autoSearch');
+      console.log('[CityNet Bridge] Search data cleared');
+    },
+
+    /**
+     * Get help
+     */
+    help: function() {
+      console.log(`
+[CityNet Bridge] Available Commands:
+  AlibeyqCitynetBridge.inject()       - Manually trigger search injection
+  AlibeyqCitynetBridge.getSearchData() - View stored search data
+  AlibeyqCitynetBridge.inspect()      - Inspect Vue app structure
+  AlibeyqCitynetBridge.clear()        - Clear stored search data
+  AlibeyqCitynetBridge.help()         - Show this help
+
+Debugging:
+  1. Search from homepage
+  2. Check console for "[CityNet Bridge]" messages
+  3. Run: AlibeyqCitynetBridge.inspect()
+  4. Look for which strategy succeeded (✓ marks)
+  5. Share console output if issues persist
+      `);
     }
   };
+
+  // Auto-show help in console
+  console.log('[CityNet Bridge] Type AlibeyqCitynetBridge.help() for debugging commands');
 
 })();
