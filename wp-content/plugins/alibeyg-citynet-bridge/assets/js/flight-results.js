@@ -3,9 +3,11 @@
  *
  * This script should be included on the flight results page (e.g., /flight/)
  * It reads search parameters from sessionStorage/URL and triggers the search
+ * CRITICAL: Injects API results directly into CityNet's Vuex store for display
  *
  * @package Alibeyg_Citynet_Bridge
  * @since 0.5.1
+ * @version 0.5.6
  */
 
 (function() {
@@ -170,6 +172,10 @@
         sessionStorage.removeItem('autoSearch');
 
         if (result.status === 200 && result.data) {
+          // CRITICAL: Inject results into CityNet's Vuex store
+          this.injectResultsIntoCityNet(result.data);
+
+          // Also display in custom UI if not in silent mode
           this.displayResults(result.data);
         } else if (result.code && result.message) {
           // WordPress error format
@@ -183,6 +189,71 @@
         sessionStorage.removeItem('autoSearch');
         this.showError('Network error. Please check your connection and try again.');
       });
+    },
+
+    /**
+     * Inject API results into CityNet's Vuex store
+     * This makes CityNet's UI display the results
+     */
+    injectResultsIntoCityNet: function(data) {
+      console.log('[Alibeyg Flight Results] Injecting results into CityNet store...');
+
+      const app = document.getElementById('app');
+      if (!app || !app.__vue__) {
+        console.warn('[Alibeyg Flight Results] CityNet Vue app not found, cannot inject results');
+        return;
+      }
+
+      const vueInstance = app.__vue__;
+      if (!vueInstance.$store) {
+        console.warn('[Alibeyg Flight Results] CityNet Vuex store not found');
+        return;
+      }
+
+      // Try multiple mutation names that CityNet might use for flight results
+      const resultMutations = [
+        'flightStore/setFlightResult',
+        'flightStore/SET_FLIGHT_RESULT',
+        'flightStore/setSearchResults',
+        'flightStore/SET_SEARCH_RESULTS',
+        'flightStore/setFlights',
+        'flightStore/SET_FLIGHTS',
+        'flightStore/setFlightData',
+        'setFlightResult',
+        'SET_FLIGHT_RESULT'
+      ];
+
+      let injected = false;
+      resultMutations.forEach(function(mutation) {
+        try {
+          vueInstance.$store.commit(mutation, data);
+          console.log('[Alibeyg Flight Results] ✓ Results injected via mutation: ' + mutation);
+          injected = true;
+        } catch (e) {
+          // Silent fail - mutation doesn't exist
+        }
+      });
+
+      // Fallback: Direct state injection using Vue.set() for reactivity
+      if (!injected && vueInstance.$store.state.flightStore) {
+        try {
+          if (typeof vueInstance.$set === 'function') {
+            vueInstance.$set(vueInstance.$store.state.flightStore, 'flightResult', data);
+            vueInstance.$set(vueInstance.$store.state.flightStore, 'searchResults', data);
+            vueInstance.$set(vueInstance.$store.state.flightStore, 'flights', data);
+            console.log('[Alibeyg Flight Results] ⚠ Results force-injected via Vue.set()');
+          } else {
+            vueInstance.$store.state.flightStore.flightResult = data;
+            vueInstance.$store.state.flightStore.searchResults = data;
+            vueInstance.$store.state.flightStore.flights = data;
+            console.log('[Alibeyg Flight Results] ⚠ Results force-injected via direct assignment');
+          }
+        } catch (e) {
+          console.error('[Alibeyg Flight Results] Failed to inject results:', e);
+        }
+      }
+
+      console.log('[Alibeyg Flight Results] Results injection complete');
     },
 
     /**

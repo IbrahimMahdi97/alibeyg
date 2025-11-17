@@ -1,5 +1,5 @@
 /**
- * CityNet Bridge Script v2.2
+ * CityNet Bridge Script v2.3
  *
  * This script bridges the custom Alibeyg search widget with CityNet's Vue.js app
  * by making CityNet perform its own search with the custom widget's parameters.
@@ -12,10 +12,11 @@
  *    - Falls back to Vue.set() for reactivity
  * 4. Stores data in CityNet's expected locations (localStorage + URL)
  * 5. Triggers CityNet's internal search mechanism
+ * 6. Flight-results.js injects API results into CityNet's Vuex store for display
  *
  * @package Alibeyg_Citynet_Bridge
- * @since 0.5.5
- * @version 0.5.5
+ * @since 0.5.6
+ * @version 0.5.6
  */
 
 (function() {
